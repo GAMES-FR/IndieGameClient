@@ -74,7 +74,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>Level2</WarningLevel>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
@@ -113,15 +113,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\includes\Constants.hpp" />
-    <ClInclude Include="..\..\includes\Input.h" />
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="Player.h" />
+    <ClCompile Include="..\..\sources\main.cpp" />
+    <ClCompile Include="..\..\sources\MenuLoop.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="Input.cpp" />
-    <ClCompile Include="Map.cpp" />
+    <ClInclude Include="..\..\includes\Constants.hpp" />
+    <ClInclude Include="..\..\includes\Loop.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
