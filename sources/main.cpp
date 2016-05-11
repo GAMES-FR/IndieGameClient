@@ -1,7 +1,7 @@
 #include "Loop.hpp"
 #include "Constants.hpp"
 
-#ifdef _IRR_WINDOWS_
+#if defined (_IRR_WINDOWS_) && ! defined (MSYS)
 # pragma comment(lib, "Irrlicht.lib")
 // # pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
