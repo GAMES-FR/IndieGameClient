@@ -15,7 +15,7 @@ int main()
   /* lib and device init */
   irr::IrrlichtDevice *device =
     irr::createDevice(irr::video::EDT_SOFTWARE,
-		      irr::core::dimension2d<irr::u32>(640, 480), 16,
+		      irr::core::dimension2d<irr::u32>(1440, 900), 16,
 		      false, false, false, 0);
   if (!device)
     return (ERROR_CODE);
@@ -27,36 +27,40 @@ int main()
   device->setWindowCaption(L"Hello World! - Irrlicht Engine Demo");
   guienv->addStaticText(L"Hello World! This is the Irrlicht Software renderer!",
 			irr::core::rect<irr::s32>(10,10,260,22), true);
-  irr::scene::IAnimatedMesh* mesh = smgr->getMesh(ASSETS_DIR"/sydney.md2");
-  if (!mesh)
+  device->getFileSystem()->addFileArchive(ASSETS_DIR"/map-20kdm2.pk3");
+  irr::scene::IAnimatedMesh* player = smgr->getMesh(ASSETS_DIR"/sydney.md2");
+  irr::scene::IAnimatedMeshSceneNode* player_node = smgr->addAnimatedMeshSceneNode(player);
+
+  if (!player)
     {
       device->drop();
       return (ERROR_CODE);
     }
-  irr::scene::IAnimatedMeshSceneNode* node = smgr->addAnimatedMeshSceneNode(mesh);
-  if (node)
+
+  if (player_node)
     {
-      node->setMaterialFlag(irr::video::EMF_LIGHTING, false);
-      node->setMD2Animation(irr::scene::EMAT_STAND);
-      node->setMaterialTexture(0, driver->getTexture(ASSETS_DIR"/sydney.bmp") );
+      player_node->setMaterialFlag(irr::video::EMF_LIGHTING, false);
+      player_node->setMD2Animation(irr::scene::EMAT_STAND);
+      player_node->setMaterialTexture(0, driver->getTexture(ASSETS_DIR"/sydney.bmp") );
     }
-  smgr->addCameraSceneNode(0,
-			   irr::core::vector3df(0,30,-40),
+  
+	smgr->addCameraSceneNode(0,
+			   irr::core::vector3df(0,40,-30),
 			   irr::core::vector3df(0,5,0));
 
   /* omg la loop */
-  while(device->run())
-    {
-      /* clear screen */
-      driver->beginScene(true, true, irr::video::SColor(255,100,101,140));
+  while (device->run())
+  {
+	  /* clear screen */
+	  driver->beginScene(true, true, irr::video::SColor(255, 100, 101, 140));
 
-      /* draw */
-      smgr->drawAll();
-      guienv->drawAll();
+	  /* draw */
+	  smgr->drawAll();
+	  guienv->drawAll();
 
-      /* blit */
-      driver->endScene();
-    }
+	  /* blit */
+	  driver->endScene();
+  }
   device->drop();
   return (OK_CODE);
 }
