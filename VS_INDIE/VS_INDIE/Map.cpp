@@ -21,7 +21,7 @@ int main()
 	Player				player;
 
 	irr::IrrlichtDevice *device =
-		irr::createDevice(irr::video::EDT_DIRECT3D9, irr::core::dimension2d<irr::u32>(1280, 720), 16, false, false, false, &receiver);
+		irr::createDevice(irr::video::EDT_OPENGL, irr::core::dimension2d<irr::u32>(1280, 720), 16, false, false, false, &receiver);
 
 	if (device == 0)
 		return 1; // could not create selected driver.
