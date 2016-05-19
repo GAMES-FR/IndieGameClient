@@ -15,12 +15,16 @@ class Player
 private:
 	irr::core::vector3df _pos;
 	irr::core::vector3df _rot;
+	irr::scene::ISceneNode *_node;
 
 public:
 	Player(float x = 0.0f, float y = 0.0f, float z = 0.0f);
 	~Player();
 
 	void update(irr::f32 dt);
+
+	void setNode(irr::scene::ISceneNode *node);
+
 	void setPosition(irr::core::vector3df newPos);
 	void setPosition(float newX, float newY, float newZ);
 	irr::core::vector3df getPosition() const;

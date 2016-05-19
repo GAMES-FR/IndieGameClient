@@ -21,7 +21,7 @@ void					Camera::updateCamera(Player *player)
 	float yf = player->getPosition().Y;// - sin(player->getRotation() * M_PI / 180.0f) * this->_zoom;
 	float zf = player->getPosition().Z + sin(player->getRotation().Y * M_PI / 180.0f) * this->_zoom;
 
-	camera->setPosition(irr::core::vector3df(xf, yf + 10.0f, zf));
+	camera->setPosition(irr::core::vector3df(xf, yf + 45.0f, zf));
 	camera->setTarget(player->getPosition());
 }
 

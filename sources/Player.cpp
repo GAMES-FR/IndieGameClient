@@ -45,6 +45,13 @@ void Player::update(irr::f32 dt)
 		this->_pos.X -= (float)(cos(this->_rot.Y * M_PI / 180.0f) * speed * dt);
 		this->_pos.Z += (float)(sin(this->_rot.Y * M_PI / 180.0f) * speed * dt);
 	}
+	this->_node->setPosition(this->_pos);
+	this->_node->setRotation(this->_rot);
+}
+
+void Player::setNode(irr::scene::ISceneNode *node)
+{
+	this->_node = node;
 }
 
 void Player::setPosition(irr::core::vector3df newPos)

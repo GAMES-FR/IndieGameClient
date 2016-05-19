@@ -8,6 +8,7 @@
 
 struct device_t
 {
+	InputHandler receiver;
   irr::IrrlichtDevice *ptr;
   irr::video::IVideoDriver* driver;
   irr::scene::ISceneManager* smgr;

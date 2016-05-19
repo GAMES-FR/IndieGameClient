@@ -1,5 +1,6 @@
 #include "Loop.hpp"
 #include "Constants.hpp"
+#include "Input.hpp"
 
 #if defined (_IRR_WINDOWS_) && ! defined (MSYS)
 # pragma comment(lib, "Irrlicht.lib")
@@ -17,8 +18,8 @@ int main()
 
   /* lib and device init */
   device.ptr = irr::createDevice(irr::video::EDT_SOFTWARE,
-				 irr::core::dimension2d<irr::u32>(640, 480), 16,
-				 false, true, false, 0);
+	  irr::core::dimension2d<irr::u32>(1280, 720), 16,
+				 false, true, false, &device.receiver);
   if (!device.ptr)
     return (ERROR_CODE);
   device.driver = device.ptr->getVideoDriver();

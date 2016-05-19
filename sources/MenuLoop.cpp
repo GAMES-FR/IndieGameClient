@@ -1,5 +1,6 @@
 #include "Loop.hpp"
 #include "Constants.hpp"
+#include "Camera.hpp"
 
 MenuLoop::MenuLoop(device_t *d)
   : _device(d), _title(L"Hello World! - Irrlicht Engine Demo")
@@ -34,7 +35,6 @@ bool MenuLoop::init()
 
 bool MenuLoop::loop()
 {
-	InputHandler receiver;
 	Player player;
 
 	//this->_device->smgr->addCameraSceneNode(0, irr::core::vector3df(0, 0, 0), irr::core::vector3df(0, 0, 0));
@@ -84,12 +84,37 @@ bool MenuLoop::loop()
 		sphere2->setMaterialFlag(irr::video::EMF_LIGHTING, false);
 	}
 
+	player.setNode(bear_node);
+	Camera camera(this->_device->ptr, sphere);
+	irr::u32 before = camera.getDevice()->getTimer()->getTime();
+
   while (this->_device->ptr->run())
     {
-		
-		this->_device->driver->beginScene(true, true, irr::video::SColor(255,100,101,140));
+		const irr::u32 now = camera.getDevice()->getTimer()->getTime();
+		const irr::f32 dt = (irr::f32)(now - before) / 1000.f; // Time in seconds
+		before = now;
+
+		if (this->_device->receiver.isKeyDown(irr::KEY_KEY_Z))
+			player.up = true;
+		else
+			player.up = false;
+		if (this->_device->receiver.isKeyDown(irr::KEY_KEY_Q))
+			player.left = true;
+		else
+			player.left = false;
+		if (this->_device->receiver.isKeyDown(irr::KEY_KEY_S))
+			player.down = true;
+		else
+			player.down = false;
+		if (this->_device->receiver.isKeyDown(irr::KEY_KEY_D))
+			player.right = true;
+		else
+			player.right = false;
+		player.update(dt);
+		camera.updateCamera(&player);
+		this->_device->driver->beginScene(true, true, irr::video::SColor(255,200,200,200));
 		this->_device->smgr->drawAll();
-		this->_device->guienv->drawAll();
+		//this->_device->guienv->drawAll();
 		this->_device->driver->endScene();
     }
   return (OK_CODE);
