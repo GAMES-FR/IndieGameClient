@@ -14,7 +14,7 @@ struct device_t
 class MenuLoop
 {
 private:
-  device_t *_d;
+  device_t *_device;
   const wchar_t *_title;
 public:
   MenuLoop(device_t *device);
