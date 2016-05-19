@@ -113,12 +113,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\sources\Camera.cpp" />
+    <ClCompile Include="..\..\sources\Input.cpp" />
     <ClCompile Include="..\..\sources\main.cpp" />
     <ClCompile Include="..\..\sources\MenuLoop.cpp" />
+    <ClCompile Include="..\..\sources\Player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\includes\Camera.hpp" />
     <ClInclude Include="..\..\includes\Constants.hpp" />
+    <ClInclude Include="..\..\includes\Input.hpp" />
     <ClInclude Include="..\..\includes\Loop.hpp" />
+    <ClInclude Include="..\..\includes\Player.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

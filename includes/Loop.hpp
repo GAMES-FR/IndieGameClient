@@ -3,6 +3,9 @@
 
 # include <irrlicht.h>
 
+# include "Player.hpp"
+# include "Input.hpp"
+
 struct device_t
 {
   irr::IrrlichtDevice *ptr;
@@ -24,4 +27,4 @@ public:
   bool loop();
 };
 
-#endif /* LOOP_HPP_ */
+#endif /* !LOOP_HPP_ */
