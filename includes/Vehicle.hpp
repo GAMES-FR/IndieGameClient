@@ -77,6 +77,10 @@ namespace Vehicle {
 		void			setConfig(Config *cfg);
 		Config			*getConfig() const;
 		void			setInputs(int inputs);
+		void			setPosition(const Vector::Vec2 & pos); // TODO
+		void			setHeading(double heading); // TODO
+		Vector::Vec2	getPosition(); // TODO
+		double			getHeading(); // TODO
 	};
 }
 
