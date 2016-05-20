@@ -113,12 +113,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\sources\Car.cpp" />
+    <ClCompile Include="..\..\sources\Vehicle.cpp" />
     <ClCompile Include="..\..\sources\main.cpp" />
     <ClCompile Include="..\..\sources\Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\includes\Car.hpp" />
+    <ClInclude Include="..\..\includes\Vehicle.hpp" />
     <ClInclude Include="..\..\includes\Constants.hpp" />
     <ClInclude Include="..\..\includes\GMath.hpp" />
     <ClInclude Include="..\..\includes\Vector.hpp" />

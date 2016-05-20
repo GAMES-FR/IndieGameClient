@@ -1,4 +1,4 @@
-#include "Car.hpp"
+#include "Vehicle.hpp"
 
 Vehicle::Car::Car(double x, double y, double heading) {
 	this->position = Vector::Vec2(x, y);
@@ -155,4 +155,32 @@ void Vehicle::Car::setConfig(Vehicle::Config *cfg) {
 
 void Vehicle::Car::setInputs(int inputs) {
 	this->inputs = inputs;
+}
+
+Vehicle::Config *Vehicle::getDefaultConfig() {
+	Config *cfg = new Vehicle::Config;
+
+	cfg->gravity = 9.81;  // m/s^2
+	cfg->mass = 1200.0;  // kg
+	cfg->inertiaScale = 1.0;  // Multiply by mass for inertia
+	cfg->halfWidth = 0.8; // Centre to side of chassis (metres)
+	cfg->cgToFront = 2.0; // Centre of gravity to front of chassis (metres)
+	cfg->cgToRear = 2.0;   // Centre of gravity to rear of chassis
+	cfg->cgToFrontAxle = 1.25;  // Centre gravity to front axle
+	cfg->cgToRearAxle = 1.25;  // Centre gravity to rear axle
+	cfg->cgHeight = 0.55;  // Centre gravity height
+	cfg->wheelRadius = 0.3;  // Includes tire (also represents height of axle)
+	cfg->wheelWidth = 0.2;  // Used for render only
+	cfg->tireGrip = 2.0;  // How much grip tires have
+	cfg->lockGrip = 0.7;  // % of grip available when wheel is locked
+	cfg->engineForce = 8000.0;
+	cfg->brakeForce = 12000.0;
+	cfg->eBrakeForce = cfg->brakeForce / 2.5;
+	cfg->weightTransfer = 0.2;  // How much weight is transferred during acceleration/braking
+	cfg->maxSteer = 0.6;  // Maximum steering angle in radians
+	cfg->cornerStiffnessFront = 5.0;
+	cfg->cornerStiffnessRear = 5.2;
+	cfg->airResist = 2.5;	// air resistance (* vel)
+	cfg->rollResist = 8.0;
+	return (cfg);
 }

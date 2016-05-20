@@ -38,6 +38,8 @@ namespace Vehicle {
 		double	rollResist;
 	};
 
+	Config *getDefaultConfig();
+
 	class Car {
 	private:
 		Config			*cfg;
