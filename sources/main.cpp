@@ -17,7 +17,7 @@ int main()
   bool ret;
 
   /* lib and device init */
-  device.ptr = irr::createDevice(irr::video::EDT_SOFTWARE,
+  device.ptr = irr::createDevice(irr::video::EDT_OPENGL,
 	  irr::core::dimension2d<irr::u32>(1280, 720), 16,
 				 false, true, false, &device.receiver);
   if (!device.ptr)
