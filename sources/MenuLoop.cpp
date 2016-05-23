@@ -1,3 +1,4 @@
+#include "Vehicle.hpp"
 #include "Loop.hpp"
 #include "Constants.hpp"
 #include "Camera.hpp"

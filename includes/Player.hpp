@@ -2,6 +2,8 @@
 #define _USE_MATH_DEFINES
 #include <cmath>
 
+#include "Vehicle.hpp"
+
 #ifdef _IRR_WINDOWS_
 # pragma comment(lib, "Irrlicht.lib")
 //# pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
@@ -16,6 +18,7 @@ private:
 	irr::core::vector3df _pos;
 	irr::core::vector3df _rot;
 	irr::scene::ISceneNode *_node;
+	Vehicle::Car _vehicle;
 
 public:
 	Player(float x = 0.0f, float y = 0.0f, float z = 0.0f);
@@ -36,6 +39,7 @@ public:
 	bool up;
 	bool right;
 	bool down;
+	int input;
 };
 
 #endif

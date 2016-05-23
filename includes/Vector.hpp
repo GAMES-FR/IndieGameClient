@@ -6,33 +6,33 @@
 namespace Vector {
 	class Vec2 {
 	public:
-		double x;
-		double y;
+		float x;
+		float y;
 
-		Vec2(double x = 0.0, double y = 0.0);
+		Vec2(float x = 0.f, float y = 0.f);
 		~Vec2();
 
 		Vec2(const Vec2 & v);
 		Vec2 & operator=(const Vec2 & v);
 
-		void set(double x, double y);
+		void set(float x, float y);
 
-		double getX() const;
-		void setX(double x);
+		float getX() const;
+		void setX(float x);
 
-		double getY() const;
-		void setY(double x);
+		float getY() const;
+		void setY(float x);
 
-		double len() const;
-		double dot(const Vec2 & v) const;
-		double det(const Vec2 & v) const;
-		void rotate( double r);
-		double angle() const;
-		void setLen(double l);
+		float len() const;
+		float dot(const Vec2 & v) const;
+		float det(const Vec2 & v) const;
+		void rotate( float r);
+		float angle() const;
+		void setLen(float l);
 		void normalize();
 	};
-	double len(double x, double y);
-	double angle(double x, double y);
+	float len(float x, float y);
+	float angle(float x, float y);
 }
 
 #endif

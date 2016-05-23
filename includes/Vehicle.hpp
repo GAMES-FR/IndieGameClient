@@ -14,28 +14,28 @@
 namespace Vehicle {
 	struct Config
 	{
-		double	gravity;
-		double	mass;
-		double	inertiaScale;
-		double	halfWidth;
-		double	cgToFront;
-		double	cgToRear;
-		double	cgToFrontAxle;
-		double	cgToRearAxle;
-		double	cgHeight;
-		double	wheelRadius;
-		double	wheelWidth;
-		double	tireGrip;
-		double	lockGrip;
-		double	engineForce;
-		double	brakeForce;
-		double	eBrakeForce;
-		double	weightTransfer;
-		double	maxSteer;
-		double	cornerStiffnessFront;
-		double	cornerStiffnessRear;
-		double	airResist;
-		double	rollResist;
+		float	gravity;
+		float	mass;
+		float	inertiaScale;
+		float	halfWidth;
+		float	cgToFront;
+		float	cgToRear;
+		float	cgToFrontAxle;
+		float	cgToRearAxle;
+		float	cgHeight;
+		float	wheelRadius;
+		float	wheelWidth;
+		float	tireGrip;
+		float	lockGrip;
+		float	engineForce;
+		float	brakeForce;
+		float	eBrakeForce;
+		float	weightTransfer;
+		float	maxSteer;
+		float	cornerStiffnessFront;
+		float	cornerStiffnessRear;
+		float	airResist;
+		float	rollResist;
 	};
 
 	Config *getDefaultConfig();
@@ -45,42 +45,42 @@ namespace Vehicle {
 		Config			*cfg;
 		int				inputs;
 
-		double 			heading;
+		float 			heading;
 		Vector::Vec2 	position;
 		Vector::Vec2	velocity;
 		Vector::Vec2	velocity_c;
 		Vector::Vec2	accel;
 		Vector::Vec2	accel_c;
-		double			absVel;
-		double 			yawRate;
-		double			steer;
-		double 			steerAngle;
+		float			absVel;
+		float 			yawRate;
+		float			steer;
+		float 			steerAngle;
 
 		bool			smoothSteer;
 		bool			safeSteer;
 
-		double			inertia;
-		double			wheelBase;
-		double			axleWeightRatioFront;
-		double			axleWeightRatioRear;
+		float			inertia;
+		float			wheelBase;
+		float			axleWeightRatioFront;
+		float			axleWeightRatioRear;
 
 		int				throttle;
 		int				brake;
 
-		void			doPhysics(double dt);
-		double			applySmoothSteer(double steerInput, double dt);
-		double			applySafeSteer(double steerInput);
+		void			doPhysics(float dt);
+		float			applySmoothSteer(float steerInput, float dt);
+		float			applySafeSteer(float steerInput);
 	public:
-		Car(double x = 0.0, double y = 0.0, double heading = 0.0);
+		Car(float x = 0.f, float y = 0.f, float heading = 0.f);
 		~Car();
-		void			update(double dtms);
+		void			update(float dtms);
 		void			setConfig(Config *cfg);
 		Config			*getConfig() const;
 		void			setInputs(int inputs);
-		void			setPosition(const Vector::Vec2 & pos); // TODO
-		void			setHeading(double heading); // TODO
-		Vector::Vec2	getPosition(); // TODO
-		double			getHeading(); // TODO
+		void			setPosition(const Vector::Vec2 & pos);
+		void			setHeading(float heading);
+		Vector::Vec2	getPosition() const;
+		float			getHeading() const;
 	};
 }
 
