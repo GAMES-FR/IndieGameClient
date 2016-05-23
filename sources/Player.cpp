@@ -5,11 +5,12 @@
 //# pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Player::Player(float x, float y, float z)
-{
-	this->_pos.X = x;
-	this->_pos.Y = y;
-	this->_pos.Z = z;
+Player::Player(irr::scene::ISceneNode *node)
+{	
+	this->_node = node;
+	this->_pos.X = node->getAbsolutePosition().X;
+	this->_pos.Y = node->getAbsolutePosition().Y;
+	this->_pos.Z = node->getAbsolutePosition().Z;
 	this->_rot.X = 0;
 	this->_rot.Y = 0;
 	this->_rot.Z = 0;

@@ -35,16 +35,11 @@ bool MenuLoop::init()
 
 bool MenuLoop::loop()
 {
-	Player player;
-
-	//this->_device->smgr->addCameraSceneNode(0, irr::core::vector3df(0, 0, 0), irr::core::vector3df(0, 0, 0));
 	this->_device->ptr->getFileSystem()->addFileArchive(ASSETS_DIR"/map-20kdm2.pk3");
 
 	// Nodes and meshes to print 
 	irr::scene::IAnimatedMesh			*map = this->_device->smgr->getMesh("20kdm2.bsp");
 	irr::scene::ISceneNode				*map_node = 0;
-	irr::scene::ISceneNode				*sphere = this->_device->smgr->addSphereSceneNode();
-	irr::scene::ISceneNode				*sphere2 = this->_device->smgr->addSphereSceneNode();
 	irr::scene::IMesh					*bear = this->_device->smgr->getMesh(ASSETS_DIR"/bear.obj");
 	irr::scene::ISceneNode				*bear_node = 0;
 
@@ -56,7 +51,7 @@ bool MenuLoop::loop()
 		bear_node = this->_device->smgr->addMeshSceneNode(bear, 0, -1, irr::core::vector3df(90, -80, 90),
 			irr::core::vector3df(0, 0, 0),
 			irr::core::vector3df(2.0f, 2.0f, 2.0f));
-		sphere->setMaterialTexture(0, this->_device->driver->getTexture(ASSETS_DIR"/bear.tga"));
+		bear_node->setMaterialTexture(0, this->_device->driver->getTexture(ASSETS_DIR"/bear.tga"));
 		bear->setMaterialFlag(irr::video::EMF_LIGHTING, false);
 	}
 
@@ -70,23 +65,9 @@ bool MenuLoop::loop()
 		map_node->setTriangleSelector(selector);
 	}
 
-	if (sphere)
-	{
-		sphere->setPosition(irr::core::vector3df(0, 0, 30));
-		sphere->setMaterialTexture(0, this->_device->driver->getTexture(ASSETS_DIR"/wall.bmp"));
-		sphere->setMaterialFlag(irr::video::EMF_LIGHTING, false);
-	}
-
-	if (sphere2)
-	{
-		sphere2->setPosition(irr::core::vector3df(0, 30, 30));
-		sphere2->setMaterialTexture(0, this->_device->driver->getTexture(ASSETS_DIR"/wall.bmp"));
-		sphere2->setMaterialFlag(irr::video::EMF_LIGHTING, false);
-	}
-
-	player.setNode(bear_node);
-	Camera camera(this->_device->ptr, sphere);
-	irr::u32 before = camera.getDevice()->getTimer()->getTime();
+	Player		player(bear_node);
+	Camera		camera(this->_device->ptr);
+	irr::u32	before = camera.getDevice()->getTimer()->getTime();
 
   while (this->_device->ptr->run())
     {

@@ -20,8 +20,7 @@ private:
 	float							_zoom;
 
 public:
-	Camera(irr::IrrlichtDevice *device, irr::scene::ISceneNode* node,
-		float zoom = 64);
+	Camera(irr::IrrlichtDevice *device,	float zoom = 64);
 	void					updateCamera(Player *player);
 
 	void					setDevice(irr::IrrlichtDevice *device);

@@ -5,9 +5,7 @@
 //# pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Camera::Camera(irr::IrrlichtDevice *device,
-	irr::scene::ISceneNode* node,
-	float zoom)
+Camera::Camera(irr::IrrlichtDevice *device,	float zoom)
 {
 	this->_device = device;
 	this->_zoom = zoom;

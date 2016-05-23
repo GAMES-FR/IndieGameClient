@@ -18,19 +18,19 @@ private:
 	irr::scene::ISceneNode *_node;
 
 public:
-	Player(float x = 0.0f, float y = 0.0f, float z = 0.0f);
+	Player(irr::scene::ISceneNode *node);
 	~Player();
 
-	void update(irr::f32 dt);
+	void					update(irr::f32 dt);
 
-	void setNode(irr::scene::ISceneNode *node);
+	void					setNode(irr::scene::ISceneNode *node);
 
-	void setPosition(irr::core::vector3df newPos);
-	void setPosition(float newX, float newY, float newZ);
-	irr::core::vector3df getPosition() const;
-	void setRotation(irr::core::vector3df newRot);
-	void setRotation(float newX, float newY, float newZ);
-	irr::core::vector3df getRotation() const;
+	void					setPosition(irr::core::vector3df newPos);
+	void					setPosition(float newX, float newY, float newZ);
+	irr::core::vector3df	getPosition() const;
+	void					setRotation(irr::core::vector3df newRot);
+	void					setRotation(float newX, float newY, float newZ);
+	irr::core::vector3df	getRotation() const;
 
 	bool left;
 	bool up;
