@@ -118,13 +118,18 @@
     <ClCompile Include="..\..\sources\main.cpp" />
     <ClCompile Include="..\..\sources\MenuLoop.cpp" />
     <ClCompile Include="..\..\sources\Player.cpp" />
+    <ClCompile Include="..\..\sources\Vector.cpp" />
+    <ClCompile Include="..\..\sources\Vehicle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\includes\Camera.hpp" />
     <ClInclude Include="..\..\includes\Constants.hpp" />
+    <ClInclude Include="..\..\includes\GMath.hpp" />
     <ClInclude Include="..\..\includes\Input.hpp" />
     <ClInclude Include="..\..\includes\Loop.hpp" />
     <ClInclude Include="..\..\includes\Player.hpp" />
+    <ClInclude Include="..\..\includes\Vector.hpp" />
+    <ClInclude Include="..\..\includes\Vehicle.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
