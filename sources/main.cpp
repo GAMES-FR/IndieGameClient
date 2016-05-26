@@ -13,8 +13,8 @@
  */
 int main()
 {
-  device_t device;
-  bool ret;
+  device_t	device;
+  bool		ret;
 
   /* lib and device init */
   device.ptr = irr::createDevice(irr::video::EDT_OPENGL,

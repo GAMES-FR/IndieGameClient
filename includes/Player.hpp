@@ -15,10 +15,10 @@
 class Player
 {
 private:
-	irr::core::vector3df _pos;
-	irr::core::vector3df _rot;
-	irr::scene::ISceneNode *_node;
-	Vehicle::Car _vehicle;
+	irr::core::vector3df	_pos;
+	irr::core::vector3df	_rot;
+	irr::scene::ISceneNode*	_node;
+	Vehicle::Car			_vehicle;
 
 public:
 	Player(irr::scene::ISceneNode *node);
@@ -34,12 +34,13 @@ public:
 	void					setRotation(irr::core::vector3df newRot);
 	void					setRotation(float newX, float newY, float newZ);
 	irr::core::vector3df	getRotation() const;
+	irr::scene::ISceneNode*	getNode() const;
 
-	bool left;
-	bool up;
-	bool right;
-	bool down;
-	int input;
+	bool	left;
+	bool	up;
+	bool	right;
+	bool	down;
+	int		input;
 };
 
 #endif

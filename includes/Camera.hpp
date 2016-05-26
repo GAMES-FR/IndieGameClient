@@ -17,16 +17,16 @@ class Camera
 {
 private:
 	irr::IrrlichtDevice*			_device;
-	float							_zoom;
+	irr::core::vector3df			_offset;
 
 public:
-	Camera(irr::IrrlichtDevice *device,	float zoom = 64);
+	Camera(irr::IrrlichtDevice *device);
 	void					updateCamera(Player *player);
 
 	void					setDevice(irr::IrrlichtDevice *device);
 	irr::IrrlichtDevice*	getDevice() const;
-	void					setZoom(float zoom);
-	float					getZoom() const;
+	void					addZoom(float zoom);
+	irr::core::vector3df	getZoom() const;
 };
 
 #endif

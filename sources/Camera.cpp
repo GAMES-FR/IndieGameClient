@@ -1,25 +1,29 @@
 #include "Camera.hpp"
+#include "Input.hpp"
 
 #ifdef _IRR_WINDOWS_
 # pragma comment(lib, "Irrlicht.lib")
 //# pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Camera::Camera(irr::IrrlichtDevice *device,	float zoom)
+Camera::Camera(irr::IrrlichtDevice *device)
 {
 	this->_device = device;
-	this->_zoom = zoom;
+	this->_offset.X = 60;
+	this->_offset.Y = 60;
+	this->_offset.Z = 60;
 }
 
 void					Camera::updateCamera(Player *player)
 {
-	irr::scene::ICameraSceneNode *camera = this->_device->getSceneManager()->getActiveCamera();
+	irr::scene::ICameraSceneNode	*camera = this->_device->getSceneManager()->getActiveCamera();
+	irr::scene::ISceneNode			*node = player->getNode();
 
-	float xf = player->getPosition().X - cos(player->getRotation().Y * M_PI / 180.0f) * this->_zoom;
-	float yf = player->getPosition().Y;// - sin(player->getRotation() * M_PI / 180.0f) * this->_zoom;
-	float zf = player->getPosition().Z + sin(player->getRotation().Y * M_PI / 180.0f) * this->_zoom;
+	float xf = node->getAbsolutePosition().X - cos(player->getRotation().Y * M_PI / 180.0f) * (this->_offset.X + this->_offset.Y);
+	float yf = node->getAbsolutePosition().Y + this->_offset.Y;
+	float zf = node->getAbsolutePosition().Z + sin(node->getRotation().Y * M_PI / 180.0f) * (this->_offset.Z + this->_offset.Y);
 
-	camera->setPosition(irr::core::vector3df(xf, yf + 45.0f, zf));
+	camera->setPosition(irr::core::vector3df(xf, yf, zf));
 	camera->setTarget(player->getPosition());
 }
 
@@ -33,14 +37,15 @@ irr::IrrlichtDevice*	Camera::getDevice() const
 	return (this->_device);
 }
 
-void					Camera::setZoom(float zoom)
+void					Camera::addZoom(float new_offset)
 {
-	this->_zoom = zoom;
-	std::cout << "setZoom() = " << this->_zoom << std::endl;
+	this->_offset -= new_offset;
+	if (this->_offset < irr::core::vector3df(20, 20, 20) ||
+		this->_offset > irr::core::vector3df(120, 120, 120))
+		this->_offset += new_offset;
 }
 
-float					Camera::getZoom() const
+irr::core::vector3df	Camera::getZoom() const
 {
-	std::cout << "getZoom() = " << this->_zoom << std::endl;
-	return (this->_zoom);
+	return (this->_offset);
 }
