@@ -35,6 +35,7 @@ public:
 	void					setRotation(float newX, float newY, float newZ);
 	irr::core::vector3df	getRotation() const;
 	irr::scene::ISceneNode*	getNode() const;
+	void					setCollisions(irr::scene::ISceneManager* &smgr);
 
 	bool	left;
 	bool	up;

@@ -4,7 +4,7 @@
 
 #if defined (_IRR_WINDOWS_) && ! defined (MSYS)
 # pragma comment(lib, "Irrlicht.lib")
-// # pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
+//# pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
 /* 

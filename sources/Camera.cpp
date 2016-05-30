@@ -19,7 +19,7 @@ void					Camera::updateCamera(Player *player)
 	irr::scene::ICameraSceneNode	*camera = this->_device->getSceneManager()->getActiveCamera();
 	irr::scene::ISceneNode			*node = player->getNode();
 
-	float xf = node->getAbsolutePosition().X - cos(player->getRotation().Y * M_PI / 180.0f) * (this->_offset.X + this->_offset.Y);
+	float xf = node->getAbsolutePosition().X - cos(node->getRotation().Y * M_PI / 180.0f) * (this->_offset.X + this->_offset.Y);
 	float yf = node->getAbsolutePosition().Y + this->_offset.Y;
 	float zf = node->getAbsolutePosition().Z + sin(node->getRotation().Y * M_PI / 180.0f) * (this->_offset.Z + this->_offset.Y);
 

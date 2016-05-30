@@ -1,4 +1,5 @@
 #include "Player.hpp"
+#include <iostream>
 
 #ifdef _IRR_WINDOWS_
 # pragma comment(lib, "Irrlicht.lib")
@@ -30,14 +31,15 @@ void Player::update(irr::f32 dt)
 {
 	const irr::f32 speed = 300.f;
 
+	this->_pos = this->_node->getPosition();
 	this->input = (this->up * I_THROTTLE) | (this->left * I_LEFT) | (this->right * I_RIGHT) | (this->down * I_BRAKE);
 	this->_vehicle.setInputs(this->input);
 	this->_vehicle.update((double)dt);
 	
 	if (this->left)
-		this->_rot.Y -= 1;
+		this->_rot.Y -= speed * dt;
 	if (this->right)
-		this->_rot.Y += 1;
+		this->_rot.Y += speed * dt;
 	if (this->_rot.Y < -180)
 		this->_rot.Y += 360;
 	if (this->_rot.Y >= 180)
@@ -98,12 +100,61 @@ void Player::setRotation(float newX, float newY, float newZ)
 	this->_rot.Z = newZ;
 }
 
-irr::core::vector3df Player::getRotation() const
+irr::core::vector3df	Player::getRotation() const
 {
 	return (this->_rot);
 }
 
-irr::scene::ISceneNode *Player::getNode() const
+irr::scene::ISceneNode* Player::getNode() const
 {
 	return (this->_node);
+}
+
+void					Player::setCollisions(irr::scene::ISceneManager* &smgr)
+{
+	irr::scene::IMetaTriangleSelector*			meta = smgr->createMetaTriangleSelector(); // Hold several triangles at a time
+	irr::core::array<irr::scene::ISceneNode*>	nodes;
+
+	smgr->getSceneNodesFromType(irr::scene::ESNT_ANY, nodes); // Find all nodes
+
+	for (irr::u32 i = 0; i < nodes.size(); ++i)
+	{
+		irr::scene::ISceneNode*			node = nodes[i];
+		irr::scene::ITriangleSelector*	selector = 0;
+
+		if (node != this->_node)
+		{
+			switch (node->getType())
+			{
+			case irr::scene::ESNT_ANIMATED_MESH:
+				selector = smgr->createTriangleSelectorFromBoundingBox(node);
+				break;
+
+			case irr::scene::ESNT_OCTREE:
+				selector = smgr->createOctreeTriangleSelector(((irr::scene::IMeshSceneNode*)node)->getMesh(), node);
+				break;
+
+			default:
+				break;
+			}
+
+			if (selector)
+			{
+				// Add selector to the meta then drop it *DUBSTEP INTENSIFIES*
+				meta->addTriangleSelector(selector);
+				selector->drop();
+			}
+		}
+	}
+
+	if (meta)
+	{
+		irr::scene::ISceneNodeAnimator* anim = smgr->createCollisionResponseAnimator(
+			meta, this->_node, this->_node->getTransformedBoundingBox().getExtent(),
+			irr::core::vector3df(0, -5.f, 0));
+		meta->drop();
+
+		this->_node->addAnimator(anim);
+		anim->drop();
+	}
 }

@@ -24,8 +24,8 @@ public:
 	MenuLoop(device_t *device);
 	~MenuLoop();
 public:
-	bool init();
-	bool loop();
+	bool	init();
+	bool	loop();
 };
 
 #endif /* !LOOP_HPP_ */
