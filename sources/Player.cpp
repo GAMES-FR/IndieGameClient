@@ -6,6 +6,8 @@
 //# pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
+#define MOVE_SCALE 10
+
 Player::Player(irr::scene::ISceneNode *node)
 {	
 	this->_node = node;
@@ -21,6 +23,9 @@ Player::Player(irr::scene::ISceneNode *node)
 	this->right = false;
 	this->down = false;
 	this->_vehicle.setConfig(Vehicle::getDefaultConfig());
+	Vehicle::Config *cfg = _vehicle.getConfig();
+	_vehicle.smoothSteer = true;
+	_vehicle.safeSteer = true;
 }
 
 Player::~Player()
@@ -33,10 +38,14 @@ void Player::update(irr::f32 dt)
 
 	this->_pos = this->_node->getPosition();
 	this->input = (this->up * I_THROTTLE) | (this->left * I_LEFT) | (this->right * I_RIGHT) | (this->down * I_BRAKE);
+	
+	Vector::Vec2 p(this->_pos.X / MOVE_SCALE, this->_pos.Z / MOVE_SCALE);
+	this->_vehicle.setPosition(p);
+	
 	this->_vehicle.setInputs(this->input);
 	this->_vehicle.update((double)dt);
 	
-	if (this->left)
+	/*if (this->left)
 		this->_rot.Y -= speed * dt;
 	if (this->right)
 		this->_rot.Y += speed * dt;
@@ -55,13 +64,12 @@ void Player::update(irr::f32 dt)
 		this->_pos.X = this->_node->getAbsolutePosition().X - (float)(cos(this->_rot.Y * M_PI / 180.0f) * speed * dt);
 		this->_pos.Y = this->_node->getAbsolutePosition().Y;
 		this->_pos.Z = this->_node->getAbsolutePosition().Z + (float)(sin(this->_rot.Y * M_PI / 180.0f) * speed * dt);
-	}
-
-	/*Vector::Vec2 & pos = this->_vehicle.getPosition();
-	this->_pos.X = pos.x * 300000;
-	this->_pos.Z = pos.y * 300000;
-	this->_rot.Y = (this->_vehicle.getHeading() / M_PI * 180.f) * 300000;*/
-	//printf("%f - %f - %f\n", this->_pos.X, this->_pos.Z, this->_rot.Y);
+	}*/
+	Vector::Vec2 & pos = this->_vehicle.getPosition();
+	this->_pos.X = pos.x * MOVE_SCALE;
+	this->_pos.Z = pos.y * MOVE_SCALE;
+	this->_rot.Y = (-this->_vehicle.getHeading() / M_PI * 180.f);/**/
+	//printf("%f - %f - %f\n", GMath::min(2.f, -2.f), GMath::max(2.f, -2.f), GMath::clamp(2.f, -2.f, 2.f));
 	this->_node->setPosition(this->_pos);
 	this->_node->setRotation(this->_rot);
 }

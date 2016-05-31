@@ -56,9 +56,6 @@ namespace Vehicle {
 		float			steer;
 		float 			steerAngle;
 
-		bool			smoothSteer;
-		bool			safeSteer;
-
 		float			inertia;
 		float			wheelBase;
 		float			axleWeightRatioFront;
@@ -71,6 +68,9 @@ namespace Vehicle {
 		float			applySmoothSteer(float steerInput, float dt);
 		float			applySafeSteer(float steerInput);
 	public:
+		bool			smoothSteer;
+		bool			safeSteer;
+
 		Car(float x = 0.f, float y = 0.f, float heading = 0.f);
 		~Car();
 		void			update(float dtms);

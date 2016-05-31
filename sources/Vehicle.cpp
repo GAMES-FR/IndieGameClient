@@ -1,4 +1,5 @@
 #include "Vehicle.hpp"
+#include <cstdio>
 
 Vehicle::Car::Car(float x, float y, float heading) {
 	this->position = Vector::Vec2(x, y);
@@ -100,12 +101,12 @@ void Vehicle::Car::doPhysics(float dt) {
 }
 
 void Vehicle::Car::update(float dtms) {
-	float dt = dtms / 1000.f;
+	float dt = dtms;
 
 	this->throttle = this->inputs & I_THROTTLE;
 	this->brake = this->inputs & I_BRAKE;
 
-	int steerInput = (this->inputs & I_LEFT) - (this->inputs & I_RIGHT);
+	int steerInput = !!(this->inputs & I_LEFT) - !!(this->inputs & I_RIGHT);
 
 	if (this->smoothSteer)
 		this->steer = this->applySmoothSteer(steerInput, dt);
@@ -116,7 +117,7 @@ void Vehicle::Car::update(float dtms) {
 		this->steer = this->applySafeSteer(this->steer);
 
 	this->steerAngle = this->steer * this->cfg->maxSteer;
-
+	printf("%f - %d\n", this->steer, steerInput);
 	this->doPhysics(dt);
 }
 
@@ -124,13 +125,13 @@ float Vehicle::Car::applySmoothSteer(float steerInput, float dt) {
 	float steer = 0.f;
 
 	if (abs(steerInput) > 0.001)
-		steer = GMath::clamp(this->steer - dt * 2.0, -1.0, 1.0);
+		steer = GMath::clamp(this->steer + steerInput * dt * 2.0, -1.0, 1.0);
 	else
 	{
-		if (this->steer > 0)
-			steer = GMath::max(this->steer - dt, 0.f);
-		else if (this->steer < 0)
-			steer = GMath::max(this->steer + dt, 0.f);
+		if (this->steer > 0.f)
+			steer = GMath::max(this->steer - dt * 1.f, 0.f);
+		else if (this->steer < 0.f)
+			steer = GMath::min(this->steer + dt * 1.f, 0.f);
 	}
 	return (steer);
 }

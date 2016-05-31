@@ -11,10 +11,18 @@ namespace GMath {
 	}
 
 	template<typename T>
+	T min(T a, T b) {
+		return (a > b ? b : a);
+	}
+
+	template<typename T>
+	T max(T a, T b) {
+		return (a < b ? b : a);
+	}
+
+	template<typename T>
 	T clamp(T n, T min, T max) {
-		T a = n < min ? min : n;
-		a = a > max ? max : a;
-		return a;
+		return GMath::max(GMath::min(n, max), min);
 	}
 
 	template<typename T>
@@ -24,16 +32,6 @@ namespace GMath {
 		while (n > m && n < -m)
 			n -= m * s;
 		return (n);
-	}
-
-	template<typename T>
-	T min(T a, T b) {
-		return (a > b ? b : a);
-	}
-
-	template<typename T>
-	T max(T a, T b) {
-		return (a < b ? b : a);
 	}
 
 	template<typename T>

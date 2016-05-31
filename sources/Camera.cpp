@@ -40,7 +40,7 @@ irr::IrrlichtDevice*	Camera::getDevice() const
 void					Camera::addZoom(float new_offset)
 {
 	this->_offset -= new_offset;
-	if (this->_offset < irr::core::vector3df(20, 20, 20) ||
+	if (this->_offset < irr::core::vector3df(3, 3, 3) ||
 		this->_offset > irr::core::vector3df(120, 120, 120))
 		this->_offset += new_offset;
 }

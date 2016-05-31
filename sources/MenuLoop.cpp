@@ -104,7 +104,7 @@ bool	MenuLoop::loop()
 
 		anim = this->_device->smgr->createCollisionResponseAnimator(
 			meta, player_node, irr::core::vector3df(1, 1, 1),
-			irr::core::vector3df(0, -5.f, 0));
+			irr::core::vector3df(0, 0, 0));
 		ennemy_node->addAnimator(anim);
 
 		meta->drop();
