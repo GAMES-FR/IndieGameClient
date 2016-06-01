@@ -17,15 +17,15 @@ int main()
   core::ILoop *loop[2];
   int ret;
 
-  device->ptr =
+  device.ptr =
     irr::createDevice(ivideo::EDT_SOFTWARE,
 		      icore::dimension2d<irr::u32>(640, 480), 16,
 		      false, true, false, &receiver);
-  if (!device->ptr)
+  if (!device.ptr)
     return (ERROR_CODE);
-  device->driver = device->ptr->getVideoDriver();
-  device->smgr = device->ptr->getSceneManager();
-  device->guienv = device->ptr->getGUIEnvironment();
+  device.driver = device.ptr->getVideoDriver();
+  device.smgr = device.ptr->getSceneManager();
+  device.guienv = device.ptr->getGUIEnvironment();
 
   loop[0] = new core::MenuLoop(&device);
   loop[1] = new core::GameLoop(&device);
@@ -35,9 +35,9 @@ int main()
     return (ERROR_CODE);
 
   ret = 0;
-  while (device->ptr->run())
+  while (device.ptr->run())
     ret = loop[ret]->loop();
-  device->ptr->drop();
+  device.ptr->drop();
   delete loop[1];
   delete loop[0];
   return (OK_CODE);

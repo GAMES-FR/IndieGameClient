@@ -21,7 +21,7 @@ namespace core
   class Loop: public ILoop // generic loop declarations
   {
   protected: // protected attributes
-    core::device_t _device;
+    core::device_t *_device;
     std::wstring const _title;
   protected: // protected constructors and operators
     Loop(core::device_t *device)
@@ -47,7 +47,8 @@ namespace core
   class MenuLoop: public Loop<MenuLoop> // loop derivate for menu
   {
     friend class Loop<MenuLoop>; // Loop class must access private derived methods
-    MenuLoop(core::device_t device)
+  public:
+    MenuLoop(core::device_t *device)
       : Loop(device) {}
   private:
     bool _init(void);
@@ -57,6 +58,7 @@ namespace core
   class GameLoop: public Loop<GameLoop> // loop derivate for games
   {
     friend class Loop<GameLoop>;  // Loop class must access private derived methods
+  public:
     GameLoop(core::device_t *device)
       : Loop(device) {}
   private:
