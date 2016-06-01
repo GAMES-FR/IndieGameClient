@@ -21,14 +21,13 @@ namespace core
   class Loop: public ILoop // generic loop declarations
   {
   protected: // protected attributes
-    device_t *_device;
     std::wstring const _title;
   protected: // protected constructors and operators
-    Loop(device_t *device)
-      : _device(device), _title(MENU_TITLE)
+    Loop(void)
+      : _title(MENU_TITLE)
     {
-      device->ptr->setWindowCaption(this->_title.c_str());
-      device->guienv->
+		core::device->ptr->setWindowCaption(this->_title.c_str());
+		core::device->guienv->
 	addStaticText(MENU_TITLE,
 		      icore::rect<irr::s32>(10,10,260,22), true);
     }
@@ -47,8 +46,6 @@ namespace core
   class MenuLoop: public Loop<MenuLoop> // loop derivate for menu
   {
     friend class Loop<MenuLoop>; // Loop class must access private derived methods
-  public:
-    MenuLoop(device_t *device);
   private:
     bool _init(void);
     int _loop(void);
@@ -57,8 +54,6 @@ namespace core
   class GameLoop: public Loop<GameLoop> // loop derivate for games
   {
     friend class Loop<GameLoop>;  // Loop class must access private derived methods
-  public:
-    GameLoop(device_t *device);
   private:
     bool _init(void);
     int _loop(void);
