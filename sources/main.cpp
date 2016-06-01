@@ -1,4 +1,3 @@
-#include <vector>
 #include "Loop.hpp"
 #include "Constants.hpp"
 
@@ -7,40 +6,39 @@
 // # pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-namespace core
-{
-core::device_t *device = new core::device_t;
-}
-
 /* 
  * bonjour je suis le main
  * pour l'instant je contient l'init de la lib et la boucle de jeu
  */
 int main()
 {
+  core::device_t device;
   core::Receiver receiver;
+  core::ILoop *loop[2];
   int ret;
 
-  core::device->ptr = irr::createDevice(ivideo::EDT_SOFTWARE,
-				 icore::dimension2d<irr::u32>(640, 480), 16,
-				 false, true, false, &receiver);
-  if (!core::device->ptr)
+  device->ptr =
+    irr::createDevice(ivideo::EDT_SOFTWARE,
+		      icore::dimension2d<irr::u32>(640, 480), 16,
+		      false, true, false, &receiver);
+  if (!device->ptr)
     return (ERROR_CODE);
-  core::device->driver = core::device->ptr->getVideoDriver();
-  core::device->smgr = core::device->ptr->getSceneManager();
-  core::device->guienv = core::device->ptr->getGUIEnvironment();
+  device->driver = device->ptr->getVideoDriver();
+  device->smgr = device->ptr->getSceneManager();
+  device->guienv = device->ptr->getGUIEnvironment();
 
-  std::vector<core::ILoop, core::LoopAllocator<core::ILoop>> 
-	loop((std::size_t)2);
-  if (loop[0].init())
+  loop[0] = new core::MenuLoop(&device);
+  loop[1] = new core::GameLoop(&device);
+  if (loop[0]->init())
     return (ERROR_CODE);
-  if (loop[1].init())
+  if (loop[1]->init())
     return (ERROR_CODE);
 
   ret = 0;
-  while (core::device->ptr->run())
-    ret = loop[ret].loop();
-  core::device->ptr->drop();
-  delete core::device;
+  while (device->ptr->run())
+    ret = loop[ret]->loop();
+  device->ptr->drop();
+  delete loop[1];
+  delete loop[0];
   return (OK_CODE);
 }

@@ -21,13 +21,14 @@ namespace core
   class Loop: public ILoop // generic loop declarations
   {
   protected: // protected attributes
+    core::device_t _device;
     std::wstring const _title;
   protected: // protected constructors and operators
-    Loop(void)
-      : _title(MENU_TITLE)
+    Loop(core::device_t *device)
+      : _device(device), _title(MENU_TITLE)
     {
-		core::device->ptr->setWindowCaption(this->_title.c_str());
-		core::device->guienv->
+      device->ptr->setWindowCaption(this->_title.c_str());
+      device->guienv->
 	addStaticText(MENU_TITLE,
 		      icore::rect<irr::s32>(10,10,260,22), true);
     }
@@ -46,6 +47,8 @@ namespace core
   class MenuLoop: public Loop<MenuLoop> // loop derivate for menu
   {
     friend class Loop<MenuLoop>; // Loop class must access private derived methods
+    MenuLoop(core::device_t device)
+      : Loop(device) {}
   private:
     bool _init(void);
     int _loop(void);
@@ -54,11 +57,14 @@ namespace core
   class GameLoop: public Loop<GameLoop> // loop derivate for games
   {
     friend class Loop<GameLoop>;  // Loop class must access private derived methods
+    GameLoop(core::device_t *device)
+      : Loop(device) {}
   private:
     bool _init(void);
     int _loop(void);
   };
 
+  // you can stop read from here, this code will not be used
   template <class T>
   class LoopAllocator // vector allocator to stock every Loop derivated class
   {

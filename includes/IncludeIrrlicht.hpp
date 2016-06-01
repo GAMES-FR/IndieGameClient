@@ -18,8 +18,6 @@ namespace core
     igui::IGUIEnvironment* guienv;
   };
 
-  extern core::device_t *device;
-
   enum input_type
     {
       MOVE_FOWARD = 1,
