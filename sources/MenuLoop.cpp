@@ -6,87 +6,113 @@ MenuLoop::MenuLoop(device_t *d)
   : _device(d), _title(L"Hello World! - Irrlicht Engine Demo")
 {
   d->ptr->setWindowCaption(this->_title);
-  d->guienv->addStaticText(L"Hello World! This is the Irrlicht Software renderer!",
+  d->guienv->addStaticText(L"Suck My Wheels",
 			   irr::core::rect<irr::s32>(10,10,260,22), true);
 }
 
-bool MenuLoop::init()
+bool	MenuLoop::init()
 {
-  /*irr::scene::IAnimatedMesh* mesh =
-    this->_device->smgr->getMesh(ASSETS_DIR"/sydney.md2");
-  if (!mesh)
-    {
-      this->_device->ptr->drop();
-      return (ERROR_CODE);
-    }
-  irr::scene::IAnimatedMeshSceneNode* node =
-    this->_device->smgr->addAnimatedMeshSceneNode(mesh);
-  if (node)
-    {
-		node->setMaterialFlag(irr::video::EMF_LIGHTING, false);
-		node->setMD2Animation(irr::scene::EMAT_STAND);
-		node->setMaterialTexture(0, this->_device->driver->getTexture(ASSETS_DIR"/sydney.bmp"));
-    }*/
   this->_device->smgr->addCameraSceneNode(0,
 				    irr::core::vector3df(0,0,0),
 				    irr::core::vector3df(0,0,0));
   return (OK_CODE);
 }
 
-bool MenuLoop::loop()
+bool	MenuLoop::loop()
 {
-	Player player;
-
-	//this->_device->smgr->addCameraSceneNode(0, irr::core::vector3df(0, 0, 0), irr::core::vector3df(0, 0, 0));
-	this->_device->ptr->getFileSystem()->addFileArchive(ASSETS_DIR"/map-20kdm2.pk3");
-
 	// Nodes and meshes to print 
-	irr::scene::IAnimatedMesh			*map = this->_device->smgr->getMesh("20kdm2.bsp");
-	irr::scene::ISceneNode				*map_node = 0;
-	irr::scene::ISceneNode				*sphere = this->_device->smgr->addSphereSceneNode();
-	irr::scene::ISceneNode				*sphere2 = this->_device->smgr->addSphereSceneNode();
-	irr::scene::IMesh					*bear = this->_device->smgr->getMesh(ASSETS_DIR"/bear.obj");
-	irr::scene::ISceneNode				*bear_node = 0;
-
-	// Collision detection
-	irr::scene::ITriangleSelector*		selector = 0;
-
-	if (bear)
-	{
-		bear_node = this->_device->smgr->addMeshSceneNode(bear, 0, -1, irr::core::vector3df(90, -80, 90),
-			irr::core::vector3df(0, 0, 0),
-			irr::core::vector3df(2.0f, 2.0f, 2.0f));
-		sphere->setMaterialTexture(0, this->_device->driver->getTexture(ASSETS_DIR"/bear.tga"));
-		bear->setMaterialFlag(irr::video::EMF_LIGHTING, false);
-	}
+	irr::scene::IAnimatedMesh			*map = this->_device->smgr->getMesh(ASSETS_DIR"/map/awp_india.obj");
+	irr::scene::IMeshSceneNode			*map_node = 0;
+	irr::scene::IAnimatedMesh			*player_mesh = this->_device->smgr->getMesh(ASSETS_DIR"/car/Avent.obj");
+	irr::scene::IAnimatedMeshSceneNode	*player_node = 0;
+	irr::scene::IAnimatedMesh			*ennemy_mesh = this->_device->smgr->getMesh(ASSETS_DIR"/truck/bulldozer.obj");
+	irr::scene::IAnimatedMeshSceneNode	*ennemy_node = 0;
 
 	if (map)
+	{
 		map_node = this->_device->smgr->addOctreeSceneNode(map->getMesh(0), 0, -1, 1024);
-
-	if (map_node)
-	{
-		map_node->setPosition(irr::core::vector3df(-1300, -144, -1249));
-		selector = this->_device->smgr->createOctreeTriangleSelector(map->getMesh(0), map_node, 128);
-		map_node->setTriangleSelector(selector);
+		if (map_node)
+		{
+			map_node->setMaterialFlag(irr::video::EMF_LIGHTING, false);
+			map_node->setPosition(irr::core::vector3df(0, 0, 0));
+		}
 	}
 
-	if (sphere)
+	if (player_mesh)
 	{
-		sphere->setPosition(irr::core::vector3df(0, 0, 30));
-		sphere->setMaterialTexture(0, this->_device->driver->getTexture(ASSETS_DIR"/wall.bmp"));
-		sphere->setMaterialFlag(irr::video::EMF_LIGHTING, false);
+		player_node = this->_device->smgr->addAnimatedMeshSceneNode(player_mesh);
+		//player_node->setScale(irr::core::vector3df(15.0f, 15.0f, 15.0f));
+		player_node->setPosition(irr::core::vector3df(100, 100, 100));
+		player_node->setMaterialFlag(irr::video::EMF_LIGHTING, false);
 	}
 
-	if (sphere2)
+	if (ennemy_mesh)
 	{
-		sphere2->setPosition(irr::core::vector3df(0, 30, 30));
-		sphere2->setMaterialTexture(0, this->_device->driver->getTexture(ASSETS_DIR"/wall.bmp"));
-		sphere2->setMaterialFlag(irr::video::EMF_LIGHTING, false);
+		ennemy_node = this->_device->smgr->addAnimatedMeshSceneNode(ennemy_mesh);
+		ennemy_node->setPosition(irr::core::vector3df(0, 500, 100));
+		ennemy_node->setRotation(irr::core::vector3df(-90, 0, 0));
+		ennemy_node->setMaterialFlag(irr::video::EMF_LIGHTING, false);
 	}
 
-	player.setNode(bear_node);
-	Camera camera(this->_device->ptr, sphere);
-	irr::u32 before = camera.getDevice()->getTimer()->getTime();
+	Player		player(player_node);
+	Camera		camera(this->_device->ptr);
+	Spawner		sp(this->_device);
+
+	//player.setCollisions(this->_device->smgr);
+
+	// Ceci est égal à setCollisions, sauf que j'ai rajouté ennemy_node pour qu'il soit affecté par la gravité.
+	irr::scene::IMetaTriangleSelector*			meta = this->_device->smgr->createMetaTriangleSelector(); // Hold several triangles at a time
+	irr::core::array<irr::scene::ISceneNode*>	nodes;
+
+	this->_device->smgr->getSceneNodesFromType(irr::scene::ESNT_ANY, nodes); // Find all nodes
+
+	for (irr::u32 i = 0; i < nodes.size(); ++i)
+	{
+		irr::scene::ISceneNode*			node = nodes[i];
+		irr::scene::ITriangleSelector*	selector = 0;
+
+		if (node != player.getNode())
+		{
+			switch (node->getType())
+			{
+			case irr::scene::ESNT_ANIMATED_MESH:
+				selector = this->_device->smgr->createTriangleSelectorFromBoundingBox(node);
+				break;
+
+			case irr::scene::ESNT_OCTREE:
+				selector = this->_device->smgr->createOctreeTriangleSelector(((irr::scene::IMeshSceneNode*)node)->getMesh(), node);
+				break;
+
+			default:
+				break;
+			}
+
+			if (selector)
+			{
+				// Add selector to the meta then drop it *DUBSTEP INTENSIFIES*
+				meta->addTriangleSelector(selector);
+				selector->drop();
+			}
+		}
+	}
+
+	if (meta)
+	{
+		irr::scene::ISceneNodeAnimator* anim = this->_device->smgr->createCollisionResponseAnimator(
+			meta, player.getNode(), player.getNode()->getTransformedBoundingBox().getExtent(),
+			irr::core::vector3df(0, -5.f, 0));
+		player.getNode()->addAnimator(anim);
+
+		anim = this->_device->smgr->createCollisionResponseAnimator(
+			meta, player_node, irr::core::vector3df(1, 1, 1),
+			irr::core::vector3df(0, 0, 0));
+		ennemy_node->addAnimator(anim);
+
+		meta->drop();
+		anim->drop();
+	}
+
+	irr::u32	before = camera.getDevice()->getTimer()->getTime();
 
   while (this->_device->ptr->run())
     {
@@ -94,6 +120,9 @@ bool MenuLoop::loop()
 		const irr::f32 dt = (irr::f32)(now - before) / 1000.f; // Time in seconds
 		before = now;
 
+		sp.update(dt);
+		if (this->_device->receiver.isKeyDown(irr::KEY_ESCAPE))
+			return (OK_CODE);
 		if (this->_device->receiver.isKeyDown(irr::KEY_KEY_Z))
 			player.up = true;
 		else
@@ -110,6 +139,14 @@ bool MenuLoop::loop()
 			player.right = true;
 		else
 			player.right = false;
+		if (this->_device->receiver.getMouseWheel() != 0)
+		{
+			camera.addZoom(5 * this->_device->receiver.getMouseWheel());
+			this->_device->receiver.setMouseWheel(0);
+		}
+
+		std::cout << ennemy_node->getPosition().Y << std::endl;
+
 		player.update(dt);
 		camera.updateCamera(&player);
 		this->_device->driver->beginScene(true, true, irr::video::SColor(255,200,200,200));
