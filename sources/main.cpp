@@ -9,7 +9,7 @@
 
 namespace core
 {
-	core::device_t *device = new core::device_t;
+core::device_t *device = new core::device_t;
 }
 
 /* 
@@ -30,7 +30,6 @@ int main()
   core::device->smgr = core::device->ptr->getSceneManager();
   core::device->guienv = core::device->ptr->getGUIEnvironment();
 
-  core::LoopAllocator<core::ILoop> omg;
   std::vector<core::ILoop, core::LoopAllocator<core::ILoop>> 
 	loop((std::size_t)2);
   if (loop[0].init())
@@ -42,5 +41,6 @@ int main()
   while (core::device->ptr->run())
     ret = loop[ret].loop();
   core::device->ptr->drop();
+  delete core::device;
   return (OK_CODE);
 }
