@@ -74,7 +74,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <WarningLevel>Level2</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
@@ -113,8 +113,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\sources\GameLoop.cpp" />
     <ClCompile Include="..\..\sources\main.cpp" />
     <ClCompile Include="..\..\sources\MenuLoop.cpp" />
+    <ClCompile Include="..\..\sources\Receiver.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\includes\Constants.hpp" />

@@ -27,7 +27,7 @@ int main()
   device.guienv = device.ptr->getGUIEnvironment();
 
   std::vector<core::ILoop, core::LoopAllocator<core::ILoop>>
-    loop(2, core::LoopAllocator<core::ILoop>(&device));
+    loop((std::size_t)2U);
   if (loop[0].init())
     return (ERROR_CODE);
   if (loop[1].init())

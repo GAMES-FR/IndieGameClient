@@ -46,7 +46,7 @@ namespace core
 
   class MenuLoop: public Loop<MenuLoop> // loop derivate for menu
   {
-    friend class Loop; // Loop class must access private derived methods
+    friend class Loop<MenuLoop>; // Loop class must access private derived methods
   public:
     MenuLoop(device_t *device);
   private:
@@ -56,7 +56,7 @@ namespace core
 
   class GameLoop: public Loop<GameLoop> // loop derivate for games
   {
-    friend class Loop;  // Loop class must access private derived methods
+    friend class Loop<GameLoop>;  // Loop class must access private derived methods
   public:
     GameLoop(device_t *device);
   private:
@@ -73,13 +73,9 @@ namespace core
 		   sizeof(std::wstring const)];
     };
     bool round;
-    device_t *_device;
   public: // vetor use value type to call the constructors
     typedef Padding value_type;
   public:
-    LoopAllocator(device_t *device)
-      : _device(device) {}
-
     Padding *allocate(std::size_t const) const
     {
       return (reinterpret_cast<Padding *>
@@ -93,10 +89,10 @@ namespace core
       this->round =! this->round;
       if (this->round)
 	::new (reinterpret_cast<void *>(ptr))
-	    MenuLoop(this->_device, std::forward<_Args>(args)...);
+	    MenuLoop(std::forward<_Args>(args)...);
       else
 	::new (reinterpret_cast<void *>(ptr))
-	    GameLoop(this->_device, std::forward<_Args>(args)...);
+	    GameLoop(std::forward<_Args>(args)...);
     }
 
     template <class _Obj>
