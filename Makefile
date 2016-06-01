@@ -23,7 +23,9 @@ LDLIBS :=	-l Irrlicht
 #
 NAME :=		indie
 SRC :=		main.cpp \
-		MenuLoop.cpp
+		MenuLoop.cpp \
+		GameLoop.cpp \
+		Receiver.cpp
 SRC :=		$(addprefix $(SRCDIR)/, $(SRC))
 OBJ :=		$(SRC:.cpp=.swag)
 OBJ_DEBUG :=	$(SRC:.cpp=.debug)
@@ -35,6 +37,8 @@ ifeq ($(firstword $(MAKECMDGOALS)), debug)
 .ONESHELL:
 else ifeq ($(firstword $(MAKECMDGOALS)), msys)
 LDFLAGS +=	-D MSYS
+.DEFAULT:
+		@:
 endif
 
 all:		$(NAME)
@@ -81,6 +85,3 @@ re:		fclean all
 .PHONY:		all debug clean fclean re
 
 .SILENT:	clean fclean
-
-.DEFAULT:
-		@echo nik ta mèr tu peu pa fèr sa

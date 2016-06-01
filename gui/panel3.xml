@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel>
+  <title text="Settings">
+    <size w="100%" h="5%" />
+    <position x="0" y="0" />
+  </title>
+
+  <button id="PANEL_CONTROLS" text="Controls">
+    <size w="60%" h="5%" />
+    <position x="20%" y="25%" />
+    <to>panel4.xml</to>
+  </button>
+
+  <button id="PANEL_VIDEO_AND_SOUND" text="Video and Sound">
+    <size w="60%" h="5%" />
+    <position x="20%" y="45%" />
+    <to>panel5.xml</to>
+  </button>
+
+  <button id="PANEL_STATS" text="Stats">
+    <size w="60%" h="5%" />
+    <position x="20%" y="65%" />
+    <to>panel6.xml</to>
+  </button>
+
+  <button id="PANEL_BACK" text="Back">
+    <size w="60%" h="5%" />
+    <position x="20%" y="85%" />
+    <to>panel1.xml</to>
+  </button>
+</panel>

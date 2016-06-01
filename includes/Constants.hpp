@@ -10,4 +10,6 @@
 #  define ASSETS_DIR "./assets"
 # endif
 
+# define MENU_TITLE L"Hello World! This is the Irrlicht Software renderer!"
+
 #endif /* CONSTANTS_HPP_ */

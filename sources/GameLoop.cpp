@@ -1,11 +1,11 @@
 #include "Loop.hpp"
 
-core::MenuLoop::MenuLoop(device_t *device)
+core::GameLoop::GameLoop(device_t *device)
   : Loop(device)
 {
 }
 
-bool core::MenuLoop::_init(void)
+bool core::GameLoop::_init(void)
 {
   iscene::IAnimatedMesh* mesh =
     this->_device->smgr->getMesh(ASSETS_DIR"/sydney.md2");
@@ -27,17 +27,12 @@ bool core::MenuLoop::_init(void)
   return (OK_CODE);
 }
 
-int core::MenuLoop::_loop()
+int core::GameLoop::_loop()
 {
-  static int omg = 0;
-
   this->_device->driver->beginScene(true, true,
 				    ivideo::SColor(255, 100, 101, 140));
   this->_device->smgr->drawAll();
   this->_device->guienv->drawAll();
   this->_device->driver->endScene();
-  if (core::Receiver::inputs & core::MOVE_FOWARD)
-    std::cout << "omg il avance " << omg << std::endl;
-  omg++;
   return (OK_CODE);
 }

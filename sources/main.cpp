@@ -1,3 +1,4 @@
+#include <vector>
 #include "Loop.hpp"
 #include "Constants.hpp"
 
@@ -12,26 +13,29 @@
  */
 int main()
 {
-  device_t device;
-  bool ret;
+  core::device_t device;
+  core::Receiver receiver;
+  int ret;
 
-  /* lib and device init */
-  device.ptr = irr::createDevice(irr::video::EDT_SOFTWARE,
-				 irr::core::dimension2d<irr::u32>(640, 480), 16,
-				 false, true, false, 0);
+  device.ptr = irr::createDevice(ivideo::EDT_SOFTWARE,
+				 icore::dimension2d<irr::u32>(640, 480), 16,
+				 false, true, false, &receiver);
   if (!device.ptr)
     return (ERROR_CODE);
   device.driver = device.ptr->getVideoDriver();
   device.smgr = device.ptr->getSceneManager();
   device.guienv = device.ptr->getGUIEnvironment();
 
-  /* gui and objects init */
-  MenuLoop menu(&device);
-  if (menu.init())
+  std::vector<core::ILoop, core::LoopAllocator<core::ILoop>>
+    loop(2, core::LoopAllocator<core::ILoop>(&device));
+  if (loop[0].init())
+    return (ERROR_CODE);
+  if (loop[1].init())
     return (ERROR_CODE);
 
-  /* omg la loop */
-  ret = menu.loop();
+  ret = 0;
+  while (device.ptr->run())
+    ret = loop[ret].loop();
   device.ptr->drop();
-  return (ret);
+  return (OK_CODE);
 }
