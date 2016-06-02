@@ -4,7 +4,7 @@
 
 #if defined (_IRR_WINDOWS_) && ! defined (MSYS)
 # pragma comment(lib, "Irrlicht.lib")
-// # pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
+//# pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
 /* 
@@ -13,11 +13,11 @@
  */
 int main()
 {
-  device_t device;
-  bool ret;
+  device_t	device;
+  bool		ret;
 
   /* lib and device init */
-  device.ptr = irr::createDevice(irr::video::EDT_SOFTWARE,
+  device.ptr = irr::createDevice(irr::video::EDT_OPENGL,
 	  irr::core::dimension2d<irr::u32>(1280, 720), 16,
 				 false, true, false, &device.receiver);
   if (!device.ptr)

@@ -22,6 +22,8 @@ public:
 	// Override de la méthode OnEvent de Irrlicht
 	virtual bool			OnEvent(const irr::SEvent& event);
 	virtual bool			isKeyDown(irr::EKEY_CODE keyCode) const;
+	virtual void			setMouseWheel(irr::f32 value);
+	virtual irr::f32		getMouseWheel() const;
 };
 
 #endif

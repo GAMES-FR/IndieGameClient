@@ -1,27 +1,40 @@
 #include "Camera.hpp"
+#include "Input.hpp"
+#include "GMath.hpp"
 
 #ifdef _IRR_WINDOWS_
 # pragma comment(lib, "Irrlicht.lib")
 //# pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Camera::Camera(irr::IrrlichtDevice *device,
-	irr::scene::ISceneNode* node,
-	float zoom)
+Camera::Camera(irr::IrrlichtDevice *device)
 {
 	this->_device = device;
-	this->_zoom = zoom;
+	this->_distance = 40;
+	this->_angle = 20.f;
+	this->_angleOffset = 90.f;
+	this->_curX = 0;
+	this->_curY = 0;
+	this->_curZ = 0;
 }
 
 void					Camera::updateCamera(Player *player)
 {
-	irr::scene::ICameraSceneNode *camera = this->_device->getSceneManager()->getActiveCamera();
+	irr::scene::ICameraSceneNode	*camera = this->_device->getSceneManager()->getActiveCamera();
+	irr::scene::ISceneNode			*node = player->getNode();
 
-	float xf = player->getPosition().X - cos(player->getRotation().Y * M_PI / 180.0f) * this->_zoom;
-	float yf = player->getPosition().Y;// - sin(player->getRotation() * M_PI / 180.0f) * this->_zoom;
-	float zf = player->getPosition().Z + sin(player->getRotation().Y * M_PI / 180.0f) * this->_zoom;
+	float yf = node->getAbsolutePosition().Y + this->_distance * sin(this->_angle / 180.f * M_PI);
+	float d = this->_distance * cos(this->_angle / 180.f * M_PI);
 
-	camera->setPosition(irr::core::vector3df(xf, yf + 45.0f, zf));
+	float a = (node->getRotation().Y - this->_angleOffset) / 180.0f * M_PI;
+
+	float xf = node->getAbsolutePosition().X + sin(a) * d;
+	float zf = node->getAbsolutePosition().Z + cos(a) * d;
+
+	this->_curX = (this->_curX + xf) / 2;
+	this->_curY = (this->_curY * 4 + yf) / 5;
+	this->_curZ = (this->_curZ + zf) / 2;
+	camera->setPosition(irr::core::vector3df(this->_curX, this->_curY, this->_curZ));
 	camera->setTarget(player->getPosition());
 }
 
@@ -35,14 +48,12 @@ irr::IrrlichtDevice*	Camera::getDevice() const
 	return (this->_device);
 }
 
-void					Camera::setZoom(float zoom)
-{
-	this->_zoom = zoom;
-	std::cout << "setZoom() = " << this->_zoom << std::endl;
+void					Camera::addDistance(float d) {
+	float sd = this->_distance - d;
+	
+	this->_distance = GMath::clamp(sd, MIN_DIST, MAX_DIST);
 }
 
-float					Camera::getZoom() const
-{
-	std::cout << "getZoom() = " << this->_zoom << std::endl;
-	return (this->_zoom);
+float					Camera::getDistance() const {
+	return this->_distance;
 }

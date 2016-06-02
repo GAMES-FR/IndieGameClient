@@ -18,10 +18,7 @@ bool		InputHandler::OnEvent(const irr::SEvent& event)
 		_keyIsDown[event.KeyInput.Key] = event.KeyInput.PressedDown;
 	if (event.EventType == irr::EET_MOUSE_INPUT_EVENT)
 		if (event.MouseInput.Wheel)
-		{
 			this->_mouseWheel = event.MouseInput.Wheel;
-			std::cout << "Mouse Wheel = " << this->_mouseWheel << std::endl;
-		}
 
 	return false;
 }
@@ -29,4 +26,14 @@ bool		InputHandler::OnEvent(const irr::SEvent& event)
 bool		InputHandler::isKeyDown(irr::EKEY_CODE keyCode) const
 {
 	return _keyIsDown[keyCode];
+}
+
+void		InputHandler::setMouseWheel(irr::f32 value)
+{
+	this->_mouseWheel = value;
+}
+
+irr::f32	InputHandler::getMouseWheel() const
+{
+	return (this->_mouseWheel);
 }
