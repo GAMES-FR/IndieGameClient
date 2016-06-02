@@ -1,6 +1,7 @@
 #include "Loop.hpp"
 #include "Constants.hpp"
 #include "Camera.hpp"
+#include "Vehicle.hpp"
 
 MenuLoop::MenuLoop(device_t *d)
   : _device(d), _title(L"Hello World! - Irrlicht Engine Demo")
@@ -71,23 +72,21 @@ bool	MenuLoop::loop()
 
 		if (this->_device->receiver.isKeyDown(irr::KEY_ESCAPE))
 			return (OK_CODE);
+		int inputs = 0;
 		if (this->_device->receiver.isKeyDown(irr::KEY_KEY_Z))
-			player.up = true;
-		else
-			player.up = false;
+			inputs |= I_THROTTLE;
 		if (this->_device->receiver.isKeyDown(irr::KEY_KEY_Q))
-			player.left = true;
-		else
-			player.left = false;
+			inputs |= I_LEFT;
 		if (this->_device->receiver.isKeyDown(irr::KEY_KEY_S))
-			player.down = true;
-		else
-			player.down = false;
+			inputs |= I_BRAKE;
 		if (this->_device->receiver.isKeyDown(irr::KEY_KEY_D))
-			player.right = true;
-		else
-			player.right = false;
-		if (this->_device->receiver.getMouseWheel() != 0)
+			inputs |= I_RIGHT;
+		if (this->_device->receiver.isKeyDown(irr::KEY_SPACE))
+			inputs |= I_EBRAKE;
+		if (this->_device->receiver.isKeyDown(irr::KEY_LCONTROL))
+			inputs |= I_REVERSE;
+		player.setInputs(inputs);
+			if (this->_device->receiver.getMouseWheel() != 0)
 		{
 			camera.addDistance(5 * this->_device->receiver.getMouseWheel());
 			this->_device->receiver.setMouseWheel(0);

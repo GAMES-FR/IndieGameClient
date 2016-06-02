@@ -28,6 +28,8 @@ public:
 
 	void					setNode(irr::scene::ISceneNode *node);
 
+	void					setInputs(int);
+
 	void					setPosition(irr::core::vector3df newPos);
 	void					setPosition(float newX, float newY, float newZ);
 	irr::core::vector3df	getPosition() const;

@@ -52,7 +52,7 @@ void Vehicle::Car::doPhysics(float dt) {
 
 	//  Get amount of brake/throttle from our inputs
 	float brake = GMath::min((this->inputs & I_BRAKE) * cfg->brakeForce + (this->inputs & I_EBRAKE) * cfg->eBrakeForce, cfg->brakeForce);
-	float throttle = (this->inputs & I_THROTTLE) * (cfg->engineForce) + (cfg->engineForce * cfg->reverseForce) * (this->inputs & I_REVERSE);
+	float throttle = !!(this->inputs & I_THROTTLE) * (cfg->engineForce) - (cfg->engineForce / cfg->reverseForce) * !!(this->inputs & I_REVERSE);
 
 	//  Resulting force in local car coordinates.
 	//  This is implemented as a RWD car only.
@@ -171,7 +171,7 @@ Vehicle::Config *Vehicle::getDefaultConfig() {
 	cfg->tireGrip = 2.0;  // How much grip tires have
 	cfg->lockGrip = 0.7;  // % of grip available when wheel is locked
 	cfg->engineForce = 8000.f;
-	cfg->reverseForce = -0.3;
+	cfg->reverseForce = 3.f;
 	cfg->brakeForce = 12000.f;
 	cfg->eBrakeForce = cfg->brakeForce / 2.5;
 	cfg->weightTransfer = 0.2;  // How much weight is transferred during acceleration/braking

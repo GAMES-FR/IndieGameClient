@@ -18,10 +18,6 @@ Player::Player(irr::scene::ISceneNode *node)
 	this->_rot.Y = node->getRotation().Y;
 	this->_rot.Z = node->getRotation().Z;
 	this->input = 0;
-	this->left = false;
-	this->up = false;
-	this->right = false;
-	this->down = false;
 	this->_vehicle.setConfig(Vehicle::getDefaultConfig());
 	//Vehicle::Config *cfg = _vehicle.getConfig();
 	_vehicle.smoothSteer = true;
@@ -32,12 +28,13 @@ Player::~Player()
 {
 }
 
+void Player::setInputs(int inputs) {
+	this->input = inputs;
+}
+
 void Player::update(irr::f32 dt)
 {
-	const irr::f32 speed = 300.f;
-
 	this->_pos = this->_node->getPosition();
-	this->input = (this->up * I_THROTTLE) | (this->left * I_LEFT) | (this->right * I_RIGHT) | (this->down * I_BRAKE);
 
 	Vector::Vec2 p(this->_pos.X / MOVE_SCALE, this->_pos.Z / MOVE_SCALE);
 	this->_vehicle.setPosition(p);
