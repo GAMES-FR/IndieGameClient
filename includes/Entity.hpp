@@ -6,18 +6,19 @@
 
 class Entity {
 private:
+	irr::scene::ISceneManager						*smgr;
 	irr::scene::IAnimatedMesh						*mesh;
 	irr::scene::IAnimatedMeshSceneNode				*node;
-	irr::scene::ISceneNodeAnimatorCollisionResponse	*collision;
-
+	irr::scene::ISceneNodeAnimatorCollisionResponse	*worldCollision;
+		
 public:
-	Entity(std::string const & meshPath, std::string const & name);
+	Entity(std::string const & meshPath, std::string const & name, irr::scene::ISceneManager *smgr);
 
 	irr::scene::IAnimatedMesh						*getMesh() const;
 	irr::scene::IAnimatedMeshSceneNode				*getNode() const;
 
-	void											setCollision();
-	irr::scene::ISceneNodeAnimatorCollisionResponse	*getCollision();
+	void											setWorldCollision(irr::scene::ISceneNodeAnimatorCollisionResponse *worldCollision);
+	irr::scene::ISceneNodeAnimatorCollisionResponse	*getWorldCollision();
 };
 
 #endif

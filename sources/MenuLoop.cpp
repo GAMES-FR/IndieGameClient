@@ -89,7 +89,6 @@ bool	MenuLoop::loop()
 			player.right = false;
 		if (this->_device->receiver.getMouseWheel() != 0)
 		{
-			printf("%f\n", this->_device->receiver.getMouseWheel());
 			camera.addDistance(5 * this->_device->receiver.getMouseWheel());
 			this->_device->receiver.setMouseWheel(0);
 		}
