@@ -8,20 +8,12 @@
 
 #define MOVE_SCALE 10
 
-Player::Player(irr::scene::ISceneNode *node)
-{	
-	this->_node = node;
-	this->_pos.X = node->getPosition().X;
-	this->_pos.Y = node->getPosition().Y;
-	this->_pos.Z = node->getPosition().Z;
-	this->_rot.X = node->getRotation().X;
-	this->_rot.Y = node->getRotation().Y;
-	this->_rot.Z = node->getRotation().Z;
+Player::Player(std::string const & meshPath, irr::scene::ISceneManager *smgr) : entity(meshPath, "Player", smgr)
+{
+	this->smgr = smgr;
+	
 	this->input = 0;
 	this->_vehicle.setConfig(Vehicle::getDefaultConfig());
-	//Vehicle::Config *cfg = _vehicle.getConfig();
-	_vehicle.smoothSteer = true;
-	_vehicle.safeSteer = true;
 }
 
 Player::~Player()
@@ -32,72 +24,35 @@ void Player::setInputs(int inputs) {
 	this->input = inputs;
 }
 
+Entity const & Player::getEntity() const {
+	return this->entity;
+}
+
 void Player::update(irr::f32 dt)
 {
-	this->_pos = this->_node->getPosition();
+	irr::scene::IAnimatedMeshSceneNode *node = this->entity.getNode();
+	irr::core::vector3df pos = node->getPosition();
+	irr::core::vector3df rot = node->getRotation();
 
-	Vector::Vec2 p(this->_pos.X / MOVE_SCALE, this->_pos.Z / MOVE_SCALE);
+	Vector::Vec2 p(pos.X / MOVE_SCALE, pos.Z / MOVE_SCALE);
 	this->_vehicle.setPosition(p);
 
 	this->_vehicle.setInputs(this->input);
 	this->_vehicle.update((double)dt);
 	
-	Vector::Vec2 & pos = this->_vehicle.getPosition();
-	this->_pos.X = pos.x * MOVE_SCALE;
-	this->_pos.Z = pos.y * MOVE_SCALE;
-	this->_rot.Y = (-this->_vehicle.getHeading() / M_PI * 180.f);
-	this->_node->setPosition(this->_pos);
-	this->_node->setRotation(this->_rot);
-}
-
-void Player::setNode(irr::scene::ISceneNode *node)
-{
-	this->_node = node;
-}
-
-void Player::setPosition(irr::core::vector3df newPos)
-{
-	this->_pos = newPos;
-}
-
-void Player::setPosition(float newX, float newY, float newZ)
-{
-	this->_pos.X = newX;
-	this->_pos.Y = newY;
-	this->_pos.Z = newZ;
-}
-
-irr::core::vector3df Player::getPosition() const
-{
-	return (this->_pos);
-}
-
-void Player::setRotation(irr::core::vector3df newRot)
-{
-	this->_rot = newRot;
-}
-
-void Player::setRotation(float newX, float newY, float newZ)
-{
-	this->_rot.X = newX;
-	this->_rot.Y = newY;
-	this->_rot.Z = newZ;
-}
-
-irr::core::vector3df	Player::getRotation() const
-{
-	return (this->_rot);
-}
-
-irr::scene::ISceneNode* Player::getNode() const
-{
-	return (this->_node);
+	Vector::Vec2 & vehiclePos = this->_vehicle.getPosition();
+	pos.X = vehiclePos.x * MOVE_SCALE;
+	pos.Z = vehiclePos.y * MOVE_SCALE;
+	rot.Y = (-this->_vehicle.getHeading() / M_PI * 180.f);
+	node->setPosition(pos);
+	node->setRotation(rot);
 }
 
 void					Player::setCollisions(irr::scene::ISceneManager* &smgr)
 {
 	irr::scene::IMetaTriangleSelector*			meta = smgr->createMetaTriangleSelector(); // Hold several triangles at a time
 	irr::core::array<irr::scene::ISceneNode*>	nodes;
+	irr::scene::ISceneNode *playerNode = this->entity.getNode();
 
 	smgr->getSceneNodesFromType(irr::scene::ESNT_ANY, nodes); // Find all nodes
 
@@ -106,7 +61,7 @@ void					Player::setCollisions(irr::scene::ISceneManager* &smgr)
 		irr::scene::ISceneNode*			node = nodes[i];
 		irr::scene::ITriangleSelector*	selector = 0;
 
-		if (node != this->_node)
+		if (node != playerNode)
 		{
 			switch (node->getType())
 			{
@@ -134,11 +89,11 @@ void					Player::setCollisions(irr::scene::ISceneManager* &smgr)
 	if (meta)
 	{
 		irr::scene::ISceneNodeAnimator* anim = smgr->createCollisionResponseAnimator(
-			meta, this->_node, this->_node->getTransformedBoundingBox().getExtent(),
+			meta, playerNode, playerNode->getTransformedBoundingBox().getExtent(),
 			irr::core::vector3df(0, -5.f, 0));
 		meta->drop();
 
-		this->_node->addAnimator(anim);
+		playerNode->addAnimator(anim);
 		anim->drop();
 	}
 }

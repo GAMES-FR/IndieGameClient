@@ -3,6 +3,7 @@
 Entity::Entity(std::string const & meshPath, std::string const & name, irr::scene::ISceneManager *smgr) {
 	this->mesh = smgr->getMesh(meshPath.c_str());
 	this->node = smgr->addAnimatedMeshSceneNode(this->mesh);
+	this->node->setName(name.c_str());
 	this->smgr = smgr;
 }
 

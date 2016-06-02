@@ -21,7 +21,7 @@ Camera::Camera(irr::IrrlichtDevice *device)
 void					Camera::updateCamera(Player *player)
 {
 	irr::scene::ICameraSceneNode	*camera = this->_device->getSceneManager()->getActiveCamera();
-	irr::scene::ISceneNode			*node = player->getNode();
+	irr::scene::ISceneNode			*node = player->getEntity().getNode();
 
 	float yf = node->getAbsolutePosition().Y + this->_distance * sin(this->_angle / 180.f * M_PI);
 	float d = this->_distance * cos(this->_angle / 180.f * M_PI);
@@ -35,7 +35,7 @@ void					Camera::updateCamera(Player *player)
 	this->_curY = (this->_curY * 4 + yf) / 5;
 	this->_curZ = (this->_curZ + zf) / 2;
 	camera->setPosition(irr::core::vector3df(this->_curX, this->_curY, this->_curZ));
-	camera->setTarget(player->getPosition());
+	camera->setTarget(node->getPosition());
 }
 
 void					Camera::setDevice(irr::IrrlichtDevice *device)

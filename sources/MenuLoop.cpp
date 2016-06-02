@@ -24,8 +24,6 @@ bool	MenuLoop::loop()
 	// Nodes and meshes to print 
 	irr::scene::IAnimatedMesh			*map = this->_device->smgr->getMesh(ASSETS_DIR"/map/awp_india.obj");
 	irr::scene::IMeshSceneNode			*map_node = 0;
-	irr::scene::IAnimatedMesh			*player_mesh = this->_device->smgr->getMesh(ASSETS_DIR"/car/Avent.obj");
-	irr::scene::IAnimatedMeshSceneNode	*player_node = 0;
 	irr::scene::IAnimatedMesh			*ennemy_mesh = this->_device->smgr->getMesh(ASSETS_DIR"/truck/bulldozer.obj");
 	irr::scene::IAnimatedMeshSceneNode	*ennemy_node = 0;
 
@@ -39,13 +37,12 @@ bool	MenuLoop::loop()
 		}
 	}
 
-	if (player_mesh)
-	{
-		player_node = this->_device->smgr->addAnimatedMeshSceneNode(player_mesh);
-		player_node->setScale(irr::core::vector3df(9.0f, 9.0f, 9.0f));
-		player_node->setPosition(irr::core::vector3df(100, 100, 100));
-		player_node->setMaterialFlag(irr::video::EMF_LIGHTING, false);
-	}
+	Player		player(std::string(ASSETS_DIR"/car/Avent.obj"), this->_device->smgr);
+
+	irr::scene::ISceneNode *playerNode = player.getEntity().getNode();
+	playerNode->setScale(irr::core::vector3df(3.0f, 3.0f, 3.0f));
+	playerNode->setPosition(irr::core::vector3df(100, 100, 100));
+	playerNode->setMaterialFlag(irr::video::EMF_LIGHTING, false);
 
 	if (ennemy_mesh)
 	{
@@ -55,7 +52,6 @@ bool	MenuLoop::loop()
 		ennemy_node->setMaterialFlag(irr::video::EMF_LIGHTING, false);
 	}
 
-	Player		player(player_node);
 	Camera		camera(this->_device->ptr);
 
 	player.setCollisions(this->_device->smgr);

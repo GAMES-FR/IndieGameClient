@@ -12,37 +12,26 @@
 #ifndef PLAYER_H
 # define PLAYER_H
 
+# include "Entity.hpp"
+
 class Player
 {
 private:
-	irr::core::vector3df	_pos;
-	irr::core::vector3df	_rot;
-	irr::scene::ISceneNode*	_node;
+	Entity					entity;
 	Vehicle::Car			_vehicle;
+	irr::scene::ISceneManager *smgr;
 
 public:
-	Player(irr::scene::ISceneNode *node);
+	Player(std::string const &, irr::scene::ISceneManager *);
 	~Player();
 
 	void					update(irr::f32 dt);
 
-	void					setNode(irr::scene::ISceneNode *node);
-
 	void					setInputs(int);
-
-	void					setPosition(irr::core::vector3df newPos);
-	void					setPosition(float newX, float newY, float newZ);
-	irr::core::vector3df	getPosition() const;
-	void					setRotation(irr::core::vector3df newRot);
-	void					setRotation(float newX, float newY, float newZ);
-	irr::core::vector3df	getRotation() const;
-	irr::scene::ISceneNode*	getNode() const;
 	void					setCollisions(irr::scene::ISceneManager* &smgr);
 
-	bool	left;
-	bool	up;
-	bool	right;
-	bool	down;
+	Entity const &			getEntity() const;
+
 	int		input;
 };
 
