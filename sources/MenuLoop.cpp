@@ -41,7 +41,7 @@ bool	MenuLoop::loop()
 	if (player_mesh)
 	{
 		player_node = this->_device->smgr->addAnimatedMeshSceneNode(player_mesh);
-		//player_node->setScale(irr::core::vector3df(15.0f, 15.0f, 15.0f));
+		player_node->setScale(irr::core::vector3df(9.0f, 9.0f, 9.0f));
 		player_node->setPosition(irr::core::vector3df(100, 100, 100));
 		player_node->setMaterialFlag(irr::video::EMF_LIGHTING, false);
 	}
@@ -57,59 +57,9 @@ bool	MenuLoop::loop()
 	Player		player(player_node);
 	Camera		camera(this->_device->ptr);
 
-	//player.setCollisions(this->_device->smgr);
+	player.setCollisions(this->_device->smgr);
 
-	// Ceci est égal à setCollisions, sauf que j'ai rajouté ennemy_node pour qu'il soit affecté par la gravité.
-	irr::scene::IMetaTriangleSelector*			meta = this->_device->smgr->createMetaTriangleSelector(); // Hold several triangles at a time
-	irr::core::array<irr::scene::ISceneNode*>	nodes;
-
-	this->_device->smgr->getSceneNodesFromType(irr::scene::ESNT_ANY, nodes); // Find all nodes
-
-	for (irr::u32 i = 0; i < nodes.size(); ++i)
-	{
-		irr::scene::ISceneNode*			node = nodes[i];
-		irr::scene::ITriangleSelector*	selector = 0;
-
-		if (node != player.getNode())
-		{
-			switch (node->getType())
-			{
-			case irr::scene::ESNT_ANIMATED_MESH:
-				selector = this->_device->smgr->createTriangleSelectorFromBoundingBox(node);
-				break;
-
-			case irr::scene::ESNT_OCTREE:
-				selector = this->_device->smgr->createOctreeTriangleSelector(((irr::scene::IMeshSceneNode*)node)->getMesh(), node);
-				break;
-
-			default:
-				break;
-			}
-
-			if (selector)
-			{
-				// Add selector to the meta then drop it *DUBSTEP INTENSIFIES*
-				meta->addTriangleSelector(selector);
-				selector->drop();
-			}
-		}
-	}
-
-	if (meta)
-	{
-		irr::scene::ISceneNodeAnimator* anim = this->_device->smgr->createCollisionResponseAnimator(
-			meta, player.getNode(), player.getNode()->getTransformedBoundingBox().getExtent(),
-			irr::core::vector3df(0, -5.f, 0));
-		player.getNode()->addAnimator(anim);
-
-		anim = this->_device->smgr->createCollisionResponseAnimator(
-			meta, player_node, irr::core::vector3df(1, 1, 1),
-			irr::core::vector3df(0, 0, 0));
-		ennemy_node->addAnimator(anim);
-
-		meta->drop();
-		anim->drop();
-	}
+	
 
 	irr::u32	before = camera.getDevice()->getTimer()->getTime();
 
@@ -139,17 +89,15 @@ bool	MenuLoop::loop()
 			player.right = false;
 		if (this->_device->receiver.getMouseWheel() != 0)
 		{
+			printf("%f\n", this->_device->receiver.getMouseWheel());
 			camera.addDistance(5 * this->_device->receiver.getMouseWheel());
 			this->_device->receiver.setMouseWheel(0);
 		}
-
-		std::cout << ennemy_node->getPosition().Y << std::endl;
 
 		player.update(dt);
 		camera.updateCamera(&player);
 		this->_device->driver->beginScene(true, true, irr::video::SColor(255,200,200,200));
 		this->_device->smgr->drawAll();
-		//this->_device->guienv->drawAll();
 		this->_device->driver->endScene();
     }
   return (OK_CODE);

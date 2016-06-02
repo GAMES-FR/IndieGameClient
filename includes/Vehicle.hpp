@@ -10,6 +10,7 @@
 # define I_EBRAKE	0b100
 # define I_LEFT		0b1000
 # define I_RIGHT	0b10000
+# define I_REVERSE	0b100000
 
 namespace Vehicle {
 	struct Config
@@ -28,6 +29,7 @@ namespace Vehicle {
 		float	tireGrip;
 		float	lockGrip;
 		float	engineForce;
+		float	reverseForce;
 		float	brakeForce;
 		float	eBrakeForce;
 		float	weightTransfer;
@@ -60,9 +62,6 @@ namespace Vehicle {
 		float			wheelBase;
 		float			axleWeightRatioFront;
 		float			axleWeightRatioRear;
-
-		int				throttle;
-		int				brake;
 
 		void			doPhysics(float dt);
 		float			applySmoothSteer(float steerInput, float dt);
