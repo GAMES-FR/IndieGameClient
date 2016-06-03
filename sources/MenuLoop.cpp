@@ -81,6 +81,17 @@ bool	MenuLoop::loop()
 			inputs |= I_EBRAKE;
 		if (this->_device->receiver.isKeyDown(irr::KEY_LCONTROL))
 			inputs |= I_REVERSE;
+
+		// Ce que charpe à rajouter
+		if (this->_device->receiver.isKeyDown(irr::KEY_KEY_F))
+		{
+			if (!player.fire)
+				player.stopped_fire = true;
+			player.fire = true;
+		}
+		else
+			player.fire = false;
+
 		player.setInputs(inputs);
 			if (this->_device->receiver.getMouseWheel() != 0)
 		{

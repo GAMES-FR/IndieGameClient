@@ -10,4 +10,7 @@
 #  define ASSETS_DIR "./assets"
 # endif
 
+# define MISSILE_MESH_PATH ASSETS_DIR"/bear.obj"
+# define SPAWNER_MESH_PATH ASSETS_DIR"/bear.obj"
+
 #endif /* CONSTANTS_HPP_ */

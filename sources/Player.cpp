@@ -1,11 +1,6 @@
 #include "Player.hpp"
 #include <iostream>
 
-#ifdef _IRR_WINDOWS_
-# pragma comment(lib, "Irrlicht.lib")
-//# pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
-#endif
-
 #define MOVE_SCALE 10
 
 Player::Player(std::string const & meshPath, irr::scene::ISceneManager *smgr) : entity(meshPath, "Player", smgr)
@@ -14,6 +9,11 @@ Player::Player(std::string const & meshPath, irr::scene::ISceneManager *smgr) : 
 	
 	this->input = 0;
 	this->_vehicle.setConfig(Vehicle::getDefaultConfig());
+
+	// Ce que charpe à rajouter
+	this->fire = false;
+	this->has_missile = false;
+	this->stopped_fire = false;
 }
 
 Player::~Player()
@@ -46,6 +46,10 @@ void Player::update(irr::f32 dt)
 	rot.Y = (-this->_vehicle.getHeading() / M_PI * 180.f);
 	node->setPosition(pos);
 	node->setRotation(rot);
+
+	// Ce que charpe à rajouter
+	if (this->fire && this->stopped_fire)
+		fire_blipblipblipblipblip();
 }
 
 void					Player::setCollisions(irr::scene::ISceneManager* &smgr)
@@ -96,4 +100,12 @@ void					Player::setCollisions(irr::scene::ISceneManager* &smgr)
 		playerNode->addAnimator(anim);
 		anim->drop();
 	}
+}
+
+// Ce que charpe à rajouter
+void Player::fire_blipblipblipblipblip()
+{
+	this->_missiles.push_back(new Missile(this->entity.getNode(), this->smgr));
+	this->stopped_fire = false;
+	//MenuLoop::entities.push_back(this->_bonus);
 }

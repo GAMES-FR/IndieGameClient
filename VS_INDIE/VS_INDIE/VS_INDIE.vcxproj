@@ -118,7 +118,9 @@
     <ClCompile Include="..\..\sources\Input.cpp" />
     <ClCompile Include="..\..\sources\main.cpp" />
     <ClCompile Include="..\..\sources\MenuLoop.cpp" />
+    <ClCompile Include="..\..\sources\Missile.cpp" />
     <ClCompile Include="..\..\sources\Player.cpp" />
+    <ClCompile Include="..\..\sources\Spawner.cpp" />
     <ClCompile Include="..\..\sources\Vector.cpp" />
     <ClCompile Include="..\..\sources\Vehicle.cpp" />
   </ItemGroup>
@@ -129,7 +131,9 @@
     <ClInclude Include="..\..\includes\GMath.hpp" />
     <ClInclude Include="..\..\includes\Input.hpp" />
     <ClInclude Include="..\..\includes\Loop.hpp" />
+    <ClInclude Include="..\..\includes\Missile.hpp" />
     <ClInclude Include="..\..\includes\Player.hpp" />
+    <ClInclude Include="..\..\includes\Spawner.hpp" />
     <ClInclude Include="..\..\includes\Vector.hpp" />
     <ClInclude Include="..\..\includes\Vehicle.hpp" />
   </ItemGroup>
