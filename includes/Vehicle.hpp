@@ -76,7 +76,6 @@ namespace Vehicle {
 		void			update(float dtms);
 		void			setConfig(Config *cfg);
 		Config			*getConfig() const;
-		void			setInputs(int inputs);
 		void			setPosition(const Vector::Vec2 & pos);
 		void			setHeading(float heading);
 		Vector::Vec2	getPosition() const;
