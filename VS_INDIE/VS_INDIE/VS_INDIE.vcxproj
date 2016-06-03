@@ -115,6 +115,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\sources\Camera.cpp" />
     <ClCompile Include="..\..\sources\Entity.cpp" />
+    <ClCompile Include="..\..\sources\GameLoop.cpp" />
     <ClCompile Include="..\..\sources\Input.cpp" />
     <ClCompile Include="..\..\sources\main.cpp" />
     <ClCompile Include="..\..\sources\MenuLoop.cpp" />
