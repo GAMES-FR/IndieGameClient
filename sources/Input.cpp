@@ -1,18 +1,14 @@
-#include "Input.hpp"
+#include "IncludeIrrlicht.hpp"
 #include <iostream>
 
-#ifdef _MSC_VER
-#pragma comment(lib, "Irrlicht.lib")
-#endif
-
-InputHandler::InputHandler()
+core::InputHandler::InputHandler()
 {
 	for (irr::u32 i = 0; i < irr::KEY_KEY_CODES_COUNT; ++i)
 		_keyIsDown[i] = false;
 	this->_mouseWheel = 0;
 }
 
-bool		InputHandler::OnEvent(const irr::SEvent& event)
+bool		core::InputHandler::OnEvent(const irr::SEvent& event)
 {
 	if (event.EventType == irr::EET_KEY_INPUT_EVENT)
 		_keyIsDown[event.KeyInput.Key] = event.KeyInput.PressedDown;
@@ -23,17 +19,17 @@ bool		InputHandler::OnEvent(const irr::SEvent& event)
 	return false;
 }
 
-bool		InputHandler::isKeyDown(irr::EKEY_CODE keyCode) const
+bool		core::InputHandler::isKeyDown(irr::EKEY_CODE keyCode) const
 {
 	return _keyIsDown[keyCode];
 }
 
-void		InputHandler::setMouseWheel(irr::f32 value)
+void		core::InputHandler::setMouseWheel(irr::f32 value)
 {
 	this->_mouseWheel = value;
 }
 
-irr::f32	InputHandler::getMouseWheel() const
+irr::f32	core::InputHandler::getMouseWheel() const
 {
 	return (this->_mouseWheel);
 }

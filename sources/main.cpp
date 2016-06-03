@@ -1,6 +1,5 @@
 #include "Loop.hpp"
 #include "Constants.hpp"
-#include "Input.hpp"
 
 #if defined (_IRR_WINDOWS_) && ! defined (MSYS)
 # pragma comment(lib, "Irrlicht.lib")
@@ -13,12 +12,13 @@
  */
 int main()
 {
-  device_t	device;
-  bool		ret;
+  core::device_t device;
+  core::ILoop *loop[2];
+  int ret;
 
   /* lib and device init */
-  device.ptr = irr::createDevice(irr::video::EDT_OPENGL,
-	  irr::core::dimension2d<irr::u32>(1280, 720), 16,
+  device.ptr = irr::createDevice(ivideo::EDT_OPENGL,
+	  icore::dimension2d<irr::u32>(1280, 720), 16,
 				 false, true, false, &device.receiver);
   if (!device.ptr)
     return (ERROR_CODE);
@@ -26,13 +26,18 @@ int main()
   device.smgr = device.ptr->getSceneManager();
   device.guienv = device.ptr->getGUIEnvironment();
 
-  /* gui and objects init */
-  MenuLoop menu(&device);
-  if (menu.init())
+  loop[0] = new core::GameLoop(&device);
+  // loop[1] = new core::MenuLoop(&device);
+  if (loop[0]->init())
     return (ERROR_CODE);
+  // if (loop[1]->init())
+  //   return (ERROR_CODE);
 
-  /* omg la loop */
-  ret = menu.loop();
+  ret = 0;
+  while (device.ptr->run())
+    ret = loop[ret]->loop();
   device.ptr->drop();
-  return (ret);
+  // delete loop[1];
+  delete loop[0];
+  return (OK_CODE);
 }

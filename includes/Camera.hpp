@@ -1,17 +1,8 @@
-#include <irrlicht.h>
-#define _USE_MATH_DEFINES
-#include <cmath>
-#include <iostream>
-
-#include "Player.hpp"
-
-#ifdef _IRR_WINDOWS_
-# pragma comment(lib, "Irrlicht.lib")
-//# pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
-#endif
-
 #ifndef CAMERA_H
 # define CAMERA_H
+
+# include "IncludeIrrlicht.hpp"
+# include "Player.hpp"
 
 # define MAX_DIST 200.f
 # define MIN_DIST 10.f

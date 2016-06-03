@@ -3,7 +3,6 @@
 
 # define _USE_MATH_DEFINES
 # include <vector>
-# include <irrlicht.h>
 # include <cmath>
 
 # include "Vehicle.hpp"
@@ -15,20 +14,20 @@ class Player
 private:
 	Entity					entity;
 	Vehicle::Car			_vehicle;
-	irr::scene::ISceneManager *smgr;
+	iscene::ISceneManager *smgr;
 
 	// Ce que charpe à rajouter
 	std::vector<Missile *>	_missiles;
 
 
 public:
-	Player(std::string const &, irr::scene::ISceneManager *);
+	Player(std::string const &, iscene::ISceneManager *);
 	~Player();
 
 	void					update(irr::f32 dt);
 
 	void					setInputs(int);
-	void					setCollisions(irr::scene::ISceneManager* &smgr);
+	void					setCollisions(iscene::ISceneManager* &smgr);
 
 	Entity const &			getEntity() const;
 

@@ -3,12 +3,12 @@
 #include "Camera.hpp"
 #include "Vehicle.hpp"
 
-core::MenuLoop::MenuLoop(device_t *device)
+core::GameLoop::GameLoop(device_t *device)
   : Loop(device, L"Suck My Wheels")
 {
 }
 
-bool	core::MenuLoop::_init(void)
+bool	core::GameLoop::_init(void)
 {
   this->_device->smgr->addCameraSceneNode(0,
 				    icore::vector3df(0,0,0),
@@ -16,7 +16,7 @@ bool	core::MenuLoop::_init(void)
   return (OK_CODE);
 }
 
-int	core::MenuLoop::_loop(void)
+int	core::GameLoop::_loop(void)
 {
 	// Nodes and meshes to print 
 	iscene::IAnimatedMesh			*map = this->_device->smgr->getMesh(ASSETS_DIR"/map/awp_india.obj");
@@ -79,7 +79,7 @@ int	core::MenuLoop::_loop(void)
 		if (this->_device->receiver.isKeyDown(irr::KEY_LCONTROL))
 			inputs |= I_REVERSE;
 
-		// Ce que charpe à rajouter
+		// Ce que charpe Ã  rajouter
 		if (this->_device->receiver.isKeyDown(irr::KEY_KEY_F))
 		{
 			if (!player.fire)

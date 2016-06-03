@@ -12,7 +12,7 @@ private:
 	Entity	entity;
 
 public:
-	Missile(irr::scene::ISceneNode *, irr::scene::ISceneManager *);
+	Missile(iscene::ISceneNode *, iscene::ISceneManager *);
 	~Missile();
 };
 

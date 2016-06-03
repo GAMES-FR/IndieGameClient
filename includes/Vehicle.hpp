@@ -4,13 +4,14 @@
 # include <cmath>
 # include "Vector.hpp"
 # include "GMath.hpp"
+# include "IncludeIrrlicht.hpp"
 
-# define I_THROTTLE 0b1
-# define I_BRAKE	0b10
-# define I_EBRAKE	0b100
-# define I_LEFT		0b1000
-# define I_RIGHT	0b10000
-# define I_REVERSE	0b100000
+# define I_THROTTLE core::MOVE_FOWARD
+# define I_BRAKE core::MOVE_BACK
+# define I_EBRAKE core::MOVE_STAP
+# define I_LEFT core::MOVE_LEFT
+# define I_RIGHT core::MOVE_RIGHT
+# define I_REVERSE core::MOVE_REVERSE
 
 namespace Vehicle {
 	struct Config
