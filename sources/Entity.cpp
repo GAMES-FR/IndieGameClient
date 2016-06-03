@@ -15,10 +15,15 @@ iscene::IAnimatedMeshSceneNode				*Entity::getNode() const {
 	return (this->node);
 }
 
-void											Entity::setWorldCollision(iscene::ISceneNodeAnimatorCollisionResponse * worldCollision) {
+/*void										Entity::setWorldCollision(std::vector<iscene::ISceneNodeAnimatorCollisionResponse*> worldCollision) {
 	this->worldCollision = worldCollision;
+}*/
+
+void										Entity::addWorldCollision(iscene::ISceneNodeAnimatorCollisionResponse *anim)
+{
+	this->worldCollision.push_back(anim);
 }
 
-iscene::ISceneNodeAnimatorCollisionResponse	*Entity::getWorldCollision() {
+std::vector<iscene::ISceneNodeAnimatorCollisionResponse*> Entity::getWorldCollision() const {
 	return (this->worldCollision);
 }

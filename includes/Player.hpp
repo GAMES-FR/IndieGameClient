@@ -14,7 +14,7 @@ class Player
 private:
 	Entity					entity;
 	Vehicle::Car			_vehicle;
-	iscene::ISceneManager *smgr;
+	iscene::ISceneManager	*smgr;
 
 	// Ce que charpe à rajouter
 	std::vector<Missile *>	_missiles;

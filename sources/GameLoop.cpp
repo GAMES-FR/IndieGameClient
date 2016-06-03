@@ -21,7 +21,7 @@ int	core::GameLoop::_loop(void)
 	// Nodes and meshes to print 
 	iscene::IAnimatedMesh			*map = this->_device->smgr->getMesh(ASSETS_DIR"/map/awp_india.obj");
 	iscene::IMeshSceneNode			*map_node = 0;
-	iscene::IAnimatedMesh			*ennemy_mesh = this->_device->smgr->getMesh(ASSETS_DIR"/truck/bulldozer.obj");
+	iscene::IAnimatedMesh			*ennemy_mesh = this->_device->smgr->getMesh(ASSETS_DIR"/truck/Truck.obj");
 	iscene::IAnimatedMeshSceneNode	*ennemy_node = 0;
 
 	if (map)
@@ -31,6 +31,7 @@ int	core::GameLoop::_loop(void)
 		{
 			map_node->setMaterialFlag(ivideo::EMF_LIGHTING, false);
 			map_node->setPosition(icore::vector3df(0, 0, 0));
+			map_node->setName("map");
 		}
 	}
 
@@ -40,20 +41,19 @@ int	core::GameLoop::_loop(void)
 	playerNode->setScale(icore::vector3df(3.0f, 3.0f, 3.0f));
 	playerNode->setPosition(icore::vector3df(100, 100, 100));
 	playerNode->setMaterialFlag(ivideo::EMF_LIGHTING, false);
+	playerNode->setName("player");
 
 	if (ennemy_mesh)
 	{
 		ennemy_node = this->_device->smgr->addAnimatedMeshSceneNode(ennemy_mesh);
-		ennemy_node->setPosition(icore::vector3df(0, 500, 100));
-		ennemy_node->setRotation(icore::vector3df(-90, 0, 0));
+		ennemy_node->setPosition(icore::vector3df(120, 84, 100));
 		ennemy_node->setMaterialFlag(ivideo::EMF_LIGHTING, false);
+		ennemy_node->setName("enemy");
 	}
 
 	Camera		camera(this->_device->ptr);
 
 	player.setCollisions(this->_device->smgr);
-
-	
 
 	irr::u32	before = camera.getDevice()->getTimer()->getTime();
 

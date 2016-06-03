@@ -47,6 +47,15 @@ void Player::update(irr::f32 dt)
 	node->setPosition(pos);
 	node->setRotation(rot);
 
+	//Debug : pour tester ce qui collisionne :)
+	int i = 0;
+	while (i < this->entity.getWorldCollision().size())
+	{
+		if (this->entity.getWorldCollision()[i]->collisionOccurred())
+			std::cout << this->entity.getWorldCollision()[i]->getCollisionNode()->getName() << std::endl;
+		i++;
+	}
+
 	// Ce que charpe à rajouter
 	if (this->fire && this->stopped_fire)
 		fire_blipblipblipblipblip();
@@ -54,7 +63,55 @@ void Player::update(irr::f32 dt)
 
 void					Player::setCollisions(iscene::ISceneManager* &smgr)
 {
-	iscene::IMetaTriangleSelector*			meta = smgr->createMetaTriangleSelector(); // Hold several triangles at a time
+	//Ce que jeune poney a changé
+	icore::array<irr::scene::ISceneNode*>	nodes;
+
+	smgr->getSceneNodesFromType(irr::scene::ESNT_ANY, nodes); // Find all nodes
+
+	for (irr::u32 i = 0; i < nodes.size(); ++i)
+	{
+		iscene::ISceneNode*								node = nodes[i];
+		iscene::ITriangleSelector*						selector = 0;
+		iscene::ISceneNodeAnimatorCollisionResponse*	anim = 0;
+
+		if (node != this->entity.getNode())
+		{
+			switch (node->getType())
+			{
+			case irr::scene::ESNT_OCTREE:
+				selector = smgr->createOctreeTriangleSelector(((irr::scene::IMeshSceneNode*)node)->getMesh(), node);
+				this->entity.getNode()->setTriangleSelector(selector);
+
+				anim = smgr->createCollisionResponseAnimator(selector,
+					this->entity.getNode(), this->entity.getNode()->getTransformedBoundingBox().getExtent(),
+					irr::core::vector3df(0, -5.f, 0));
+
+				selector->drop();
+				this->entity.getNode()->addAnimator(anim);
+				this->entity.addWorldCollision(anim);
+				anim->drop();
+				break;
+
+			case irr::scene::ESNT_ANIMATED_MESH:
+				selector = smgr->createTriangleSelectorFromBoundingBox(node);
+				this->entity.getNode()->setTriangleSelector(selector);
+
+				anim = smgr->createCollisionResponseAnimator(selector,
+					this->entity.getNode(), this->entity.getNode()->getTransformedBoundingBox().getExtent(),
+					irr::core::vector3df(0, 0, 0));
+
+				selector->drop();
+				this->entity.getNode()->addAnimator(anim);
+				this->entity.addWorldCollision(anim);//getWorldCollision().push_back(anim);
+				anim->drop();
+				break;
+
+			default:
+				break;
+			}
+		}
+	}
+	/*iscene::IMetaTriangleSelector*			meta = smgr->createMetaTriangleSelector(); // Hold several triangles at a time
 	icore::array<iscene::ISceneNode*>	nodes;
 	iscene::ISceneNode *playerNode = this->entity.getNode();
 
@@ -99,7 +156,7 @@ void					Player::setCollisions(iscene::ISceneManager* &smgr)
 
 		playerNode->addAnimator(anim);
 		anim->drop();
-	}
+	}*/
 }
 
 // Ce que charpe à rajouter
