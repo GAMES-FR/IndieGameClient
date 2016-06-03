@@ -3,6 +3,7 @@
 
 # include "IncludeIrrlicht.hpp"
 # include "Player.hpp"
+# include "Camera.hpp"
 
 namespace core
 {
@@ -20,6 +21,7 @@ namespace core
   protected: // protected attributes
     core::device_t *_device;
     std::wstring const &_title;
+    std::vector<iscene::IAnimatedMeshSceneNode *> _local;
   protected: // protected constructors and operators
     Loop(core::device_t *device, std::wstring const &title)
       : _device(device), _title(title)
@@ -52,22 +54,14 @@ namespace core
   class GameLoop: public Loop<GameLoop> // loop derivate for games
   {
     friend class Loop<GameLoop>;  // Loop class must access private derived methods
-    // iscene::IAnimatedMesh *map;
-    // iscene::IMeshSceneNode *map_node;
-    // iscene::IAnimatedMesh *player_mesh;
-    // iscene::IAnimatedMeshSceneNode *player_node;
-    // iscene::IAnimatedMesh *ennemy_mesh;
-    // iscene::IAnimatedMeshSceneNode *ennemy_node;
-    // Player *player;
-    // Camera *camera;
-    // iscene::IMetaTriangleSelector *meta;
-    // icore::array<iscene::ISceneNode *> nodes;
-    // iscene::ISceneNodeAnimator* anim;
-    // irr::u32 before;
-    // irr::u32 now;
-    // irr::f32 dt;
+    Player *_player;
+    Camera *_camera;
+    irr::u32 _before;
+  public:
+    static std::vector<iscene::IAnimatedMeshSceneNode *> gosts;
   public:
     GameLoop(core::device_t *device);
+    ~GameLoop(void);
   private:
     bool _init(void);
     int _loop(void);

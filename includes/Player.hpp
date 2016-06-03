@@ -26,16 +26,12 @@ public:
 
 	void					update(irr::f32 dt);
 
-	void					setInputs(int);
 	void					setCollisions(iscene::ISceneManager* &smgr);
 
 	Entity const &			getEntity() const;
 
-	int		input;
-
 	// Ce que charpe à rajouter
 	void					fire_blipblipblipblipblip();
-	bool	fire;
 	bool	stopped_fire;
 	bool	has_missile;
 };
