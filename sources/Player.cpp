@@ -40,7 +40,7 @@ void Player::update(irr::f32 dt)
 	this->_vehicle.setInputs(this->input);
 	this->_vehicle.update((double)dt);
 	
-	Vector::Vec2 & vehiclePos = this->_vehicle.getPosition();
+	Vector::Vec2 vehiclePos = this->_vehicle.getPosition();
 	pos.X = vehiclePos.x * MOVE_SCALE;
 	pos.Z = vehiclePos.y * MOVE_SCALE;
 	rot.Y = (-this->_vehicle.getHeading() / M_PI * 180.f);

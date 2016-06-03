@@ -41,8 +41,8 @@ void Vehicle::Car::doPhysics(float dt) {
 	float yawSpeedRear = -cfg->cgToRearAxle * this->yawRate;
 
 	// Calculate slip angles for front and rear wheels (a.k.a. alpha)
-	float slipAngleFront = atan2(this->velocity_c.y + yawSpeedFront, abs(this->velocity_c.x)) - GMath::sign(this->velocity_c.x) * this->steerAngle;
-	float slipAngleRear  = atan2(this->velocity_c.y + yawSpeedRear,  abs(this->velocity_c.x));
+	float slipAngleFront = atan2(this->velocity_c.y + yawSpeedFront, std::abs(this->velocity_c.x)) - GMath::sign(this->velocity_c.x) * this->steerAngle;
+	float slipAngleRear  = atan2(this->velocity_c.y + yawSpeedRear,  std::abs(this->velocity_c.x));
 
 	float tireGripFront = cfg->tireGrip;
 	float tireGripRear = cfg->tireGrip * (1.0 - (this->inputs & I_EBRAKE) * (1.0 - cfg->lockGrip)); // reduce rear grip when ebrake is on
@@ -59,8 +59,8 @@ void Vehicle::Car::doPhysics(float dt) {
 	float tractionForce_cx = throttle - brake * GMath::sign(this->velocity_c.x);
 	float tractionForce_cy = 0;
 
-	float dragForce_cx = -cfg->rollResist * this->velocity_c.x - cfg->airResist * this->velocity_c.x * abs(this->velocity_c.x);
-	float dragForce_cy = -cfg->rollResist * this->velocity_c.y - cfg->airResist * this->velocity_c.y * abs(this->velocity_c.y);
+	float dragForce_cx = -cfg->rollResist * this->velocity_c.x - cfg->airResist * this->velocity_c.x * std::abs(this->velocity_c.x);
+	float dragForce_cy = -cfg->rollResist * this->velocity_c.y - cfg->airResist * this->velocity_c.y * std::abs(this->velocity_c.y);
 
 	// total force in car coordinates
 	float totalForce_cx = dragForce_cx + tractionForce_cx;
@@ -84,7 +84,7 @@ void Vehicle::Car::doPhysics(float dt) {
 	float angularTorque = (frictionForceFront_cy + tractionForce_cy) * cfg->cgToFrontAxle - frictionForceRear_cy * cfg->cgToRearAxle;
 
 	//  Sim gets unstable at very slow speeds, so just stop the car
-	if( abs(this->absVel) < 0.5 && !throttle )
+	if( std::abs(this->absVel) < 0.5 && !throttle )
 	{
 		this->velocity.x = this->velocity.y = this->absVel = 0;
 		angularTorque = this->yawRate = 0;
@@ -120,7 +120,7 @@ void Vehicle::Car::update(float dtms) {
 float Vehicle::Car::applySmoothSteer(float steerInput, float dt) {
 	float steer = 0.f;
 
-	if (abs(steerInput) > 0.001)
+	if (std::abs(steerInput) > 0.001)
 		steer = GMath::clamp(this->steer + steerInput * dt * 2.0, -1.0, 1.0);
 	else
 	{

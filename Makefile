@@ -23,7 +23,14 @@ LDLIBS :=	-l Irrlicht
 #
 NAME :=		indie
 SRC :=		main.cpp \
-		MenuLoop.cpp
+		MenuLoop.cpp \
+		Player.cpp \
+		Camera.cpp \
+		Entity.cpp \
+		Input.cpp \
+		Vehicle.cpp \
+		Vector.cpp \
+		Missile.cpp
 SRC :=		$(addprefix $(SRCDIR)/, $(SRC))
 OBJ :=		$(SRC:.cpp=.swag)
 OBJ_DEBUG :=	$(SRC:.cpp=.debug)
