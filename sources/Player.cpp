@@ -6,22 +6,16 @@
 Player::Player(std::string const & meshPath, iscene::ISceneManager *smgr) : entity(meshPath, "Player", smgr)
 {
 	this->smgr = smgr;
-	
-	this->input = 0;
+
 	this->_vehicle.setConfig(Vehicle::getDefaultConfig());
 
 	// Ce que charpe à rajouter
-	this->fire = false;
 	this->has_missile = false;
 	this->stopped_fire = false;
 }
 
 Player::~Player()
 {
-}
-
-void Player::setInputs(int inputs) {
-	this->input = inputs;
 }
 
 Entity const & Player::getEntity() const {
@@ -37,7 +31,6 @@ void Player::update(irr::f32 dt)
 	Vector::Vec2 p(pos.X / MOVE_SCALE, pos.Z / MOVE_SCALE);
 	this->_vehicle.setPosition(p);
 
-	this->_vehicle.setInputs(this->input);
 	this->_vehicle.update((double)dt);
 	
 	Vector::Vec2 vehiclePos = this->_vehicle.getPosition();
@@ -48,7 +41,7 @@ void Player::update(irr::f32 dt)
 	node->setRotation(rot);
 
 	//Debug : pour tester ce qui collisionne :)
-	int i = 0;
+	unsigned int i = 0;
 	while (i < this->entity.getWorldCollision().size())
 	{
 		if (this->entity.getWorldCollision()[i]->collisionOccurred())
@@ -57,7 +50,7 @@ void Player::update(irr::f32 dt)
 	}
 
 	// Ce que charpe à rajouter
-	if (this->fire && this->stopped_fire)
+	if ((core::Receiver::inputs & core::GAME_FIRE) && this->stopped_fire)
 		fire_blipblipblipblipblip();
 }
 
