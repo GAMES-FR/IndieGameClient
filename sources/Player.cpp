@@ -3,7 +3,7 @@
 
 #define MOVE_SCALE 10
 
-Player::Player(std::string const & meshPath, irr::scene::ISceneManager *smgr) : entity(meshPath, "Player", smgr)
+Player::Player(std::string const & meshPath, iscene::ISceneManager *smgr) : entity(meshPath, "Player", smgr)
 {
 	this->smgr = smgr;
 	
@@ -30,9 +30,9 @@ Entity const & Player::getEntity() const {
 
 void Player::update(irr::f32 dt)
 {
-	irr::scene::IAnimatedMeshSceneNode *node = this->entity.getNode();
-	irr::core::vector3df pos = node->getPosition();
-	irr::core::vector3df rot = node->getRotation();
+	iscene::IAnimatedMeshSceneNode *node = this->entity.getNode();
+	icore::vector3df pos = node->getPosition();
+	icore::vector3df rot = node->getRotation();
 
 	Vector::Vec2 p(pos.X / MOVE_SCALE, pos.Z / MOVE_SCALE);
 	this->_vehicle.setPosition(p);
@@ -52,29 +52,29 @@ void Player::update(irr::f32 dt)
 		fire_blipblipblipblipblip();
 }
 
-void					Player::setCollisions(irr::scene::ISceneManager* &smgr)
+void					Player::setCollisions(iscene::ISceneManager* &smgr)
 {
-	irr::scene::IMetaTriangleSelector*			meta = smgr->createMetaTriangleSelector(); // Hold several triangles at a time
-	irr::core::array<irr::scene::ISceneNode*>	nodes;
-	irr::scene::ISceneNode *playerNode = this->entity.getNode();
+	iscene::IMetaTriangleSelector*			meta = smgr->createMetaTriangleSelector(); // Hold several triangles at a time
+	icore::array<iscene::ISceneNode*>	nodes;
+	iscene::ISceneNode *playerNode = this->entity.getNode();
 
-	smgr->getSceneNodesFromType(irr::scene::ESNT_ANY, nodes); // Find all nodes
+	smgr->getSceneNodesFromType(iscene::ESNT_ANY, nodes); // Find all nodes
 
 	for (irr::u32 i = 0; i < nodes.size(); ++i)
 	{
-		irr::scene::ISceneNode*			node = nodes[i];
-		irr::scene::ITriangleSelector*	selector = 0;
+		iscene::ISceneNode*			node = nodes[i];
+		iscene::ITriangleSelector*	selector = 0;
 
 		if (node != playerNode)
 		{
 			switch (node->getType())
 			{
-			case irr::scene::ESNT_ANIMATED_MESH:
+			case iscene::ESNT_ANIMATED_MESH:
 				selector = smgr->createTriangleSelectorFromBoundingBox(node);
 				break;
 
-			case irr::scene::ESNT_OCTREE:
-				selector = smgr->createOctreeTriangleSelector(((irr::scene::IMeshSceneNode*)node)->getMesh(), node);
+			case iscene::ESNT_OCTREE:
+				selector = smgr->createOctreeTriangleSelector(((iscene::IMeshSceneNode*)node)->getMesh(), node);
 				break;
 
 			default:
@@ -92,9 +92,9 @@ void					Player::setCollisions(irr::scene::ISceneManager* &smgr)
 
 	if (meta)
 	{
-		irr::scene::ISceneNodeAnimator* anim = smgr->createCollisionResponseAnimator(
+		iscene::ISceneNodeAnimator* anim = smgr->createCollisionResponseAnimator(
 			meta, playerNode, playerNode->getTransformedBoundingBox().getExtent(),
-			irr::core::vector3df(0, -5.f, 0));
+			icore::vector3df(0, -5.f, 0));
 		meta->drop();
 
 		playerNode->addAnimator(anim);

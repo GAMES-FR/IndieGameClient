@@ -1,12 +1,12 @@
 #include "Spawner.hpp"
 
-Spawner::Spawner(irr::scene::ISceneManager *smgr) : entity(std::string(SPAWNER_MESH_PATH), std::string("missile"), smgr)
+Spawner::Spawner(iscene::ISceneManager *smgr) : entity(std::string(SPAWNER_MESH_PATH), std::string("missile"), smgr)
 {
 	//this->_type = (Bonus::Type)(rand() % NB_BONUS);
 	//this->_type = Bonus::MISSILE;
 	//this->generateBonus(device);
 	
-	this->entity.getNode()->setPosition(irr::core::vector3df(200.f, 0.f, 200.f));
+	this->entity.getNode()->setPosition(icore::vector3df(200.f, 0.f, 200.f));
 }
 
 Spawner::~Spawner()

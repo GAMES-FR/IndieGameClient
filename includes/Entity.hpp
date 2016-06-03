@@ -1,24 +1,24 @@
 #ifndef ENTITY_HPP_
 # define ENTITY_HPP_
 
-# include <irrlicht.h>
+# include "IncludeIrrlicht.hpp"
 # include <string>
 
 class Entity {
 private:
-	irr::scene::ISceneManager						*smgr;
-	irr::scene::IAnimatedMesh						*mesh;
-	irr::scene::IAnimatedMeshSceneNode				*node;
-	irr::scene::ISceneNodeAnimatorCollisionResponse	*worldCollision;
+	iscene::ISceneManager						*smgr;
+	iscene::IAnimatedMesh						*mesh;
+	iscene::IAnimatedMeshSceneNode				*node;
+	iscene::ISceneNodeAnimatorCollisionResponse	*worldCollision;
 		
 public:
-	Entity(std::string const & meshPath, std::string const & name, irr::scene::ISceneManager *smgr);
+	Entity(std::string const & meshPath, std::string const & name, iscene::ISceneManager *smgr);
 
-	irr::scene::IAnimatedMesh						*getMesh() const;
-	irr::scene::IAnimatedMeshSceneNode				*getNode() const;
+	iscene::IAnimatedMesh						*getMesh() const;
+	iscene::IAnimatedMeshSceneNode				*getNode() const;
 
-	void											setWorldCollision(irr::scene::ISceneNodeAnimatorCollisionResponse *worldCollision);
-	irr::scene::ISceneNodeAnimatorCollisionResponse	*getWorldCollision();
+	void											setWorldCollision(iscene::ISceneNodeAnimatorCollisionResponse *worldCollision);
+	iscene::ISceneNodeAnimatorCollisionResponse	*getWorldCollision();
 };
 
 #endif

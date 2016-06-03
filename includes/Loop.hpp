@@ -1,31 +1,127 @@
 #ifndef LOOP_HPP_
 # define LOOP_HPP_
 
-# include <irrlicht.h>
-
+# include "IncludeIrrlicht.hpp"
 # include "Player.hpp"
-# include "Input.hpp"
 
-struct device_t
+namespace core
 {
-	InputHandler				receiver;
-	irr::IrrlichtDevice*		ptr;
-	irr::video::IVideoDriver*	driver;
-	irr::scene::ISceneManager*	smgr;
-	irr::gui::IGUIEnvironment*	guienv;
-};
+  class ILoop // loop interface
+  {
+  public:
+    virtual ~ILoop() {}
+    virtual bool init(void) = 0;
+    virtual int loop(void) = 0;
+  };
 
-class MenuLoop
-{
-private:
-	device_t		*_device;
-	const wchar_t	*_title;
-public:
-	MenuLoop(device_t *device);
-	~MenuLoop();
-public:
-	bool	init();
-	bool	loop();
-};
+  template<class T>
+  class Loop: public ILoop // generic loop declarations
+  {
+  protected: // protected attributes
+    core::device_t *_device;
+    std::wstring const &_title;
+  protected: // protected constructors and operators
+    Loop(core::device_t *device, std::wstring const &title)
+      : _device(device), _title(title)
+    {
+      device->ptr->setWindowCaption(title.c_str());
+      device->guienv->addStaticText(title.c_str(), icore::rect<irr::s32>(10,10,260,22), true);
+    }
+
+  public: // public methods
+    bool init(void)
+    {
+      return (static_cast<T *>(this)->_init());
+    }
+    int loop(void)
+    {
+      return (static_cast<T *>(this)->_loop());
+    }
+  };
+
+  class MenuLoop: public Loop<MenuLoop> // loop derivate for menu
+  {
+    friend class Loop<MenuLoop>; // Loop class must access private derived methods
+  public:
+    MenuLoop(core::device_t *device);
+  private:
+    bool _init(void);
+    int _loop(void);
+  };
+
+  class GameLoop: public Loop<GameLoop> // loop derivate for games
+  {
+    friend class Loop<GameLoop>;  // Loop class must access private derived methods
+    // iscene::IAnimatedMesh *map;
+    // iscene::IMeshSceneNode *map_node;
+    // iscene::IAnimatedMesh *player_mesh;
+    // iscene::IAnimatedMeshSceneNode *player_node;
+    // iscene::IAnimatedMesh *ennemy_mesh;
+    // iscene::IAnimatedMeshSceneNode *ennemy_node;
+    // Player *player;
+    // Camera *camera;
+    // iscene::IMetaTriangleSelector *meta;
+    // icore::array<iscene::ISceneNode *> nodes;
+    // iscene::ISceneNodeAnimator* anim;
+    // irr::u32 before;
+    // irr::u32 now;
+    // irr::f32 dt;
+  public:
+    GameLoop(core::device_t *device);
+  private:
+    bool _init(void);
+    int _loop(void);
+  };
+
+  // you can stop read from here, this code will not be used
+  template <class T>
+  class LoopAllocator // vector allocator to stock every Loop derivated class
+  {
+    class Padding: public ILoop // sizeof(ILoop) is too small so..
+    {
+      char padding[sizeof(device_t *) +
+		   sizeof(std::wstring const)];
+    };
+    bool round;
+  public: // vetor use value type to call the constructors
+    typedef Padding value_type;
+  public:
+    Padding *allocate(std::size_t const) const
+    {
+      return (reinterpret_cast<Padding *>
+	      (::operator new
+	       (sizeof(MenuLoop) + sizeof(GameLoop))));
+    }
+
+    template <class _Obj, class ..._Args>
+    void construct(_Obj * const ptr, _Args &&... args)
+    {
+      this->round =! this->round;
+      if (this->round)
+	::new (reinterpret_cast<void *>(ptr))
+	    MenuLoop(std::forward<_Args>(args)...);
+      else
+	::new (reinterpret_cast<void *>(ptr))
+	    GameLoop(std::forward<_Args>(args)...);
+    }
+
+    template <class _Obj>
+    void destroy(_Obj * const ptr) const
+    {
+      ptr->~_Obj();
+    }
+
+    void deallocate(Padding * const ptr, std::size_t) const
+    {
+      ::operator delete(ptr);
+    }
+
+  private:
+    constexpr std::size_t max_size(void) const
+    {
+      return (((std::size_t)(-1)) / sizeof(Padding));
+    }
+  };
+}
 
 #endif /* !LOOP_HPP_ */

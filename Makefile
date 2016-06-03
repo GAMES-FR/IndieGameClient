@@ -24,6 +24,7 @@ LDLIBS :=	-l Irrlicht
 NAME :=		indie
 SRC :=		main.cpp \
 		MenuLoop.cpp \
+		GameLoop.cpp \
 		Player.cpp \
 		Camera.cpp \
 		Entity.cpp \

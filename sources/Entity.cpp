@@ -1,24 +1,24 @@
 #include "Entity.hpp"
 
-Entity::Entity(std::string const & meshPath, std::string const & name, irr::scene::ISceneManager *smgr) {
+Entity::Entity(std::string const & meshPath, std::string const & name, iscene::ISceneManager *smgr) {
 	this->mesh = smgr->getMesh(meshPath.c_str());
 	this->node = smgr->addAnimatedMeshSceneNode(this->mesh);
 	this->node->setName(name.c_str());
 	this->smgr = smgr;
 }
 
-irr::scene::IAnimatedMesh						*Entity::getMesh() const {
+iscene::IAnimatedMesh						*Entity::getMesh() const {
 	return (this->mesh);
 }
 
-irr::scene::IAnimatedMeshSceneNode				*Entity::getNode() const {
+iscene::IAnimatedMeshSceneNode				*Entity::getNode() const {
 	return (this->node);
 }
 
-void											Entity::setWorldCollision(irr::scene::ISceneNodeAnimatorCollisionResponse * worldCollision) {
+void											Entity::setWorldCollision(iscene::ISceneNodeAnimatorCollisionResponse * worldCollision) {
 	this->worldCollision = worldCollision;
 }
 
-irr::scene::ISceneNodeAnimatorCollisionResponse	*Entity::getWorldCollision() {
+iscene::ISceneNodeAnimatorCollisionResponse	*Entity::getWorldCollision() {
 	return (this->worldCollision);
 }
