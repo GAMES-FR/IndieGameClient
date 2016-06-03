@@ -13,24 +13,26 @@ core::Receiver::Receiver()
     _core_keys
     { MOVE_FOWARD, MOVE_LEFT, MOVE_BACK, MOVE_RIGHT, MOVE_REVERSE,
 	MOVE_STAP, GAME_FIRE, GUI_MENU, GUI_SCREEN }
+ {
+   int ct;
+
+   ct = -1;
+   while (++ct < KEYS_COUNT)
+     this->match_irr_keys[this->_irr_keys[ct]] = this->_core_keys[ct];
+ }
+
+bool core::Receiver::match_input(irr::EKEY_CODE const code) const
 {
   int ct;
 
   ct = -1;
-  while (++ct < KEYS_COUNT)
-    this->match_irr_keys[this->_irr_keys[ct]] = this->_core_keys[ct];
-}
-
-bool core::Receiver::match_input(irr::EKEY_CODE const code) const
-{
-  int ct = -1;
   while (++ct < KEYS_COUNT)
     if (code == this->_irr_keys[ct])
       return (true);
   return (false);
 }
 
-bool		core::Receiver::OnEvent(irr::SEvent const &event)
+bool		core::Receiver::OnEvent(const irr::SEvent& event)
 {
   if (event.EventType == irr::EET_KEY_INPUT_EVENT
       && match_input(event.KeyInput.Key))

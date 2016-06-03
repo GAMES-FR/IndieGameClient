@@ -1,0 +1,822 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 5.5 5.5.3.2642 Release
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl trackssingle01
+Ka 0.352941 0.352941 0.352941
+Kd 1 1 1
+Ks 0.564706 0.564706 0.564706
+illum 2
+Ns 45.2548
+map_Kd textures/single_track_chain.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl metal_gratin01
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 17.1484
+map_Kd textures/yellow_metal_grid.png
+map_bump 
+bump 
+map_opacity textures/yellow_metal_grid.png
+map_d textures/yellow_metal_grid.png
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl seatdrill_ma01
+Ka 0.835294 0.835294 0.835294
+Kd 1 1 1
+Ks 0.643137 0.643137 0.643137
+illum 2
+Ns 36.7583
+map_Kd textures/drill_machine_seat.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl main_yellow_01
+Ka 0.529412 0.529412 0.529412
+Kd 1 1 1
+Ks 0.529412 0.529412 0.529412
+illum 2
+Ns 42.2243
+map_Kd textures/yellow_rusty_metal.png
+map_bump textures/yellow_rusty_metal_ddn.png
+bump textures/yellow_rusty_metal_ddn.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl black_metalb01
+Ka 0.27451 0.27451 0.27451
+Kd 1 1 1
+Ks 0.678431 0.678431 0.678431
+illum 2
+Ns 22.6274
+map_Kd textures/horizontal_grey_metal.png
+map_bump textures/horizontal_yellow_metal_ddn.png
+bump textures/horizontal_yellow_metal_ddn.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl main_yel_01
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 45.2548
+map_Kd textures/horizontal_yellow_metal.png
+map_bump textures/horizontal_yellow_metal_ddn.png
+bump textures/horizontal_yellow_metal_ddn.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl chromatic_su01
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0.756863 0.756863 0.756863
+illum 2
+Ns 19.6983
+map_Kd textures/chromatic_surface.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl catwalkship_01
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0.392157 0.392157 0.392157
+illum 2
+Ns 34.2967
+map_Kd textures/side_catwalk.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl mainbulldoze01
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 32
+map_Kd textures/bulldozer_main.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl pusherpusher01
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 51.9842
+map_Kd textures/pusher_main.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl decalsdrilli01
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 55.7152
+map_Kd textures/drilling_machine_decals.png
+map_bump 
+bump 
+map_opacity textures/drilling_machine_decals.png
+map_d textures/drilling_machine_decals.png
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl exhaust_meta01
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0.65098 0.65098 0.65098
+illum 2
+Ns 24.2515
+map_Kd textures/exhaust_metal.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl black_rubber01
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0.658824 0.658824 0.658824
+illum 2
+Ns 19.6983
+map_Kd textures/black_tile.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl detailsbulld01
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 17.1484
+map_Kd textures/bulldozer_details.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__76
+Ka 0.352941 0.352941 0.352941
+Kd 0.352941 0.352941 0.352941
+Ks 0.564706 0.564706 0.564706
+illum 2
+Ns 45.2548
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl trackssingle010
+Ka 0.352941 0.352941 0.352941
+Kd 1 1 1
+Ks 0.564706 0.564706 0.564706
+illum 2
+Ns 45.2548
+map_Kd textures/single_track_chain.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl metal_gratin010
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 17.1484
+map_Kd textures/yellow_metal_grid.png
+map_bump 
+bump 
+map_opacity textures/yellow_metal_grid.png
+map_d textures/yellow_metal_grid.png
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl main_yellow_010
+Ka 0.529412 0.529412 0.529412
+Kd 1 1 1
+Ks 0.529412 0.529412 0.529412
+illum 2
+Ns 42.2243
+map_Kd textures/yellow_rusty_metal.png
+map_bump textures/yellow_rusty_metal_ddn.png
+bump textures/yellow_rusty_metal_ddn.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl black_metalb010
+Ka 0.27451 0.27451 0.27451
+Kd 1 1 1
+Ks 0.678431 0.678431 0.678431
+illum 2
+Ns 22.6274
+map_Kd textures/horizontal_grey_metal.png
+map_bump textures/horizontal_yellow_metal_ddn.png
+bump textures/horizontal_yellow_metal_ddn.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl main_yel_010
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 45.2548
+map_Kd textures/horizontal_yellow_metal.png
+map_bump textures/horizontal_yellow_metal_ddn.png
+bump textures/horizontal_yellow_metal_ddn.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl catwalkship_010
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0.392157 0.392157 0.392157
+illum 2
+Ns 34.2967
+map_Kd textures/side_catwalk.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl mainbulldoze010
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 32
+map_Kd textures/bulldozer_main.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl pusherpusher010
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 51.9842
+map_Kd textures/pusher_main.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl detailsbulld010
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 17.1484
+map_Kd textures/bulldozer_details.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__61
+Ka 0.352941 0.352941 0.352941
+Kd 0.352941 0.352941 0.352941
+Ks 0.564706 0.564706 0.564706
+illum 2
+Ns 45.2548
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl trackssingle011
+Ka 0.352941 0.352941 0.352941
+Kd 1 1 1
+Ks 0.564706 0.564706 0.564706
+illum 2
+Ns 45.2548
+map_Kd textures/single_track_chain.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl metal_gratin011
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 17.1484
+map_Kd textures/yellow_metal_grid.png
+map_bump 
+bump 
+map_opacity textures/yellow_metal_grid.png
+map_d textures/yellow_metal_grid.png
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl seatdrill_ma010
+Ka 0.835294 0.835294 0.835294
+Kd 1 1 1
+Ks 0.643137 0.643137 0.643137
+illum 2
+Ns 36.7583
+map_Kd textures/drill_machine_seat.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl main_yellow_011
+Ka 0.529412 0.529412 0.529412
+Kd 1 1 1
+Ks 0.529412 0.529412 0.529412
+illum 2
+Ns 42.2243
+map_Kd textures/yellow_rusty_metal.png
+map_bump textures/yellow_rusty_metal_ddn.png
+bump textures/yellow_rusty_metal_ddn.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl black_metalb011
+Ka 0.27451 0.27451 0.27451
+Kd 1 1 1
+Ks 0.678431 0.678431 0.678431
+illum 2
+Ns 22.6274
+map_Kd textures/horizontal_grey_metal.png
+map_bump textures/horizontal_yellow_metal_ddn.png
+bump textures/horizontal_yellow_metal_ddn.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl main_yel_011
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 45.2548
+map_Kd textures/horizontal_yellow_metal.png
+map_bump textures/horizontal_yellow_metal_ddn.png
+bump textures/horizontal_yellow_metal_ddn.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl chromatic_su010
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0.756863 0.756863 0.756863
+illum 2
+Ns 19.6983
+map_Kd textures/chromatic_surface.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl catwalkship_011
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0.392157 0.392157 0.392157
+illum 2
+Ns 34.2967
+map_Kd textures/side_catwalk.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl mainbulldoze011
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 32
+map_Kd textures/bulldozer_main.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl pusherpusher011
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 51.9842
+map_Kd textures/pusher_main.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl exhaust_meta010
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0.65098 0.65098 0.65098
+illum 2
+Ns 24.2515
+map_Kd textures/exhaust_metal.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl detailsbulld011
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 17.1484
+map_Kd textures/bulldozer_details.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__50
+Ka 0.352941 0.352941 0.352941
+Kd 0.352941 0.352941 0.352941
+Ks 0.564706 0.564706 0.564706
+illum 2
+Ns 45.2548
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl trackssingle012
+Ka 0.352941 0.352941 0.352941
+Kd 1 1 1
+Ks 0.564706 0.564706 0.564706
+illum 2
+Ns 45.2548
+map_Kd textures/single_track_chain.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl metal_gratin012
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 17.1484
+map_Kd textures/yellow_metal_grid.png
+map_bump 
+bump 
+map_opacity textures/yellow_metal_grid.png
+map_d textures/yellow_metal_grid.png
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl seatdrill_ma011
+Ka 0.835294 0.835294 0.835294
+Kd 1 1 1
+Ks 0.643137 0.643137 0.643137
+illum 2
+Ns 36.7583
+map_Kd textures/drill_machine_seat.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl main_yellow_012
+Ka 0.529412 0.529412 0.529412
+Kd 1 1 1
+Ks 0.529412 0.529412 0.529412
+illum 2
+Ns 42.2243
+map_Kd textures/yellow_rusty_metal.png
+map_bump textures/yellow_rusty_metal_ddn.png
+bump textures/yellow_rusty_metal_ddn.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl black_metalb012
+Ka 0.27451 0.27451 0.27451
+Kd 1 1 1
+Ks 0.678431 0.678431 0.678431
+illum 2
+Ns 22.6274
+map_Kd textures/horizontal_grey_metal.png
+map_bump textures/horizontal_yellow_metal_ddn.png
+bump textures/horizontal_yellow_metal_ddn.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl main_yel_012
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 45.2548
+map_Kd textures/horizontal_yellow_metal.png
+map_bump textures/horizontal_yellow_metal_ddn.png
+bump textures/horizontal_yellow_metal_ddn.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl chromatic_su011
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0.756863 0.756863 0.756863
+illum 2
+Ns 19.6983
+map_Kd textures/chromatic_surface.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl catwalkship_012
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0.392157 0.392157 0.392157
+illum 2
+Ns 34.2967
+map_Kd textures/side_catwalk.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl mainbulldoze012
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 32
+map_Kd textures/bulldozer_main.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl pusherpusher012
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 51.9842
+map_Kd textures/pusher_main.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl exhaust_meta011
+Ka 0.392157 0.392157 0.392157
+Kd 1 1 1
+Ks 0.65098 0.65098 0.65098
+illum 2
+Ns 24.2515
+map_Kd textures/exhaust_metal.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl detailsbulld012
+Ka 0.470588 0.470588 0.470588
+Kd 1 1 1
+Ks 0.470588 0.470588 0.470588
+illum 2
+Ns 17.1484
+map_Kd textures/bulldozer_details.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__37
+Ka 0.352941 0.352941 0.352941
+Kd 0.352941 0.352941 0.352941
+Ks 0.564706 0.564706 0.564706
+illum 2
+Ns 45.2548
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 

@@ -41,22 +41,6 @@ namespace core
     bool OnEvent(irr::SEvent const &event);
   };
 
-  // class InputHandler : public irr::IEventReceiver
-  // {
-  // private:
-  //   // Handler des touches actuellement pressées ou non
-  //   bool					_keyIsDown[irr::KEY_KEY_CODES_COUNT];
-  //   irr::f32				_mouseWheel;
-
-  // public:
-  //   InputHandler();
-  //   // Override de la méthode OnEvent de Irrlicht
-  //   virtual bool			OnEvent(const irr::SEvent& event);
-  //   virtual bool			isKeyDown(irr::EKEY_CODE keyCode) const;
-  //   virtual void			setMouseWheel(irr::f32 value);
-  //   virtual irr::f32		getMouseWheel() const;
-  // };
-
   struct device_t
   {
     core::Receiver receiver;
