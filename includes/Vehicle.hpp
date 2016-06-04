@@ -80,6 +80,7 @@ namespace Vehicle {
 		void			setHeading(float heading);
 		Vector::Vec2	getPosition() const;
 		float			getHeading() const;
+		void			calmezVous(float angle, float force);
 	};
 }
 

@@ -29,6 +29,12 @@ void Player::update(irr::f32 dt)
 	icore::vector3df rot = node->getRotation();
 
 	Vector::Vec2 p(pos.X / MOVE_SCALE, pos.Z / MOVE_SCALE);
+	Vector::Vec2 kek = this->_vehicle.getPosition();
+	if (abs(p.x - kek.x) > 0.1 || abs(p.y - kek.y) > 0.001) {
+		std::cout << "Calmez vous !" << std::endl;
+		this->_vehicle.calmezVous(M_PI, 10.f);
+	}
+
 	this->_vehicle.setPosition(p);
 
 	this->_vehicle.update((double)dt);
@@ -45,7 +51,11 @@ void Player::update(irr::f32 dt)
 	while (i < this->entity.getWorldCollision().size())
 	{
 		if (this->entity.getWorldCollision()[i]->collisionOccurred())
-			std::cout << this->entity.getWorldCollision()[i]->getCollisionNode()->getName() << std::endl;
+		{
+			irr::core::vector3df lole = this->entity.getWorldCollision()[i]->getCollisionPoint();
+			irr::core::vector3df keko = this->entity.getNode()->getPosition();
+			//std::cout << lole.X << " - " << lole.Y << " - " << lole.Z << std::endl;
+		}
 		i++;
 	}
 

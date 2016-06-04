@@ -43,7 +43,7 @@ bool	core::GameLoop::_init(void)
         this->_player = new Player(std::string(ASSETS_DIR"/car/Avent.obj"), this->_device->smgr);
 
 	iscene::ISceneNode *playerNode = this->_player->getEntity().getNode();
-	playerNode->setScale(icore::vector3df(3.0f, 3.0f, 3.0f));
+	playerNode->setScale(icore::vector3df(2.0f, 2.0f, 2.0f));
 	playerNode->setPosition(icore::vector3df(100, 100, 100));
 	playerNode->setMaterialFlag(ivideo::EMF_LIGHTING, false);
 	playerNode->setName("player");

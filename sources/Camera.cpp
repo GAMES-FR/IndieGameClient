@@ -5,7 +5,7 @@ Camera::Camera(irr::IrrlichtDevice *device)
 {
 	this->_device = device;
 	this->_distance = 40;
-	this->_angle = 20.f;
+	this->_angle = 30.f;
 	this->_angleOffset = 90.f;
 	this->_curX = 0;
 	this->_curY = 0;
