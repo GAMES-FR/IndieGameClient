@@ -10,9 +10,9 @@
 #  define ASSETS_DIR "./assets"
 # endif
 
-# define MAP_MESH_PATH		ASSETS_DIR"map/awp_india.obj"
+# define MAP_MESH_PATH		ASSETS_DIR"mp/arena.obj"
 # define CAR_MESH_PATH		ASSETS_DIR"tcar/f.obj"
-# define ENEMY_MESH_PATH	ASSETS_DIR"truck/Truck.obj"
+# define ENEMY_MESH_PATH	ASSETS_DIR"truck/camion.obj"
 
 # define MISSILE_MESH_PATH	ASSETS_DIR"missils/missils.obj"	
 # define MISSILE_SCALE		1.f

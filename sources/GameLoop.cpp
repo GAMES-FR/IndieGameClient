@@ -28,6 +28,8 @@ bool	core::GameLoop::_init(void)
 	iscene::IMeshSceneNode			*map_node = 0;
 	iscene::IAnimatedMesh			*ennemy_mesh = this->_device->smgr->getMesh(ENEMY_MESH_PATH);
 	iscene::IAnimatedMeshSceneNode	*ennemy_node = 0;
+	iscene::ISceneNode* skydome = this->_device->smgr->addSkyDomeSceneNode(this->_device->driver->getTexture("../../assets/sky/ashrand_bright_stormy_front.png"), 16, 8, 1.0f, 2.0f);
+	skydome->setRotation(irr::core::vector3df(0.f, 0.f, 0.f));
 
 	if (map)
 	{
@@ -35,7 +37,7 @@ bool	core::GameLoop::_init(void)
 		if (map_node)
 		{
 			map_node->setMaterialFlag(ivideo::EMF_LIGHTING, false);
-			map_node->setPosition(icore::vector3df(0, 0, 0));
+			map_node->setPosition(icore::vector3df(0, -3000, 0));
 			map_node->setName("map");
 		}
 	}

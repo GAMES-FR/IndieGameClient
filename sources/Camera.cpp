@@ -4,7 +4,7 @@
 Camera::Camera(irr::IrrlichtDevice *device)
 {
 	this->_device = device;
-	this->_distance = 40;
+	this->_distance = 100;
 	this->_angle = 30.f;
 	this->_angleOffset = 90.f;
 	this->_curX = 0;
@@ -16,7 +16,7 @@ void					Camera::updateCamera(Player *player)
 {
 	iscene::ICameraSceneNode	*camera = this->_device->getSceneManager()->getActiveCamera();
 	iscene::ISceneNode			*node = player->getEntity().getNode();
-
+	camera->setFarValue(1000000);
 	float yf = node->getAbsolutePosition().Y + this->_distance * sin(this->_angle / 180.f * M_PI);
 	float d = this->_distance * cos(this->_angle / 180.f * M_PI);
 
