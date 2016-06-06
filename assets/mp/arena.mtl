@@ -1,0 +1,394 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 05.06.2016 23:11:45
+
+newmtl 6ih_ironhorde_traincart02_0
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_door_01.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_door_01.png
+
+newmtl 6ih_ironhorde_traincart02_1
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_wood_02.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_wood_02.png
+
+newmtl 6ih_ironhorde_traincart02_2
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_interiorwall_02_gray.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_interiorwall_02_gray.png
+
+newmtl 6ih_ironhorde_traincart02_3
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_brackets_05.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_brackets_05.png
+
+newmtl 6ih_ironhorde_traincart02_4
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_brackets_02.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_brackets_02.png
+
+newmtl 6ih_ironhorde_traincart02_5
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_trims_02.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_trims_02.png
+
+newmtl 6ih_ironhorde_traincart02_6
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_metalrail_wide.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_metalrail_wide.png
+
+newmtl 6ih_ironhorde_traincart02_7
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_brackets_03.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_brackets_03.png
+
+newmtl 6ih_ironhorde_traincart02_8
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_brackets_01.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_brackets_01.png
+
+newmtl 6ih_ironhorde_traincart02_9
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_brackets.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_brackets.png
+
+newmtl 6ih_ironhorde_traincart02_10
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_spikes_01.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_spikes_01.png
+
+newmtl 6ih_ironhorde_traincart02_11
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_spikestaple_01.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_spikestaple_01.png
+
+newmtl 6ih_ironhorde_traincart02_12
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_roof_01.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_roof_01.png
+
+newmtl 6ih_ironhorde_traincart02_13
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_roof_02.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_roof_02.png
+
+newmtl 6ih_ironhorde_traincart02_14
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_metalplate01.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_metalplate01.png
+
+newmtl 6ih_ironhorde_traincart02_15
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_wood_01.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_wood_01.png
+
+newmtl 6ih_ironhorde_traincart02_16
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_woodstairs_01.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_woodstairs_01.png
+
+newmtl 6ih_ironhorde_traincart02_17
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_wooddeck_01.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_wooddeck_01.png
+
+newmtl 6ih_ironhorde_traincart02_18
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_brackets_v3.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_brackets_v3.png
+
+newmtl 6ih_ironhorde_traincart02_19
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_metal_01_gray.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_metal_01_gray.png
+
+newmtl 6ih_ironhorde_traincart02_20
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_interiorwall_02.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_interiorwall_02.png
+
+newmtl 6ih_ironhorde_traincart02_21
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_trims_01.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_trims_01.png
+
+newmtl 6ih_ironhorde_traincart02_22
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_metalrail.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_metalrail.png
+
+newmtl 6ih_ironhorde_traincart02_23
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\grey_04.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\grey_04.png
+
+newmtl 6ih_ironhorde_traincart02_24
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_wall_02.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6ih_ironhorde_wall_02.png
+
+newmtl 6ih_ironhorde_traincart02_25
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_sheetmetal.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_sheetmetal.png
+
+newmtl 6ih_ironhorde_traincart02_26
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_ventbeam_02.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_ventbeam_02.png
+
+newmtl 6ih_ironhorde_traincart02_27
+	Ns 43.2193
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7000 0.7000 0.7000
+	Kd 0.8000 0.8000 0.8000
+	Ks 0.2000 0.2000 0.2000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_floorgrate.png
+	map_Kd C:\Users\Kallen\Desktop\arena.fbm\6du_bkfoundry_floorgrate.png
