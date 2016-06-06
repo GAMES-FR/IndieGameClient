@@ -1,0 +1,30 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 03.06.2016 23:23:30
+
+newmtl creature_missilerocketmount_missilerocketmount_m2_Geoset_000
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.2500 0.2500 0.2500
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka missils_rocketskin1.png
+	map_Kd missils_rocketskin1.png
+
+newmtl creature_missilerocketmount_missilerocketmount_m2_Geoset_001_Lum
+	Ns 0.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 0.0000 0.0000 0.0000
+	Ks 1.0000 0.3529 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka missils_red_glow3.png
+	map_Kd missils_red_glow3.png

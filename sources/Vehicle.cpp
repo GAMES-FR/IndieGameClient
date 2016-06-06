@@ -170,7 +170,7 @@ Vehicle::Config *Vehicle::getDefaultConfig() {
 	cfg->brakeForce = 12000.f;
 	cfg->eBrakeForce = cfg->brakeForce / 2.5;
 	cfg->weightTransfer = 0.2;  // How much weight is transferred during acceleration/braking
-	cfg->maxSteer = 0.6;  // Maximum steering angle in radians
+	cfg->maxSteer = 1.5;  // Maximum steering angle in radians
 	cfg->cornerStiffnessFront = 5.0;
 	cfg->cornerStiffnessRear = 5.2;
 	cfg->airResist = 2.5;	// air resistance (* vel)

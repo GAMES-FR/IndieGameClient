@@ -14,13 +14,14 @@ private:
 		
 public:
 	Entity(std::string const & meshPath, std::string const & name, iscene::ISceneManager *smgr);
+	~Entity();
 
 	iscene::IAnimatedMesh						*getMesh() const;
 	iscene::IAnimatedMeshSceneNode				*getNode() const;
 
-	//void										setWorldCollision(std::vector<iscene::ISceneNodeAnimatorCollisionResponse*> worldCollision);
+	void														setWorldCollision(std::vector<iscene::ISceneNodeAnimatorCollisionResponse*> worldCollision);
 	void														addWorldCollision(iscene::ISceneNodeAnimatorCollisionResponse *anim);
-	std::vector<iscene::ISceneNodeAnimatorCollisionResponse*>	getWorldCollision() const;
+	std::vector<iscene::ISceneNodeAnimatorCollisionResponse*>	const & getWorldCollision() const;
 };
 
 #endif

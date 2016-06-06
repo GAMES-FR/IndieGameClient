@@ -12,8 +12,8 @@
  */
 int main()
 {
-  core::device_t device;
-  core::ILoop *loop[2];
+  core::device_t	device;
+  core::ILoop		*loop[2];
   int ret;
 
   /* lib and device init */

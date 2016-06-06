@@ -24,9 +24,9 @@ bool	core::GameLoop::_init(void)
   this->_device->smgr->addCameraSceneNode(0,
 				    icore::vector3df(0,0,0),
 				    icore::vector3df(0,0,0));	// Nodes and meshes to print 
-	iscene::IAnimatedMesh			*map = this->_device->smgr->getMesh(ASSETS_DIR"/map/awp_india.obj");
+	iscene::IAnimatedMesh			*map = this->_device->smgr->getMesh(MAP_MESH_PATH);
 	iscene::IMeshSceneNode			*map_node = 0;
-	iscene::IAnimatedMesh			*ennemy_mesh = this->_device->smgr->getMesh(ASSETS_DIR"/truck/Truck.obj");
+	iscene::IAnimatedMesh			*ennemy_mesh = this->_device->smgr->getMesh(ENEMY_MESH_PATH);
 	iscene::IAnimatedMeshSceneNode	*ennemy_node = 0;
 
 	if (map)
@@ -40,7 +40,7 @@ bool	core::GameLoop::_init(void)
 		}
 	}
 
-        this->_player = new Player(std::string(ASSETS_DIR"/car/Avent.obj"), this->_device->smgr);
+        this->_player = new Player(std::string(CAR_MESH_PATH), this->_device->smgr);
 
 	iscene::ISceneNode *playerNode = this->_player->getEntity().getNode();
 	playerNode->setScale(icore::vector3df(2.0f, 2.0f, 2.0f));
@@ -85,7 +85,7 @@ int	core::GameLoop::_loop(void)
 
   this->_player->update(dt);
   this->_camera->updateCamera(this->_player);
-  this->_device->driver->beginScene(true, true, ivideo::SColor(255,200,200,200));
+  this->_device->driver->beginScene(true, true, ivideo::SColor(255, 200, 200, 200));
   this->_device->smgr->drawAll();
   this->_device->driver->endScene();
   return (OK_CODE);

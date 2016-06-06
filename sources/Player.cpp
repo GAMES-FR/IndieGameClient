@@ -1,4 +1,5 @@
 #include "Player.hpp"
+#include <vector>
 #include <iostream>
 
 #define MOVE_SCALE 10
@@ -38,7 +39,7 @@ void Player::update(irr::f32 dt)
 	this->_vehicle.setPosition(p);
 
 	this->_vehicle.update((double)dt);
-	
+
 	Vector::Vec2 vehiclePos = this->_vehicle.getPosition();
 	pos.X = vehiclePos.x * MOVE_SCALE;
 	pos.Z = vehiclePos.y * MOVE_SCALE;
@@ -46,22 +47,60 @@ void Player::update(irr::f32 dt)
 	node->setPosition(pos);
 	node->setRotation(rot);
 
-	//Debug : pour tester ce qui collisionne :)
-	unsigned int i = 0;
-	while (i < this->entity.getWorldCollision().size())
-	{
-		if (this->entity.getWorldCollision()[i]->collisionOccurred())
-		{
-			irr::core::vector3df lole = this->entity.getWorldCollision()[i]->getCollisionPoint();
-			irr::core::vector3df keko = this->entity.getNode()->getPosition();
-			//std::cout << lole.X << " - " << lole.Y << " - " << lole.Z << std::endl;
-		}
-		i++;
-	}
-
 	// Ce que charpe à rajouter
 	if ((core::Receiver::inputs & core::GAME_FIRE) && this->stopped_fire)
 		fire_blipblipblipblipblip();
+
+	// Check si le missile collisionne : appliquez des calmez-vous aux entités avec des PV ;)
+	/*bool omg = false;
+	for (std::vector<Missile *>::const_iterator it = this->_missiles.begin(); it != this->_missiles.end();)
+	{
+		std::cout << "it1" << std::endl;
+		const std::vector<iscene::ISceneNodeAnimatorCollisionResponse *> worldCollision = (*it)->getEntity().getWorldCollision();
+		for (std::vector<iscene::ISceneNodeAnimatorCollisionResponse *>::const_iterator it2 = worldCollision.begin();
+		it2 != worldCollision.end(); ++it2)
+		{
+			std::cout << "noooooooooooooooo" << std::endl;
+			if ((*it2)->collisionOccurred())
+			{
+				delete (*it);
+				this->_missiles.erase(it);
+				omg = true;
+				break;
+			}
+		}
+		if (!omg)
+		{
+			++it;
+			omg = false;
+		}
+	}*/
+
+	unsigned int	i = 0;
+	while (i < this->_missiles.size())
+	{
+		std::cout << "Checking " << this->_missiles[i]->getEntity().getNode()->getName() << " n" << i <<
+			"\n - Missile address : << " << &this->_missiles[i] << " - Mesh address : << " << this->_missiles[i]->getEntity().getMesh() <<
+			"\n - Missile queue = " << this->_missiles.size() << std::endl;
+		unsigned int j = 0;
+		while (j < this->_missiles[i]->getEntity().getWorldCollision().size())
+		{
+			if (this->_missiles[i]->getEntity().getWorldCollision()[j]->collisionOccurred())
+			{
+				std::cout << "Deleting missile n" << i << "." << std::endl;
+				delete this->_missiles[i];
+				std::cout << "Erasing missile n" << i << " from the vector." << std::endl;
+				this->_missiles.erase(this->_missiles.begin() + i);
+				std::cout << "missile erased." << std::endl;
+				break;
+				//goto jesuismarre;
+			}
+			j++;
+		}
+		i++;
+	}
+jesuismarre:
+	i = 0;
 }
 
 void					Player::setCollisions(iscene::ISceneManager* &smgr)
@@ -105,7 +144,7 @@ void					Player::setCollisions(iscene::ISceneManager* &smgr)
 
 				selector->drop();
 				this->entity.getNode()->addAnimator(anim);
-				this->entity.addWorldCollision(anim);//getWorldCollision().push_back(anim);
+				this->entity.addWorldCollision(anim);
 				anim->drop();
 				break;
 
@@ -114,52 +153,6 @@ void					Player::setCollisions(iscene::ISceneManager* &smgr)
 			}
 		}
 	}
-	/*iscene::IMetaTriangleSelector*			meta = smgr->createMetaTriangleSelector(); // Hold several triangles at a time
-	icore::array<iscene::ISceneNode*>	nodes;
-	iscene::ISceneNode *playerNode = this->entity.getNode();
-
-	smgr->getSceneNodesFromType(iscene::ESNT_ANY, nodes); // Find all nodes
-
-	for (irr::u32 i = 0; i < nodes.size(); ++i)
-	{
-		iscene::ISceneNode*			node = nodes[i];
-		iscene::ITriangleSelector*	selector = 0;
-
-		if (node != playerNode)
-		{
-			switch (node->getType())
-			{
-			case iscene::ESNT_ANIMATED_MESH:
-				selector = smgr->createTriangleSelectorFromBoundingBox(node);
-				break;
-
-			case iscene::ESNT_OCTREE:
-				selector = smgr->createOctreeTriangleSelector(((iscene::IMeshSceneNode*)node)->getMesh(), node);
-				break;
-
-			default:
-				break;
-			}
-
-			if (selector)
-			{
-				// Add selector to the meta then drop it *DUBSTEP INTENSIFIES*
-				meta->addTriangleSelector(selector);
-				selector->drop();
-			}
-		}
-	}
-
-	if (meta)
-	{
-		iscene::ISceneNodeAnimator* anim = smgr->createCollisionResponseAnimator(
-			meta, playerNode, playerNode->getTransformedBoundingBox().getExtent(),
-			icore::vector3df(0, -5.f, 0));
-		meta->drop();
-
-		playerNode->addAnimator(anim);
-		anim->drop();
-	}*/
 }
 
 // Ce que charpe à rajouter

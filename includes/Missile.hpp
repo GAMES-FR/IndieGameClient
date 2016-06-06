@@ -14,6 +14,8 @@ private:
 public:
 	Missile(iscene::ISceneNode *, iscene::ISceneManager *);
 	~Missile();
+
+	Entity const	& getEntity() const;
 };
 
 #endif /* !MISSILE_HPP_ */

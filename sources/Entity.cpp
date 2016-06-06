@@ -1,10 +1,19 @@
 #include "Entity.hpp"
+#include <iostream>
 
 Entity::Entity(std::string const & meshPath, std::string const & name, iscene::ISceneManager *smgr) {
 	this->mesh = smgr->getMesh(meshPath.c_str());
 	this->node = smgr->addAnimatedMeshSceneNode(this->mesh);
+	this->node->setMaterialFlag(ivideo::EMF_LIGHTING, false);
 	this->node->setName(name.c_str());
 	this->smgr = smgr;
+}
+
+Entity::~Entity()
+{
+	std::cout << this->getNode()->getName() << " deleted." << std::endl;
+	this->worldCollision.clear();
+	this->node->remove();
 }
 
 iscene::IAnimatedMesh						*Entity::getMesh() const {
@@ -15,15 +24,15 @@ iscene::IAnimatedMeshSceneNode				*Entity::getNode() const {
 	return (this->node);
 }
 
-/*void										Entity::setWorldCollision(std::vector<iscene::ISceneNodeAnimatorCollisionResponse*> worldCollision) {
+void										Entity::setWorldCollision(std::vector<iscene::ISceneNodeAnimatorCollisionResponse*> worldCollision) {
 	this->worldCollision = worldCollision;
-}*/
+}
 
 void										Entity::addWorldCollision(iscene::ISceneNodeAnimatorCollisionResponse *anim)
 {
 	this->worldCollision.push_back(anim);
 }
 
-std::vector<iscene::ISceneNodeAnimatorCollisionResponse*> Entity::getWorldCollision() const {
+std::vector<iscene::ISceneNodeAnimatorCollisionResponse*> const &Entity::getWorldCollision() const {
 	return (this->worldCollision);
 }
