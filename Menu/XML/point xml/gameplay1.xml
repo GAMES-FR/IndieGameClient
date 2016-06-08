@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel>
+  <!-- player 1 datas -->
+  <data id="TAB_PLAYER1_PSEUDO" type="label">
+    <size w="25%" h="10%" />
+    <position x="0" y="0" />
+  </data>
+  <data id="TAB_PLAYER1_PASTILLE" type="image">
+    <size w="5%" h="10%" />
+    <position x="25%" y="0" />
+  </data>
+  <data id="TAB_PLAYER1_LIFE" type="progress_bar">
+    <size w="25%" h="5%" />
+    <position x="30%" y="0" />
+  </data>
+  <data id="TAB_PLAYER1_BOOST" type="progress_bar">
+    <size w="25%" h="5%" />
+    <position x="30%" y="5%" />
+  </data>
+  <data id="TAB_PLAYER1_BONUS" type="image">
+    <size w="10%" h="10%" />
+    <position x="55%" y="0" />
+  </data>
+  <data id="TAB_PLAYER1_STATS" type="label">
+    <size w="10%" h="10%" />
+    <position x="65%" y="0" />
+  </data>
+
+  <!-- player 2 datas -->
+  <!-- player 1 datas -->
+  <data id="TAB_PLAYER1_PSEUDO" type="label">
+    <size w="25%" h="10%" />
+    <position x="0" y="0" />
+  </data>
+  <data id="TAB_PLAYER1_PASTILLE" type="image">
+    <size w="5%" h="10%" />
+    <position x="25%" y="0" />
+  </data>
+  <data id="TAB_PLAYER1_LIFE" type="progress_bar">
+    <size w="25%" h="5%" />
+    <position x="30%" y="0" />
+  </data>
+  <data id="TAB_PLAYER1_BOOST" type="progress_bar">
+    <size w="25%" h="5%" />
+    <position x="30%" y="5%" />
+  </data>
+  <data id="TAB_PLAYER1_BONUS" type="image">
+    <size w="10%" h="10%" />
+    <position x="55%" y="0" />
+  </data>
+  <data id="TAB_PLAYER1_STATS" type="label">
+    <size w="10%" h="10%" />
+    <position x="65%" y="0" />
+  </data>
+
+  <!-- player 3 datas -->
+  <!-- fuckin truck datas -->
+  <data id="GAME_TRUCK_LIFE" type="progress_bar">
+    <size w="25%" h="5%" />
+    <position x="0" y="90%" />
+  </data>
+  <data id="GAME_TRUCK_BOOST" type="progress_bar">
+    <size w="25%" h="5%" />
+    <position x="0" y="95%" />
+  </data>
+  <data id="GAME_TRUCK_BONUS" type="image">
+    <size w="10%" h="10%" />
+    <position x="25%" y="90%" />
+  </data>
+</panel>

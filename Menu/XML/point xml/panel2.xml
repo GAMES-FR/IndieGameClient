@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel>
+  <title text="Le Jeu">
+    <size w="100%" h="5%" />
+    <position x="0" y="0" />
+  </title>
+
+  <label text="Login :">
+    <size w="30%" h="5%" />
+    <position x="17.5%" y="25%" />
+  </label>
+  <input id="PANEL_LOGIN" text="John Smith">
+    <size w="30%" h="5%" />
+    <position x="52.5%" y="25%" />
+  </input>
+
+  <button id="PANEL_FIND" text="Find Game">
+    <size w="60%" h="5%" />
+    <position x="20%" y="45%" />
+  </button>
+
+  <button id="PANEL_ENTER" text="Enter">
+    <size w="60%" h="5%" />
+    <position x="20%" y="65%" />
+  </button>
+
+  <button id="PANEL_BACK" text="Back">
+    <size w="60%" h="5%" />
+    <position x="20%" y="85%" />
+    <to>panel1.xml</to>
+  </button>
+</panel>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel>
+  <title text="Video and Sound">
+    <size w="100%" h="5%" />
+    <position x="0" y="0" />
+  </title>
+
+  <button id="PANEL_BACK" text="Back">
+    <size w="60%" h="5%" />
+    <position x="20%" y="10%" />
+    <to>panel3.xml</to>
+  </button>
+
+  <scroll w="100%" h="80%" x="0" y="20%">
+    <label text="Fullscreen">
+      <size w="50%" h="5%" />
+      <position x="0" y="0" />
+    </label>
+    <checkbox id="SETTING_FULLSCREEN" checked="false">
+      <position x="55%" y="0" />
+    </checkbox>
+
+    <label text="FPS">
+      <size w="50%" h="5%" />
+      <position x="0" y="6%" />
+    </label>
+    <cursor id="SETTING_CURSOR" value="60">
+      <position x="55%" y="6%" />
+    </cursor>
+  </scroll>
+</panel>

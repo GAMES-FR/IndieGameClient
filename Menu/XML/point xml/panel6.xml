@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel>
+  <title text="Stats">
+    <size w="100%" h="5%" />
+    <position x="0" y="0" />
+  </title>
+
+  <button id="PANEL_BACK" text="Back">
+    <size w="60%" h="5%" />
+    <position x="20%" y="10%" />
+    <to>panel3.xml</to>
+  </button>
+
+  <scroll w="100%" h="80%" x="0" y="20%">
+    <label text="Games">
+      <size w="50%" h="5%" />
+      <position x="0" y="0" />
+    </label>
+    <data id="STAT_GAMES">
+      <size w="25%" h="5%" />
+      <position x="55%" y="0" />
+    </data>
+
+    <label text="Victories">
+      <size w="50%" h="5%" />
+      <position x="0" y="6%" />
+    </label>
+    <data id="STAT_VICTORIES" type="label">
+      <size w="25%" h="5%" />
+      <position x="55%" y="6%" />
+    </data>
+  </scroll>
+</panel>

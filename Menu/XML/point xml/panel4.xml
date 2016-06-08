@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel>
+  <title text="Controls">
+    <size w="100" h="50" />
+    <position x="0" y="0" />
+  </title>
+
+  <button id="PANEL_BACK" text="Back">
+    <size w="100" h="80" />
+    <position x="20" y="10" />
+    <to>panel3.xml</to>
+  </button>
+
+  <scroll w="100%" h="80%" x="0" y="20%">
+    <label text="Move foward">
+      <size w="250" h="100" />
+      <position x="0" y="0" />
+    </label>
+    <input id="CONTROL_FOWARD" text="Z">
+      <size w="250" h="100" />
+      <position x="55%" y="0" />
+    </input>
+
+    <label text="Move left">
+      <size w="250" h="100" />
+      <position x="0" y="6%" />
+    </label>
+    <input id="CONTROL_LEFT" text="Q">
+      <size w="250" h="100" />
+      <position x="55%" y="6%" />
+    </input>
+  </scroll>
+</panel>
