@@ -15,28 +15,25 @@ using namespace video;
 
 #include <string>
 
-const std::string tab[9] = { "TAB_PLAYER1_PSEUDO", "TAB_PLAYER1_PASTILLE", "TAB_PLAYER1_LIFE", "TAB_PLAYER1_BOOST", "TAB_PLAYER1_BONUS", "TAB_PLAYER1_STATS", "GAME_TRUCK_LIFE", "GAME_TRUCK_BOOST", "GAME_TRUCK_BONUS" };
+const std::string tab[6] = { "GAME_TRUCK_LIFE", "GAME_TRUCK_BOOST", "GAME_TRUCK_BONUS", "GAME_PLAYER_LIFE", "GAME_PLAYER_BOOST", "GAME_PLAYER_BONUS" };
 
 enum Button_Type
 {
-	TAB_PLAYER1_PSEUDO,
-	TAB_PLAYER1_PASTILLE,
-	TAB_PLAYER1_LIFE,
-	TAB_PLAYER1_BOOST,
-	TAB_PLAYER1_BONUS,
-	TAB_PLAYER1_STATS,
 	GAME_TRUCK_LIFE,
 	GAME_TRUCK_BOOST,
-	GAME_TRUCK_BONUS
+	GAME_TRUCK_BONUS,
+	GAME_PLAYER_LIFE,
+	GAME_PLAYER_BOOST,
+	GAME_PLAYER_BONUS
 };
 
 Button_Type get_Index(std::string id)
 {
 	int i = 0;
 
-	while (i < 9)
+	while (i < 6)
 	{
-		if (id == tab[9])
+		if (id == tab[6])
 			return (Button_Type)i;
 		i++;
 	}
@@ -44,7 +41,7 @@ Button_Type get_Index(std::string id)
 
 int main()
 {
-	IrrXMLReader* xml = createIrrXMLReader("../../XML/point xml/gameplay1.xml");
+	IrrXMLReader* xml = createIrrXMLReader("../../XML/point xml/gameplay2.xml");
 
 	std::string id;
 	std::string type;
@@ -89,19 +86,16 @@ int main()
 				positionX = xml->getAttributeValue("x");
 				positionY = xml->getAttributeValue("y");
 			}
-			
+
 			break;
 		}
 	}
-	env->addButton(rect<s32>(atof(positionX.c_str()), atof(positionY.c_str()), atof(sizeW.c_str()), atof(sizeH.c_str())), 0, Button_Type::TAB_PLAYER1_PSEUDO, L"PseudoP1", L"PseudoP1");
-	env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()) + 50, atoi(sizeW.c_str()), atoi(sizeH.c_str())), 0, Button_Type::TAB_PLAYER1_PASTILLE, L"PastilleP1", L"PastilleP1");
-	env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()) + 150, atoi(sizeW.c_str()), atoi(sizeH.c_str())), 0, Button_Type::TAB_PLAYER1_LIFE, L"LifeP1", L"LifeP1");
-	env->addButton(rect<s32>(atof(positionX.c_str()), atof(positionY.c_str()), atof(sizeW.c_str()), atof(sizeH.c_str())), 0, Button_Type::TAB_PLAYER1_BOOST, L"BoostP1", L"BoostP1");
-	env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()) + 50, atoi(sizeW.c_str()), atoi(sizeH.c_str())), 0, Button_Type::TAB_PLAYER1_BONUS, L"BonusP1", L"BonusP1");
-	env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()) + 150, atoi(sizeW.c_str()), atoi(sizeH.c_str())), 0, Button_Type::TAB_PLAYER1_STATS, L"StatP1", L"StatP1");
 	env->addButton(rect<s32>(atof(positionX.c_str()), atof(positionY.c_str()), atof(sizeW.c_str()), atof(sizeH.c_str())), 0, Button_Type::GAME_TRUCK_LIFE, L"TruckLife", L"TruckLife");
-	env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()) + 50, atoi(sizeW.c_str()), atoi(sizeH.c_str())), 0, Button_Type::GAME_TRUCK_BOOST, L"BoostTruck", L"BoostTruck");
-	env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()) + 150, atoi(sizeW.c_str()), atoi(sizeH.c_str())), 0, Button_Type::GAME_TRUCK_BONUS, L"BonusTruck", L"BonusTruck");
+	env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()) + 50, atoi(sizeW.c_str()), atoi(sizeH.c_str())), 0, Button_Type::GAME_TRUCK_BOOST, L"TruckBoost", L"TruckBoost");
+	env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()) + 150, atoi(sizeW.c_str()), atoi(sizeH.c_str())), 0, Button_Type::GAME_TRUCK_BONUS, L"PlayerBonus", L"PlayerBonus");
+	env->addButton(rect<s32>(atof(positionX.c_str()), atof(positionY.c_str()), atof(sizeW.c_str()), atof(sizeH.c_str())), 0, Button_Type::GAME_PLAYER_LIFE, L"PlayerLife", L"PlayerLife");
+	env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()) + 50, atoi(sizeW.c_str()), atoi(sizeH.c_str())), 0, Button_Type::GAME_PLAYER_BOOST, L"PlayerBoost", L"PlayerBoost");
+	env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()) + 150, atoi(sizeW.c_str()), atoi(sizeH.c_str())), 0, Button_Type::GAME_PLAYER_BONUS, L"PlayerBonus", L"PlayerBonus");
 	while (device->run() && driver)
 	{
 		if (device->isWindowActive())
