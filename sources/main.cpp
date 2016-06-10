@@ -18,7 +18,7 @@ int main()
 
   /* lib and device init */
   device.ptr = irr::createDevice(ivideo::EDT_OPENGL,
-	  icore::dimension2d<irr::u32>(1280, 720), 16,
+	  icore::dimension2d<irr::u32>(1920, 1080), 16,
 				 false, true, false, &device.receiver);
   if (!device.ptr)
     return (ERROR_CODE);

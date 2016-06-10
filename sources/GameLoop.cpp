@@ -46,7 +46,7 @@ bool	core::GameLoop::_init(void)
 		{
 			map_node->setMaterialFlag(ivideo::EMF_LIGHTING, false);
 			map_node->setPosition(icore::vector3df(150, 0, 100));
-			map_node->setScale(icore::vector3df(20.0f, 20.0f, 20.0f));
+			map_node->setScale(icore::vector3df(10.0f, 10.0f, 10.0f));
 			map_node->setName("map");
 		}
 	}
@@ -55,14 +55,15 @@ bool	core::GameLoop::_init(void)
 
 	iscene::ISceneNode *playerNode = this->_player->getEntity().getNode();
 	playerNode->setScale(icore::vector3df(2.0f, 2.0f, 2.0f));
-	playerNode->setPosition(icore::vector3df(100, 100, 100));
+	playerNode->setPosition(icore::vector3df(-600, 0, 100));
 	playerNode->setMaterialFlag(ivideo::EMF_LIGHTING, false);
 	playerNode->setName("player");
 
 	if (ennemy_mesh)
 	{
 		ennemy_node = this->_device->smgr->addAnimatedMeshSceneNode(ennemy_mesh);
-		ennemy_node->setPosition(icore::vector3df(120, 84, 100));
+		ennemy_node->setPosition(icore::vector3df(600, -35, 100));
+		ennemy_node->setScale(icore::vector3df(0.5f, 0.5f, 0.5f));
 		ennemy_node->setMaterialFlag(ivideo::EMF_LIGHTING, false);
 		ennemy_node->setName("enemy");
 	}

@@ -1,72 +1,72 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 06.06.2016 00:00:34
+# File Created: 10.06.2016 22:15:56
 
 newmtl creature_6ih_ironhorde_siegeweapon01_2
-	Ns 43.2193
-	Ni 1.5000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
+	Ns 43.219299316406
+	Ni 1.500000000000
+	d 1.000000000000
+	Tr 0.000000000000
+	Tf 1.000000000000 1.000000000000 1.000000000000 
 	illum 2
-	Ka 0.7000 0.7000 0.7000
-	Kd 0.8000 0.8000 0.8000
-	Ks 0.2000 0.2000 0.2000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\Kallen\Desktop\camion.fbm\6ih_ironhorde_siegeweapon01_tankbarrel.png
-	map_Kd C:\Users\Kallen\Desktop\camion.fbm\6ih_ironhorde_siegeweapon01_tankbarrel.png
+	Ka 0.699999988079 0.699999988079 0.699999988079
+	Kd 0.800000011921 0.800000011921 0.800000011921
+	Ks 0.200000002980 0.200000002980 0.200000002980
+	Ke 0.000000000000 0.000000000000 0.000000000000
+	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_tankbarrel.png
+	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_tankbarrel.png
 
 newmtl creature_6ih_ironhorde_siegeweapon01_8
-	Ns 43.2193
-	Ni 1.5000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
+	Ns 43.219299316406
+	Ni 1.500000000000
+	d 1.000000000000
+	Tr 0.000000000000
+	Tf 1.000000000000 1.000000000000 1.000000000000 
 	illum 2
-	Ka 0.7000 0.7000 0.7000
-	Kd 0.8000 0.8000 0.8000
-	Ks 0.2000 0.2000 0.2000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\Kallen\Desktop\camion.fbm\6ih_ironhorde_siegeweapon01_armor.png
-	map_Kd C:\Users\Kallen\Desktop\camion.fbm\6ih_ironhorde_siegeweapon01_armor.png
+	Ka 0.699999988079 0.699999988079 0.699999988079
+	Kd 0.800000011921 0.800000011921 0.800000011921
+	Ks 0.200000002980 0.200000002980 0.200000002980
+	Ke 0.000000000000 0.000000000000 0.000000000000
+	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_armor.png
+	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_armor.png
 
 newmtl creature_6ih_ironhorde_siegeweapon01_12
-	Ns 43.2193
-	Ni 1.5000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
+	Ns 43.219299316406
+	Ni 1.500000000000
+	d 1.000000000000
+	Tr 0.000000000000
+	Tf 1.000000000000 1.000000000000 1.000000000000 
 	illum 2
-	Ka 0.7000 0.7000 0.7000
-	Kd 0.8000 0.8000 0.8000
-	Ks 0.2000 0.2000 0.2000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\Kallen\Desktop\camion.fbm\6ih_ironhorde_siegeweapon01_body.png
-	map_Kd C:\Users\Kallen\Desktop\camion.fbm\6ih_ironhorde_siegeweapon01_body.png
+	Ka 0.699999988079 0.699999988079 0.699999988079
+	Kd 0.800000011921 0.800000011921 0.800000011921
+	Ks 0.200000002980 0.200000002980 0.200000002980
+	Ke 0.000000000000 0.000000000000 0.000000000000
+	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_body.png
+	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_body.png
 
 newmtl creature_6ih_ironhorde_siegeweapon01_16
-	Ns 43.2193
-	Ni 1.5000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
+	Ns 43.219299316406
+	Ni 1.500000000000
+	d 1.000000000000
+	Tr 0.000000000000
+	Tf 1.000000000000 1.000000000000 1.000000000000 
 	illum 2
-	Ka 0.7000 0.7000 0.7000
-	Kd 0.8000 0.8000 0.8000
-	Ks 0.2000 0.2000 0.2000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\Kallen\Desktop\camion.fbm\6ih_ironhorde_siegeweapon01_wheels.png
-	map_Kd C:\Users\Kallen\Desktop\camion.fbm\6ih_ironhorde_siegeweapon01_wheels.png
+	Ka 0.699999988079 0.699999988079 0.699999988079
+	Kd 0.800000011921 0.800000011921 0.800000011921
+	Ks 0.200000002980 0.200000002980 0.200000002980
+	Ke 0.000000000000 0.000000000000 0.000000000000
+	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_wheels.png
+	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_wheels.png
 
 newmtl creature_6ih_ironhorde_siegeweapon01_18
-	Ns 43.2193
-	Ni 1.5000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
+	Ns 43.219299316406
+	Ni 1.500000000000
+	d 1.000000000000
+	Tr 0.000000000000
+	Tf 1.000000000000 1.000000000000 1.000000000000 
 	illum 2
-	Ka 0.7000 0.7000 0.7000
-	Kd 0.8000 0.8000 0.8000
-	Ks 0.2000 0.2000 0.2000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\Kallen\Desktop\camion.fbm\6ih_ironhorde_siegeweapon01_armor.png
-	map_Kd C:\Users\Kallen\Desktop\camion.fbm\6ih_ironhorde_siegeweapon01_armor.png
+	Ka 0.699999988079 0.699999988079 0.699999988079
+	Kd 0.800000011921 0.800000011921 0.800000011921
+	Ks 0.200000002980 0.200000002980 0.200000002980
+	Ke 0.000000000000 0.000000000000 0.000000000000
+	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_armor.png
+	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_armor.png
