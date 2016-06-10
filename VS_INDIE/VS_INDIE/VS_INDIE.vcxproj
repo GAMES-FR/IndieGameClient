@@ -130,6 +130,7 @@
     <ClInclude Include="..\..\includes\Constants.hpp" />
     <ClInclude Include="..\..\includes\Entity.hpp" />
     <ClInclude Include="..\..\includes\GMath.hpp" />
+    <ClInclude Include="..\..\includes\IncludeIrrlicht.hpp" />
     <ClInclude Include="..\..\includes\Input.hpp" />
     <ClInclude Include="..\..\includes\Loop.hpp" />
     <ClInclude Include="..\..\includes\Missile.hpp" />

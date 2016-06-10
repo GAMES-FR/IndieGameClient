@@ -10,7 +10,7 @@
 #  define ASSETS_DIR "./assets"
 # endif
 
-# define MAP_MESH_PATH		ASSETS_DIR"mp/arena.obj"
+# define MAP_MESH_PATH		ASSETS_DIR"mp/arena2.obj"
 # define CAR_MESH_PATH		ASSETS_DIR"tcar/f.obj"
 # define ENEMY_MESH_PATH	ASSETS_DIR"truck/camion.obj"
 

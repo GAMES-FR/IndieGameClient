@@ -83,5 +83,8 @@
     <ClInclude Include="..\..\includes\Spawner.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\includes\IncludeIrrlicht.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

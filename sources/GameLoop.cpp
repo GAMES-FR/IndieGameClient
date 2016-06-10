@@ -28,8 +28,16 @@ bool	core::GameLoop::_init(void)
 	iscene::IMeshSceneNode			*map_node = 0;
 	iscene::IAnimatedMesh			*ennemy_mesh = this->_device->smgr->getMesh(ENEMY_MESH_PATH);
 	iscene::IAnimatedMeshSceneNode	*ennemy_node = 0;
-	iscene::ISceneNode* skydome = this->_device->smgr->addSkyDomeSceneNode(this->_device->driver->getTexture("../../assets/sky/ashrand_bright_stormy_front.png"), 16, 8, 1.0f, 2.0f);
-	skydome->setRotation(irr::core::vector3df(0.f, 0.f, 0.f));
+	iscene::ISceneNode* skybox = this->_device->smgr->addSkyBoxSceneNode(
+		this->_device->driver->getTexture("../../assets/sky/test_shadowmoon_moon01.png"),
+		this->_device->driver->getTexture("../../assets/sky/test_shadowmoon_moon01.png"),
+		this->_device->driver->getTexture("../../assets/sky/test_shadowmoon_moon01.png"),
+		this->_device->driver->getTexture("../../assets/sky/test_shadowmoon_moon01.png"),
+		this->_device->driver->getTexture("../../assets/sky/test_shadowmoon_moon01.png"),
+		this->_device->driver->getTexture("../../assets/sky/test_shadowmoon_moon01.png"));
+	skybox->setRotation(irr::core::vector3df(0.f, 0.f, 0.f));
+	//iscene::ISceneNode* skydome = this->_device->smgr->addSkyDomeSceneNode(this->_device->driver->getTexture("../../assets/sky/ashrand_bright_stormy_front.png"), 16, 8, 1.0f, 2.0f);
+	//skydome->setRotation(irr::core::vector3df(5.f, 5.f, 5.f));
 
 	if (map)
 	{
@@ -37,7 +45,8 @@ bool	core::GameLoop::_init(void)
 		if (map_node)
 		{
 			map_node->setMaterialFlag(ivideo::EMF_LIGHTING, false);
-			map_node->setPosition(icore::vector3df(0, -3000, 0));
+			map_node->setPosition(icore::vector3df(150, 0, 100));
+			map_node->setScale(icore::vector3df(20.0f, 20.0f, 20.0f));
 			map_node->setName("map");
 		}
 	}

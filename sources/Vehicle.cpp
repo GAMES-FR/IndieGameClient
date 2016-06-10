@@ -165,7 +165,7 @@ Vehicle::Config *Vehicle::getDefaultConfig() {
 	cfg->wheelWidth = 0.2;  // Used for render only
 	cfg->tireGrip = 2.0;  // How much grip tires have
 	cfg->lockGrip = 0.7;  // % of grip available when wheel is locked
-	cfg->engineForce = 8000.f;
+	cfg->engineForce = 5000.f;
 	cfg->reverseForce = 3.f;
 	cfg->brakeForce = 12000.f;
 	cfg->eBrakeForce = cfg->brakeForce / 2.5;
