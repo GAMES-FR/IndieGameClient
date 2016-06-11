@@ -79,18 +79,6 @@ int main()
 			if (!strcmp("title", xml->getNodeName()))
 			{
 				button = xml->getAttributeValue("text");
-				/*env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()), atoi(sizeW.c_str()), atoi(sizeH.c_str())), 0, Button_Type::CONTROL_FORWARD);
-				env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()), atoi(sizeW.c_str()), atoi(sizeH.c_str())),0, Button_Type::CONTROL_LEFT);
-				env->addButton(rect<s32>(atoi(positionX.c_str()), atoi(positionY.c_str()), atoi(sizeW.c_str()), atoi(sizeH.c_str())), 0, Button_Type::PANEL_BACK);
-				while (device->run() && driver)
-				if (device->isWindowActive())
-				{
-				driver->beginScene(true, true, SColor(0, 200, 200, 200));
-				env->drawAll();
-				driver->endScene();
-				}
-				device->drop();
-				printf("%s\n", button.c_str());*/
 			}
 
 			if (!strcmp("size", xml->getNodeName()))
