@@ -1,0 +1,28 @@
+#
+# mtl file for car_2.obj obj file
+#
+
+newmtl creature_flyingcarpetmount_flyingcarpetmount.m2_Geoset_000
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_2_flyingcarpetcataclysm.png
+newmtl creature_flyingcarpetmount_flyingcarpetmount.m2_Geoset_001_Lum
+illum 2
+Kd 0.000000 0.000000 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_2_flyingcarpetcataclysm.png
+newmtl creature_flyingcarpetmount_flyingcarpetmount.m2_Geoset_002_Lum
+illum 2
+Kd 0.000000 0.000000 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_2_crystalsatyrglow.png

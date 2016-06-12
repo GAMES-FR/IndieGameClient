@@ -1,0 +1,156 @@
+#
+# mtl file for car_5.obj obj file
+#
+
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_000
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_am_bbay_misc_pirate.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_001
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_icebreaker_hull_wood.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_002
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_am_bbay_shiptrim_01_pirate.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_003
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_am_bbay_shipinterior_pirate.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_004
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_icebreaker_deck_wood.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_005
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_am_bbay_trim_01_pirate.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_006
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_am_bbay_woodwall_pirate.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_007
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_am_bbay_shipexterior_pirate.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_008
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_metalhull.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_009
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_am_bbay_trim_02_pirate.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_010
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_transport_icebreaker_ship_rear.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_011
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_transport_icebreaker_ship_front.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_012
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_transport_icebreaker_ship_front_blade.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_013_Lum
+illum 2
+Kd 0.000000 0.000000 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_elwynnlantern01.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_014_Dbl
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_deadminenetswood.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_015
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_am_bbay_ceiling_pirate.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_016_Dbl
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_am_bbay_net.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_017
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_jlo_bbay_sail_pirate.png
+newmtl world_expansion02_doodads_ships_nd_icebreaker_ship_bg.m2_Geoset_018
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ka 0.250000 0.250000 0.250000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd car_5_deadminefloornets4.png
