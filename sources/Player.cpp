@@ -93,14 +93,11 @@ void Player::update(irr::f32 dt)
 				this->_missiles.erase(this->_missiles.begin() + i);
 				std::cout << "missile erased." << std::endl;
 				break;
-				//goto jesuismarre;
 			}
 			j++;
 		}
 		i++;
 	}
-jesuismarre:
-	i = 0;
 }
 
 void					Player::setCollisions(iscene::ISceneManager* &smgr)

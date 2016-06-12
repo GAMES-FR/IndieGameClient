@@ -25,7 +25,7 @@ namespace irrklang
 		//! constructor creating an irrklang vec3d from an irrlicht vector.
 		#ifdef __IRR_POINT_3D_H_INCLUDED__
 		template<class B>
-		vec3d(const B& other)	:X(other.X), Y(other.Y), Z(other.Z) {};
+		vec3d(const B& other)	:X(other.X), Y(other.Y), Z(other.Z) {}
 		#endif // __IRR_POINT_3D_H_INCLUDED__
 
 		// operators

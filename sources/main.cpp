@@ -36,8 +36,8 @@ int main()
   CIrrKlangSceneNode* soundNode =
 	  new CIrrKlangSceneNode(soundEngine, device.smgr->getRootSceneNode(), device.smgr, 666);
 
-  soundNode->setSoundFileName(ASSETS_DIR"salty.wav");
-  soundNode->setMinMaxSoundDistance(30.0f); // influences the distance where the sound can be heard
+  soundNode->setSoundFileName(ASSETS_DIR"/salty.flac");
+  soundNode->setMinMaxSoundDistance(300.0f); // influences the distance where the sound can be heard
   //soundNode->setRandomMode(1000, 5000); // plays sound multiple times with random interval
 
 										// other modes would be:

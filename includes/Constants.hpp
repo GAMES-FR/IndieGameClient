@@ -5,18 +5,18 @@
 # define OK_CODE 0
 
 # if defined (_IRR_WINDOWS_) && ! defined (MSYS)
-#  define ASSETS_DIR "../../assets/"
+#  define ASSETS_DIR "../../assets"
 # else
 #  define ASSETS_DIR "./assets"
 # endif
 
-# define MAP_MESH_PATH		ASSETS_DIR"map/awp_india.obj"
-# define CAR_MESH_PATH		ASSETS_DIR"tcar/f.obj"
-# define ENEMY_MESH_PATH	ASSETS_DIR"truck/Truck.obj"
+# define MAP_MESH_PATH		ASSETS_DIR"/map/awp_india.obj"
+# define CAR_MESH_PATH		ASSETS_DIR"/tcar/f.obj"
+# define ENEMY_MESH_PATH	ASSETS_DIR"/truck/Truck.obj"
 
-# define MISSILE_MESH_PATH	ASSETS_DIR"missils/missils.obj"	
+# define MISSILE_MESH_PATH	ASSETS_DIR"/missils/missils.obj"	
 # define MISSILE_SCALE		1.f
 
-# define SPAWNER_MESH_PATH	ASSETS_DIR"bear.obj"
+# define SPAWNER_MESH_PATH	ASSETS_DIR"/bear.obj"
 
 #endif /* CONSTANTS_HPP_ */

@@ -9,14 +9,14 @@ SRCDIR :=	./sources
 # compilation options
 #
 CXX :=		g++
-CXXFLAGS :=	-I $(INCDIR) -W -Wall -Wextra -Werror -pedantic
+CXXFLAGS :=	-I $(INCDIR) -I irrKlang-1.5.0/include/ -W -Wall -Wextra -Werror -pedantic
 
 #
 # link options
 #
 LINKER :=	$(CXX)
-LDFLAGS :=
-LDLIBS :=	-l Irrlicht
+LDFLAGS :=	-Wl,-rpath=./irrKlang-1.5.0/linux-gcc-64/ -L ./irrKlang-1.5.0/linux-gcc-64/
+LDLIBS :=	-l Irrlicht -l IrrKlang
 
 #
 # indie binary options
@@ -31,7 +31,8 @@ SRC :=		main.cpp \
 		Input.cpp \
 		Vehicle.cpp \
 		Vector.cpp \
-		Missile.cpp
+		Missile.cpp \
+		irrKlangSceneNode.cpp
 SRC :=		$(addprefix $(SRCDIR)/, $(SRC))
 OBJ :=		$(SRC:.cpp=.swag)
 OBJ_DEBUG :=	$(SRC:.cpp=.debug)

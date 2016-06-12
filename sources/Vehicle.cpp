@@ -198,7 +198,7 @@ float			Vehicle::Car::getHeading() const
 	return (this->heading);
 }
 
-void			Vehicle::Car::calmezVous(float angle, float force)
+void			Vehicle::Car::calmezVous(float, float force)
 {
 	this->velocity.x /= -force;
 	this->velocity.y /= -force;

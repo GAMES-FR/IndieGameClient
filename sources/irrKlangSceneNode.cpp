@@ -300,12 +300,14 @@ void CIrrKlangSceneNode::serializeAttributes(io::IAttributes* out, io::SAttribut
 		out->addInt("MinTimeMsInterval", MinTimeMsInterval);
 		out->addInt("MaxTimeMsInterval", MaxTimeMsInterval);
 		break;
+	default:
+	  break;
 	}
 }
 
 
 //! Reads attributes of the scene node.
-void CIrrKlangSceneNode::deserializeAttributes(io::IAttributes* in, io::SAttributeReadWriteOptions* options)
+void CIrrKlangSceneNode::deserializeAttributes(io::IAttributes* in, io::SAttributeReadWriteOptions*)
 {
 	if (!in)
 		return;

@@ -21,7 +21,7 @@ Missile::Missile(iscene::ISceneNode *player, iscene::ISceneManager *smgr) : enti
 		iscene::ITriangleSelector*						selector = 0;
 		iscene::ISceneNodeAnimatorCollisionResponse*	anim = 0;
 		
-		if (node != this->entity.getNode() && node->getName() != "missile")
+		if (node != this->entity.getNode())
 		{
 			switch (node->getType())
 			{
