@@ -1,8 +1,11 @@
 #include "Loop.hpp"
 #include "Constants.hpp"
+#include "irrKlang.h"
+#include "irrKlangSceneNode.h"
 
 #if defined (_IRR_WINDOWS_) && ! defined (MSYS)
 # pragma comment(lib, "Irrlicht.lib")
+# pragma comment(lib, "irrKlang.lib")
 //# pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
@@ -12,9 +15,13 @@
  */
 int main()
 {
-  core::device_t	device;
-  core::ILoop		*loop[2];
+  ::core::device_t	device;
+  ::core::ILoop		*loop[2];
   int ret;
+
+  irrklang::ISoundEngine* soundEngine = irrklang::createIrrKlangDevice();
+
+  // .. other code here
 
   /* lib and device init */
   device.ptr = irr::createDevice(ivideo::EDT_OPENGL,
@@ -26,8 +33,22 @@ int main()
   device.smgr = device.ptr->getSceneManager();
   device.guienv = device.ptr->getGUIEnvironment();
 
-  loop[0] = new core::GameLoop(&device);
-  // loop[1] = new core::MenuLoop(&device);
+  CIrrKlangSceneNode* soundNode =
+	  new CIrrKlangSceneNode(soundEngine, device.smgr->getRootSceneNode(), device.smgr, 666);
+
+  soundNode->setSoundFileName(ASSETS_DIR"salty.wav");
+  soundNode->setMinMaxSoundDistance(30.0f); // influences the distance where the sound can be heard
+  //soundNode->setRandomMode(1000, 5000); // plays sound multiple times with random interval
+
+										// other modes would be:
+  soundNode->setLoopingStreamMode();
+										// or
+										// soundNode->setPlayOnceMode();
+  //soundNode->drop();
+
+
+  loop[0] = new ::core::GameLoop(&device);
+  // loop[1] = new ::core::MenuLoop(&device);
   if (loop[0]->init())
     return (ERROR_CODE);
   // if (loop[1]->init())

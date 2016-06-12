@@ -69,8 +69,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>..\..\..\irrlicht-1.8.3\irrlicht-1.8.3\include;..\..\includes;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\..\irrlicht-1.8.3\irrlicht-1.8.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\irrKlang-1.5.0\include;..\..\..\irrlicht-1.8.3\irrlicht-1.8.3\include;..\..\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\irrKlang-1.5.0\lib\Win32-visualStudio;..\..\..\irrlicht-1.8.3\irrlicht-1.8.3\lib\Win32-visualstudio;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -117,6 +117,7 @@
     <ClCompile Include="..\..\sources\Entity.cpp" />
     <ClCompile Include="..\..\sources\GameLoop.cpp" />
     <ClCompile Include="..\..\sources\Input.cpp" />
+    <ClCompile Include="..\..\sources\irrKlangSceneNode.cpp" />
     <ClCompile Include="..\..\sources\main.cpp" />
     <ClCompile Include="..\..\sources\MenuLoop.cpp" />
     <ClCompile Include="..\..\sources\Missile.cpp" />
@@ -131,6 +132,7 @@
     <ClInclude Include="..\..\includes\Entity.hpp" />
     <ClInclude Include="..\..\includes\GMath.hpp" />
     <ClInclude Include="..\..\includes\Input.hpp" />
+    <ClInclude Include="..\..\includes\irrKlangSceneNode.h" />
     <ClInclude Include="..\..\includes\Loop.hpp" />
     <ClInclude Include="..\..\includes\Missile.hpp" />
     <ClInclude Include="..\..\includes\Player.hpp" />
