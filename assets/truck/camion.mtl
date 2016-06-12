@@ -12,8 +12,8 @@ newmtl creature_6ih_ironhorde_siegeweapon01_2
 	Kd 0.800000011921 0.800000011921 0.800000011921
 	Ks 0.200000002980 0.200000002980 0.200000002980
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_tankbarrel.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_tankbarrel.png
+	map_Ka 6ih_ironhorde_siegeweapon01_tankbarrel.png
+	map_Kd 6ih_ironhorde_siegeweapon01_tankbarrel.png
 
 newmtl creature_6ih_ironhorde_siegeweapon01_8
 	Ns 43.219299316406
@@ -26,8 +26,8 @@ newmtl creature_6ih_ironhorde_siegeweapon01_8
 	Kd 0.800000011921 0.800000011921 0.800000011921
 	Ks 0.200000002980 0.200000002980 0.200000002980
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_armor.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_armor.png
+	map_Ka 6ih_ironhorde_siegeweapon01_armor.png
+	map_Kd 6ih_ironhorde_siegeweapon01_armor.png
 
 newmtl creature_6ih_ironhorde_siegeweapon01_12
 	Ns 43.219299316406
@@ -40,8 +40,8 @@ newmtl creature_6ih_ironhorde_siegeweapon01_12
 	Kd 0.800000011921 0.800000011921 0.800000011921
 	Ks 0.200000002980 0.200000002980 0.200000002980
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_body.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_body.png
+	map_Ka 6ih_ironhorde_siegeweapon01_body.png
+	map_Kd 6ih_ironhorde_siegeweapon01_body.png
 
 newmtl creature_6ih_ironhorde_siegeweapon01_16
 	Ns 43.219299316406
@@ -54,8 +54,8 @@ newmtl creature_6ih_ironhorde_siegeweapon01_16
 	Kd 0.800000011921 0.800000011921 0.800000011921
 	Ks 0.200000002980 0.200000002980 0.200000002980
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_wheels.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_wheels.png
+	map_Ka 6ih_ironhorde_siegeweapon01_wheels.png
+	map_Kd 6ih_ironhorde_siegeweapon01_wheels.png
 
 newmtl creature_6ih_ironhorde_siegeweapon01_18
 	Ns 43.219299316406
@@ -68,5 +68,5 @@ newmtl creature_6ih_ironhorde_siegeweapon01_18
 	Kd 0.800000011921 0.800000011921 0.800000011921
 	Ks 0.200000002980 0.200000002980 0.200000002980
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_armor.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\truck\6ih_ironhorde_siegeweapon01_armor.png
+	map_Ka 6ih_ironhorde_siegeweapon01_armor.png
+	map_Kd 6ih_ironhorde_siegeweapon01_armor.png

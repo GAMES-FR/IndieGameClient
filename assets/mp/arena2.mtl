@@ -12,8 +12,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_trims02_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_trims02.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_trims02.jpg
+	map_Ka bm_ldrn_trims02.jpg
+	map_Kd bm_ldrn_trims02.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_pillars01_Material
 	Ns 0.000000000000
@@ -26,8 +26,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_pillars01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_pillars01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_pillars01.jpg
+	map_Ka bm_ldrn_pillars01.jpg
+	map_Kd bm_ldrn_pillars01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_dirt01_Material
 	Ns 0.000000000000
@@ -40,8 +40,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_dirt01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_dirt01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_dirt01.jpg
+	map_Ka bm_ldrn_dirt01.jpg
+	map_Kd bm_ldrn_dirt01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_brownstone01_Material
 	Ns 0.000000000000
@@ -54,8 +54,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_brownstone01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_brownstone01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_brownstone01.jpg
+	map_Ka bm_ldrn_brownstone01.jpg
+	map_Kd bm_ldrn_brownstone01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_trims04_Material
 	Ns 0.000000000000
@@ -68,8 +68,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_trims04_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_trims04.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_trims04.jpg
+	map_Ka bm_ldrn_trims04.jpg
+	map_Kd bm_ldrn_trims04.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_cobblestone01_Material
 	Ns 0.000000000000
@@ -82,8 +82,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_cobblestone01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_cobblestone01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_cobblestone01.jpg
+	map_Ka bm_ldrn_cobblestone01.jpg
+	map_Kd bm_ldrn_cobblestone01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_greywall01_Material
 	Ns 0.000000000000
@@ -96,8 +96,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_greywall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_greywall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_greywall01.jpg
+	map_Ka bm_ldrn_greywall01.jpg
+	map_Kd bm_ldrn_greywall01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_rubble01_Material
 	Ns 0.000000000000
@@ -110,8 +110,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_rubble01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_rubble01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_rubble01.jpg
+	map_Ka bm_ldrn_rubble01.jpg
+	map_Kd bm_ldrn_rubble01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_wall01_Material
 	Ns 0.000000000000
@@ -124,8 +124,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_wall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_wall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_wall01.jpg
+	map_Ka bm_ldrn_wall01.jpg
+	map_Kd bm_ldrn_wall01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_door01_Material
 	Ns 0.000000000000
@@ -138,8 +138,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_door01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_door01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_door01.jpg
+	map_Ka bm_ldrn_door01.jpg
+	map_Kd bm_ldrn_door01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_crtyrdwall01_Material
 	Ns 0.000000000000
@@ -152,8 +152,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_crtyrdwall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_crtyrdwall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_crtyrdwall01.jpg
+	map_Ka bm_ldrn_crtyrdwall01.jpg
+	map_Kd bm_ldrn_crtyrdwall01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_brickfloor01_Material
 	Ns 0.000000000000
@@ -166,8 +166,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_brickfloor01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_brickfloor01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_brickfloor01.jpg
+	map_Ka bm_ldrn_brickfloor01.jpg
+	map_Kd bm_ldrn_brickfloor01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_dome01_Material
 	Ns 0.000000000000
@@ -180,8 +180,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_dome01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_dome01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_dome01.jpg
+	map_Ka bm_ldrn_dome01.jpg
+	map_Kd bm_ldrn_dome01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_belltower01_Material
 	Ns 0.000000000000
@@ -194,8 +194,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_belltower01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_belltower01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_belltower01.jpg
+	map_Ka bm_ldrn_belltower01.jpg
+	map_Kd bm_ldrn_belltower01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_chamberwall01_Material
 	Ns 0.000000000000
@@ -208,8 +208,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_chamberwall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_chamberwall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_chamberwall01.jpg
+	map_Ka bm_ldrn_chamberwall01.jpg
+	map_Kd bm_ldrn_chamberwall01.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_thronefloor02_Material
 	Ns 0.000000000000
@@ -222,8 +222,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_thronefloor02_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_thronefloor02.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_thronefloor02.jpg
+	map_Ka bm_ldrn_thronefloor02.jpg
+	map_Kd bm_ldrn_thronefloor02.jpg
 
 newmtl _pvp_lordaeron_arena_000bm_ldrn_vines01_alpha_Material
 	Ns 0.000000000000
@@ -236,8 +236,8 @@ newmtl _pvp_lordaeron_arena_000bm_ldrn_vines01_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_vines01.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_vines01.alpha.png
+	map_Ka bm_ldrn_vines01.alpha.png
+	map_Kd bm_ldrn_vines01.alpha.png
 
 newmtl _pvp_lordaeron_arena_000mm_wroughtiron_01_alpha_Material
 	Ns 0.000000000000
@@ -250,8 +250,8 @@ newmtl _pvp_lordaeron_arena_000mm_wroughtiron_01_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\mm_wroughtiron_01.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\mm_wroughtiron_01.alpha.png
+	map_Ka mm_wroughtiron_01.alpha.png
+	map_Kd mm_wroughtiron_01.alpha.png
 
 newmtl _pvp_lordaeron_arena_000_modelsbm_ldrn_trims04_Material
 	Ns 0.000000000000
@@ -264,8 +264,8 @@ newmtl _pvp_lordaeron_arena_000_modelsbm_ldrn_trims04_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_trims04.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_trims04.jpg
+	map_Ka bm_ldrn_trims04.jpg
+	map_Kd bm_ldrn_trims04.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelsbm_ldrn_pillars01_Material
 	Ns 0.000000000000
@@ -278,8 +278,8 @@ newmtl _pvp_lordaeron_arena_000_modelsbm_ldrn_pillars01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_pillars01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_pillars01.jpg
+	map_Ka bm_ldrn_pillars01.jpg
+	map_Kd bm_ldrn_pillars01.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelsbm_ldrn_dome01_Material
 	Ns 0.000000000000
@@ -292,8 +292,8 @@ newmtl _pvp_lordaeron_arena_000_modelsbm_ldrn_dome01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_dome01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_dome01.jpg
+	map_Ka bm_ldrn_dome01.jpg
+	map_Kd bm_ldrn_dome01.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelsbm_ldrn_crtyrdwall01_Material
 	Ns 0.000000000000
@@ -306,8 +306,8 @@ newmtl _pvp_lordaeron_arena_000_modelsbm_ldrn_crtyrdwall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_crtyrdwall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_crtyrdwall01.jpg
+	map_Ka bm_ldrn_crtyrdwall01.jpg
+	map_Kd bm_ldrn_crtyrdwall01.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelsslimebubbles01_alpha_Material
 	Ns 0.000000000000
@@ -320,8 +320,8 @@ newmtl _pvp_lordaeron_arena_000_modelsslimebubbles01_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\slimebubbles01.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\slimebubbles01.alpha.png
+	map_Ka slimebubbles01.alpha.png
+	map_Kd slimebubbles01.alpha.png
 
 newmtl _pvp_lordaeron_arena_000_modelsduskwooddirt_Material
 	Ns 0.000000000000
@@ -334,8 +334,8 @@ newmtl _pvp_lordaeron_arena_000_modelsduskwooddirt_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\duskwooddirt.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\duskwooddirt.jpg
+	map_Ka duskwooddirt.jpg
+	map_Kd duskwooddirt.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelscemetery01_Material
 	Ns 0.000000000000
@@ -348,8 +348,8 @@ newmtl _pvp_lordaeron_arena_000_modelscemetery01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\cemetery01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\cemetery01.jpg
+	map_Ka cemetery01.jpg
+	map_Kd cemetery01.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelstombstone07_Material
 	Ns 0.000000000000
@@ -362,8 +362,8 @@ newmtl _pvp_lordaeron_arena_000_modelstombstone07_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\tombstone07.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\tombstone07.jpg
+	map_Ka tombstone07.jpg
+	map_Kd tombstone07.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelsironmaiden_1_alpha_Material
 	Ns 0.000000000000
@@ -376,8 +376,8 @@ newmtl _pvp_lordaeron_arena_000_modelsironmaiden_1_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ironmaiden-1.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ironmaiden-1.alpha.png
+	map_Ka ironmaiden-1.alpha.png
+	map_Kd ironmaiden-1.alpha.png
 
 newmtl _pvp_lordaeron_arena_000_modelscemetery01_alpha_Material
 	Ns 0.000000000000
@@ -390,8 +390,8 @@ newmtl _pvp_lordaeron_arena_000_modelscemetery01_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\cemetery01.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\cemetery01.alpha.png
+	map_Ka cemetery01.alpha.png
+	map_Kd cemetery01.alpha.png
 
 newmtl _pvp_lordaeron_arena_000_modelsduskwoodtreestump03_trunk_Material
 	Ns 0.000000000000
@@ -404,8 +404,8 @@ newmtl _pvp_lordaeron_arena_000_modelsduskwoodtreestump03_trunk_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\duskwoodtreestump03_trunk.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\duskwoodtreestump03_trunk.jpg
+	map_Ka duskwoodtreestump03_trunk.jpg
+	map_Kd duskwoodtreestump03_trunk.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelslightposthaysacks_alpha_Material
 	Ns 0.000000000000
@@ -418,8 +418,8 @@ newmtl _pvp_lordaeron_arena_000_modelslightposthaysacks_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\lightposthaysacks.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\lightposthaysacks.alpha.png
+	map_Ka lightposthaysacks.alpha.png
+	map_Kd lightposthaysacks.alpha.png
 
 newmtl _pvp_lordaeron_arena_000_modelslordearon_bench_01_Material
 	Ns 0.000000000000
@@ -432,8 +432,8 @@ newmtl _pvp_lordaeron_arena_000_modelslordearon_bench_01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\lordearon_bench_01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\lordearon_bench_01.jpg
+	map_Ka lordearon_bench_01.jpg
+	map_Kd lordearon_bench_01.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelstombstonemonument03_Material
 	Ns 0.000000000000
@@ -446,8 +446,8 @@ newmtl _pvp_lordaeron_arena_000_modelstombstonemonument03_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\tombstonemonument03.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\tombstonemonument03.jpg
+	map_Ka tombstonemonument03.jpg
+	map_Kd tombstonemonument03.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelstombstonemonument02_Material
 	Ns 0.000000000000
@@ -460,8 +460,8 @@ newmtl _pvp_lordaeron_arena_000_modelstombstonemonument02_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\tombstonemonument02.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\tombstonemonument02.jpg
+	map_Ka tombstonemonument02.jpg
+	map_Kd tombstonemonument02.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelstombstone05_Material
 	Ns 0.000000000000
@@ -474,8 +474,8 @@ newmtl _pvp_lordaeron_arena_000_modelstombstone05_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\tombstone05.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\tombstone05.jpg
+	map_Ka tombstone05.jpg
+	map_Kd tombstone05.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelswarningtreeweb_alpha_Material
 	Ns 0.000000000000
@@ -488,8 +488,8 @@ newmtl _pvp_lordaeron_arena_000_modelswarningtreeweb_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\warningtreeweb.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\warningtreeweb.alpha.png
+	map_Ka warningtreeweb.alpha.png
+	map_Kd warningtreeweb.alpha.png
 
 newmtl _pvp_lordaeron_arena_000_modelstombstone06_Material
 	Ns 0.000000000000
@@ -502,8 +502,8 @@ newmtl _pvp_lordaeron_arena_000_modelstombstone06_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\tombstone06.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\tombstone06.jpg
+	map_Ka tombstone06.jpg
+	map_Kd tombstone06.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelsarathiplant02_alpha_Material
 	Ns 0.000000000000
@@ -516,8 +516,8 @@ newmtl _pvp_lordaeron_arena_000_modelsarathiplant02_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\arathiplant02.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\arathiplant02.alpha.png
+	map_Ka arathiplant02.alpha.png
+	map_Kd arathiplant02.alpha.png
 
 newmtl _pvp_lordaeron_arena_000_modelscandelabratallwall02_Material
 	Ns 0.000000000000
@@ -530,8 +530,8 @@ newmtl _pvp_lordaeron_arena_000_modelscandelabratallwall02_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\candelabratallwall02.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\candelabratallwall02.jpg
+	map_Ka candelabratallwall02.jpg
+	map_Kd candelabratallwall02.jpg
 
 newmtl _pvp_lordaeron_arena_000_modelsogrechainmeat01_alpha_Material
 	Ns 0.000000000000
@@ -544,8 +544,8 @@ newmtl _pvp_lordaeron_arena_000_modelsogrechainmeat01_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ogrechainmeat01.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ogrechainmeat01.alpha.png
+	map_Ka ogrechainmeat01.alpha.png
+	map_Kd ogrechainmeat01.alpha.png
 
 newmtl _pvp_lordaeron_arena_000_modelsbell_alpha_Material
 	Ns 0.000000000000
@@ -558,8 +558,8 @@ newmtl _pvp_lordaeron_arena_000_modelsbell_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.alpha.png
+	map_Ka bell.alpha.png
+	map_Kd bell.alpha.png
 
 newmtl _pvp_lordaeron_arena_000_modelsanchormetal_alpha_Material
 	Ns 0.000000000000
@@ -572,8 +572,8 @@ newmtl _pvp_lordaeron_arena_000_modelsanchormetal_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\anchormetal.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\anchormetal.alpha.png
+	map_Ka anchormetal.alpha.png
+	map_Kd anchormetal.alpha.png
 
 newmtl _pvp_lordaeron_arena_001bm_ldrn_pillars01_Material
 	Ns 0.000000000000
@@ -586,8 +586,8 @@ newmtl _pvp_lordaeron_arena_001bm_ldrn_pillars01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_pillars01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_pillars01.jpg
+	map_Ka bm_ldrn_pillars01.jpg
+	map_Kd bm_ldrn_pillars01.jpg
 
 newmtl _pvp_lordaeron_arena_001bm_ldrn_greywall01_Material
 	Ns 0.000000000000
@@ -600,8 +600,8 @@ newmtl _pvp_lordaeron_arena_001bm_ldrn_greywall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_greywall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_greywall01.jpg
+	map_Ka bm_ldrn_greywall01.jpg
+	map_Kd bm_ldrn_greywall01.jpg
 
 newmtl _pvp_lordaeron_arena_001bm_ldrn_wall01_Material
 	Ns 0.000000000000
@@ -614,8 +614,8 @@ newmtl _pvp_lordaeron_arena_001bm_ldrn_wall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_wall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_wall01.jpg
+	map_Ka bm_ldrn_wall01.jpg
+	map_Kd bm_ldrn_wall01.jpg
 
 newmtl _pvp_lordaeron_arena_001bm_ldrn_belltower01_Material
 	Ns 0.000000000000
@@ -628,8 +628,8 @@ newmtl _pvp_lordaeron_arena_001bm_ldrn_belltower01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_belltower01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_belltower01.jpg
+	map_Ka bm_ldrn_belltower01.jpg
+	map_Kd bm_ldrn_belltower01.jpg
 
 newmtl _pvp_lordaeron_arena_001bm_ldrn_chamberwall01_Material
 	Ns 0.000000000000
@@ -642,8 +642,8 @@ newmtl _pvp_lordaeron_arena_001bm_ldrn_chamberwall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_chamberwall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_chamberwall01.jpg
+	map_Ka bm_ldrn_chamberwall01.jpg
+	map_Kd bm_ldrn_chamberwall01.jpg
 
 newmtl _pvp_lordaeron_arena_001bm_ldrn_thronefloor02_Material
 	Ns 0.000000000000
@@ -656,8 +656,8 @@ newmtl _pvp_lordaeron_arena_001bm_ldrn_thronefloor02_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_thronefloor02.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_thronefloor02.jpg
+	map_Ka bm_ldrn_thronefloor02.jpg
+	map_Kd bm_ldrn_thronefloor02.jpg
 
 newmtl _pvp_lordaeron_arena_001bm_ldrn_stonefloor01_Material
 	Ns 0.000000000000
@@ -670,8 +670,8 @@ newmtl _pvp_lordaeron_arena_001bm_ldrn_stonefloor01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_stonefloor01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_stonefloor01.jpg
+	map_Ka bm_ldrn_stonefloor01.jpg
+	map_Kd bm_ldrn_stonefloor01.jpg
 
 newmtl _pvp_lordaeron_arena_001bm_ldrn_trims02_Material
 	Ns 0.000000000000
@@ -684,8 +684,8 @@ newmtl _pvp_lordaeron_arena_001bm_ldrn_trims02_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_trims02.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_trims02.jpg
+	map_Ka bm_ldrn_trims02.jpg
+	map_Kd bm_ldrn_trims02.jpg
 
 newmtl _pvp_lordaeron_arena_001bm_ldrn_domeceiling01_Material
 	Ns 0.000000000000
@@ -698,8 +698,8 @@ newmtl _pvp_lordaeron_arena_001bm_ldrn_domeceiling01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_domeceiling01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_domeceiling01.jpg
+	map_Ka bm_ldrn_domeceiling01.jpg
+	map_Kd bm_ldrn_domeceiling01.jpg
 
 newmtl _pvp_lordaeron_arena_001_modelsstormwind_torch_Material
 	Ns 0.000000000000
@@ -712,8 +712,8 @@ newmtl _pvp_lordaeron_arena_001_modelsstormwind_torch_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\stormwind_torch.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\stormwind_torch.jpg
+	map_Ka stormwind_torch.jpg
+	map_Kd stormwind_torch.jpg
 
 newmtl _pvp_lordaeron_arena_001_modelst_vfx_glow01_64_alpha_Material
 	Ns 0.000000000000
@@ -726,8 +726,8 @@ newmtl _pvp_lordaeron_arena_001_modelst_vfx_glow01_64_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\t_vfx_glow01_64.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\t_vfx_glow01_64.alpha.png
+	map_Ka t_vfx_glow01_64.alpha.png
+	map_Kd t_vfx_glow01_64.alpha.png
 
 newmtl _pvp_lordaeron_arena_001_modelsstatue01_Material
 	Ns 0.000000000000
@@ -740,8 +740,8 @@ newmtl _pvp_lordaeron_arena_001_modelsstatue01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\statue01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\statue01.jpg
+	map_Ka statue01.jpg
+	map_Kd statue01.jpg
 
 newmtl _pvp_lordaeron_arena_001_modelsdrapery_Material
 	Ns 0.000000000000
@@ -754,8 +754,8 @@ newmtl _pvp_lordaeron_arena_001_modelsdrapery_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\drapery.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\drapery.jpg
+	map_Ka drapery.jpg
+	map_Kd drapery.jpg
 
 newmtl _pvp_lordaeron_arena_001_modelsbell_Material
 	Ns 0.000000000000
@@ -768,8 +768,8 @@ newmtl _pvp_lordaeron_arena_001_modelsbell_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.jpg
+	map_Ka bell.jpg
+	map_Kd bell.jpg
 
 newmtl _pvp_lordaeron_arena_001_modelslordearon_banner_01_alpha_Material
 	Ns 0.000000000000
@@ -782,8 +782,8 @@ newmtl _pvp_lordaeron_arena_001_modelslordearon_banner_01_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\lordearon_banner_01.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\lordearon_banner_01.alpha.png
+	map_Ka lordearon_banner_01.alpha.png
+	map_Kd lordearon_banner_01.alpha.png
 
 newmtl _pvp_lordaeron_arena_001_modelsironmaiden_1_alpha_Material
 	Ns 0.000000000000
@@ -796,8 +796,8 @@ newmtl _pvp_lordaeron_arena_001_modelsironmaiden_1_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ironmaiden-1.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ironmaiden-1.alpha.png
+	map_Ka ironmaiden-1.alpha.png
+	map_Kd ironmaiden-1.alpha.png
 
 newmtl _pvp_lordaeron_arena_001_modelscandelabratallwall02_Material
 	Ns 0.000000000000
@@ -810,8 +810,8 @@ newmtl _pvp_lordaeron_arena_001_modelscandelabratallwall02_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\candelabratallwall02.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\candelabratallwall02.jpg
+	map_Ka candelabratallwall02.jpg
+	map_Kd candelabratallwall02.jpg
 
 newmtl _pvp_lordaeron_arena_001_modelsghostlands01_web_alpha_Material
 	Ns 0.000000000000
@@ -824,8 +824,8 @@ newmtl _pvp_lordaeron_arena_001_modelsghostlands01_web_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ghostlands01_web.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ghostlands01_web.alpha.png
+	map_Ka ghostlands01_web.alpha.png
+	map_Kd ghostlands01_web.alpha.png
 
 newmtl _pvp_lordaeron_arena_001_modelsogrechainmeat01_alpha_Material
 	Ns 0.000000000000
@@ -838,8 +838,8 @@ newmtl _pvp_lordaeron_arena_001_modelsogrechainmeat01_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ogrechainmeat01.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ogrechainmeat01.alpha.png
+	map_Ka ogrechainmeat01.alpha.png
+	map_Kd ogrechainmeat01.alpha.png
 
 newmtl _pvp_lordaeron_arena_001_modelsbell_alpha_Material
 	Ns 0.000000000000
@@ -852,8 +852,8 @@ newmtl _pvp_lordaeron_arena_001_modelsbell_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.alpha.png
+	map_Ka bell.alpha.png
+	map_Kd bell.alpha.png
 
 newmtl _pvp_lordaeron_arena_001_modelsanchormetal_alpha_Material
 	Ns 0.000000000000
@@ -866,8 +866,8 @@ newmtl _pvp_lordaeron_arena_001_modelsanchormetal_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\anchormetal.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\anchormetal.alpha.png
+	map_Ka anchormetal.alpha.png
+	map_Kd anchormetal.alpha.png
 
 newmtl _pvp_lordaeron_arena_002bm_ldrn_wall01_Material
 	Ns 0.000000000000
@@ -880,8 +880,8 @@ newmtl _pvp_lordaeron_arena_002bm_ldrn_wall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_wall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_wall01.jpg
+	map_Ka bm_ldrn_wall01.jpg
+	map_Kd bm_ldrn_wall01.jpg
 
 newmtl _pvp_lordaeron_arena_002bm_ldrn_belltower01_Material
 	Ns 0.000000000000
@@ -894,8 +894,8 @@ newmtl _pvp_lordaeron_arena_002bm_ldrn_belltower01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_belltower01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_belltower01.jpg
+	map_Ka bm_ldrn_belltower01.jpg
+	map_Kd bm_ldrn_belltower01.jpg
 
 newmtl _pvp_lordaeron_arena_002_modelsogrechainmeat01_alpha_Material
 	Ns 0.000000000000
@@ -908,8 +908,8 @@ newmtl _pvp_lordaeron_arena_002_modelsogrechainmeat01_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ogrechainmeat01.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ogrechainmeat01.alpha.png
+	map_Ka ogrechainmeat01.alpha.png
+	map_Kd ogrechainmeat01.alpha.png
 
 newmtl _pvp_lordaeron_arena_002_modelsbell_alpha_Material
 	Ns 0.000000000000
@@ -922,8 +922,8 @@ newmtl _pvp_lordaeron_arena_002_modelsbell_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.alpha.png
+	map_Ka bell.alpha.png
+	map_Kd bell.alpha.png
 
 newmtl _pvp_lordaeron_arena_002_modelsanchormetal_alpha_Material
 	Ns 0.000000000000
@@ -936,8 +936,8 @@ newmtl _pvp_lordaeron_arena_002_modelsanchormetal_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\anchormetal.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\anchormetal.alpha.png
+	map_Ka anchormetal.alpha.png
+	map_Kd anchormetal.alpha.png
 
 newmtl _pvp_lordaeron_arena_003bm_ldrn_wall01_Material
 	Ns 0.000000000000
@@ -950,8 +950,8 @@ newmtl _pvp_lordaeron_arena_003bm_ldrn_wall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_wall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_wall01.jpg
+	map_Ka bm_ldrn_wall01.jpg
+	map_Kd bm_ldrn_wall01.jpg
 
 newmtl _pvp_lordaeron_arena_003bm_ldrn_belltower01_Material
 	Ns 0.000000000000
@@ -964,8 +964,8 @@ newmtl _pvp_lordaeron_arena_003bm_ldrn_belltower01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_belltower01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_belltower01.jpg
+	map_Ka bm_ldrn_belltower01.jpg
+	map_Kd bm_ldrn_belltower01.jpg
 
 newmtl _pvp_lordaeron_arena_003_modelsogrechainmeat01_alpha_Material
 	Ns 0.000000000000
@@ -978,8 +978,8 @@ newmtl _pvp_lordaeron_arena_003_modelsogrechainmeat01_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ogrechainmeat01.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ogrechainmeat01.alpha.png
+	map_Ka ogrechainmeat01.alpha.png
+	map_Kd ogrechainmeat01.alpha.png
 
 newmtl _pvp_lordaeron_arena_003_modelsbell_alpha_Material
 	Ns 0.000000000000
@@ -992,8 +992,8 @@ newmtl _pvp_lordaeron_arena_003_modelsbell_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.alpha.png
+	map_Ka bell.alpha.png
+	map_Kd bell.alpha.png
 
 newmtl _pvp_lordaeron_arena_003_modelsanchormetal_alpha_Material
 	Ns 0.000000000000
@@ -1006,8 +1006,8 @@ newmtl _pvp_lordaeron_arena_003_modelsanchormetal_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\anchormetal.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\anchormetal.alpha.png
+	map_Ka anchormetal.alpha.png
+	map_Kd anchormetal.alpha.png
 
 newmtl _pvp_lordaeron_arena_004bm_ldrn_pillars01_Material
 	Ns 0.000000000000
@@ -1020,8 +1020,8 @@ newmtl _pvp_lordaeron_arena_004bm_ldrn_pillars01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_pillars01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_pillars01.jpg
+	map_Ka bm_ldrn_pillars01.jpg
+	map_Kd bm_ldrn_pillars01.jpg
 
 newmtl _pvp_lordaeron_arena_004bm_ldrn_greywall01_Material
 	Ns 0.000000000000
@@ -1034,8 +1034,8 @@ newmtl _pvp_lordaeron_arena_004bm_ldrn_greywall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_greywall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_greywall01.jpg
+	map_Ka bm_ldrn_greywall01.jpg
+	map_Kd bm_ldrn_greywall01.jpg
 
 newmtl _pvp_lordaeron_arena_004bm_ldrn_wall01_Material
 	Ns 0.000000000000
@@ -1048,8 +1048,8 @@ newmtl _pvp_lordaeron_arena_004bm_ldrn_wall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_wall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_wall01.jpg
+	map_Ka bm_ldrn_wall01.jpg
+	map_Kd bm_ldrn_wall01.jpg
 
 newmtl _pvp_lordaeron_arena_004bm_ldrn_belltower01_Material
 	Ns 0.000000000000
@@ -1062,8 +1062,8 @@ newmtl _pvp_lordaeron_arena_004bm_ldrn_belltower01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_belltower01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_belltower01.jpg
+	map_Ka bm_ldrn_belltower01.jpg
+	map_Kd bm_ldrn_belltower01.jpg
 
 newmtl _pvp_lordaeron_arena_004bm_ldrn_chamberwall01_Material
 	Ns 0.000000000000
@@ -1076,8 +1076,8 @@ newmtl _pvp_lordaeron_arena_004bm_ldrn_chamberwall01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_chamberwall01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_chamberwall01.jpg
+	map_Ka bm_ldrn_chamberwall01.jpg
+	map_Kd bm_ldrn_chamberwall01.jpg
 
 newmtl _pvp_lordaeron_arena_004bm_ldrn_thronefloor02_Material
 	Ns 0.000000000000
@@ -1090,8 +1090,8 @@ newmtl _pvp_lordaeron_arena_004bm_ldrn_thronefloor02_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_thronefloor02.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_thronefloor02.jpg
+	map_Ka bm_ldrn_thronefloor02.jpg
+	map_Kd bm_ldrn_thronefloor02.jpg
 
 newmtl _pvp_lordaeron_arena_004bm_ldrn_stonefloor01_Material
 	Ns 0.000000000000
@@ -1104,8 +1104,8 @@ newmtl _pvp_lordaeron_arena_004bm_ldrn_stonefloor01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_stonefloor01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_stonefloor01.jpg
+	map_Ka bm_ldrn_stonefloor01.jpg
+	map_Kd bm_ldrn_stonefloor01.jpg
 
 newmtl _pvp_lordaeron_arena_004bm_ldrn_trims02_Material
 	Ns 0.000000000000
@@ -1118,8 +1118,8 @@ newmtl _pvp_lordaeron_arena_004bm_ldrn_trims02_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_trims02.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_trims02.jpg
+	map_Ka bm_ldrn_trims02.jpg
+	map_Kd bm_ldrn_trims02.jpg
 
 newmtl _pvp_lordaeron_arena_004bm_ldrn_domeceiling01_Material
 	Ns 0.000000000000
@@ -1132,8 +1132,8 @@ newmtl _pvp_lordaeron_arena_004bm_ldrn_domeceiling01_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_domeceiling01.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bm_ldrn_domeceiling01.jpg
+	map_Ka bm_ldrn_domeceiling01.jpg
+	map_Kd bm_ldrn_domeceiling01.jpg
 
 newmtl _pvp_lordaeron_arena_004_modelsogrechainmeat01_alpha_Material
 	Ns 0.000000000000
@@ -1146,8 +1146,8 @@ newmtl _pvp_lordaeron_arena_004_modelsogrechainmeat01_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ogrechainmeat01.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ogrechainmeat01.alpha.png
+	map_Ka ogrechainmeat01.alpha.png
+	map_Kd ogrechainmeat01.alpha.png
 
 newmtl _pvp_lordaeron_arena_004_modelsbell_alpha_Material
 	Ns 0.000000000000
@@ -1160,8 +1160,8 @@ newmtl _pvp_lordaeron_arena_004_modelsbell_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.alpha.png
+	map_Ka bell.alpha.png
+	map_Kd bell.alpha.png
 
 newmtl _pvp_lordaeron_arena_004_modelsanchormetal_alpha_Material
 	Ns 0.000000000000
@@ -1174,8 +1174,8 @@ newmtl _pvp_lordaeron_arena_004_modelsanchormetal_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\anchormetal.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\anchormetal.alpha.png
+	map_Ka anchormetal.alpha.png
+	map_Kd anchormetal.alpha.png
 
 newmtl _pvp_lordaeron_arena_004_modelsstormwind_torch_Material
 	Ns 0.000000000000
@@ -1188,8 +1188,8 @@ newmtl _pvp_lordaeron_arena_004_modelsstormwind_torch_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\stormwind_torch.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\stormwind_torch.jpg
+	map_Ka stormwind_torch.jpg
+	map_Kd stormwind_torch.jpg
 
 newmtl _pvp_lordaeron_arena_004_modelst_vfx_glow01_64_alpha_Material
 	Ns 0.000000000000
@@ -1202,8 +1202,8 @@ newmtl _pvp_lordaeron_arena_004_modelst_vfx_glow01_64_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\t_vfx_glow01_64.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\t_vfx_glow01_64.alpha.png
+	map_Ka t_vfx_glow01_64.alpha.png
+	map_Kd t_vfx_glow01_64.alpha.png
 
 newmtl _pvp_lordaeron_arena_004_modelsbell_Material
 	Ns 0.000000000000
@@ -1216,8 +1216,8 @@ newmtl _pvp_lordaeron_arena_004_modelsbell_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\bell.jpg
+	map_Ka bell.jpg
+	map_Kd bell.jpg
 
 newmtl _pvp_lordaeron_arena_004_modelslordearon_banner_01_alpha_Material
 	Ns 0.000000000000
@@ -1230,8 +1230,8 @@ newmtl _pvp_lordaeron_arena_004_modelslordearon_banner_01_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\lordearon_banner_01.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\lordearon_banner_01.alpha.png
+	map_Ka lordearon_banner_01.alpha.png
+	map_Kd lordearon_banner_01.alpha.png
 
 newmtl _pvp_lordaeron_arena_004_modelsironmaiden_1_alpha_Material
 	Ns 0.000000000000
@@ -1244,8 +1244,8 @@ newmtl _pvp_lordaeron_arena_004_modelsironmaiden_1_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ironmaiden-1.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ironmaiden-1.alpha.png
+	map_Ka ironmaiden-1.alpha.png
+	map_Kd ironmaiden-1.alpha.png
 
 newmtl _pvp_lordaeron_arena_004_modelscandelabratallwall02_Material
 	Ns 0.000000000000
@@ -1258,8 +1258,8 @@ newmtl _pvp_lordaeron_arena_004_modelscandelabratallwall02_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\candelabratallwall02.jpg
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\candelabratallwall02.jpg
+	map_Ka candelabratallwall02.jpg
+	map_Kd candelabratallwall02.jpg
 
 newmtl _pvp_lordaeron_arena_004_modelsghostlands01_web_alpha_Material
 	Ns 0.000000000000
@@ -1272,5 +1272,5 @@ newmtl _pvp_lordaeron_arena_004_modelsghostlands01_web_alpha_Material
 	Kd 0.000000000000 0.000000000000 0.000000000000
 	Ks 0.000000000000 0.000000000000 0.000000000000
 	Ke 0.000000000000 0.000000000000 0.000000000000
-	map_Ka C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ghostlands01_web.alpha.png
-	map_Kd C:\Users\Kallen\Documents\GitHub\IndieGameClient\assets\mp\ghostlands01_web.alpha.png
+	map_Ka ghostlands01_web.alpha.png
+	map_Kd ghostlands01_web.alpha.png
