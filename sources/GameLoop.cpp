@@ -36,8 +36,6 @@ bool	core::GameLoop::_init(void)
 		this->_device->driver->getTexture("../../assets/sky/test_shadowmoon_moon01.png"),
 		this->_device->driver->getTexture("../../assets/sky/test_shadowmoon_moon01.png"));
 	skybox->setRotation(irr::core::vector3df(0.f, 0.f, 0.f));
-	//iscene::ISceneNode* skydome = this->_device->smgr->addSkyDomeSceneNode(this->_device->driver->getTexture("../../assets/sky/ashrand_bright_stormy_front.png"), 16, 8, 1.0f, 2.0f);
-	//skydome->setRotation(irr::core::vector3df(5.f, 5.f, 5.f));
 
 	if (map)
 	{
