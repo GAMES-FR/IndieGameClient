@@ -1,12 +1,16 @@
-#
-# mtl file for car_6.obj obj file
-#
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 13.06.2016 03:39:21
 
-newmtl world_generic_goblin_passivedoodads_rocketship_go_rocketship.m2_Geoset_000
-illum 2
-Kd 1.000000 1.000000 1.000000
-Ka 0.250000 0.250000 0.250000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ns 0.000000
-map_Kd car_6_go_rocket01.png
+newmtl _car_6world_generic_goblin_passivedoodads_rocketship_go_rocketship_m2_Geoset_000
+	Ns 0.000000000000
+	Ni 1.500000000000
+	d 1.000000000000
+	Tr 0.000000000000
+	Tf 1.000000000000 1.000000000000 1.000000000000 
+	illum 2
+	Ka 0.250000000000 0.250000000000 0.250000000000
+	Kd 1.000000000000 1.000000000000 1.000000000000
+	Ks 0.000000000000 0.000000000000 0.000000000000
+	Ke 0.000000000000 0.000000000000 0.000000000000
+	map_Ka car_6_go_rocket01.png
+	map_Kd car_6_go_rocket01.png
